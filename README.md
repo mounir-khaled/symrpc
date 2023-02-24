@@ -12,6 +12,7 @@ Statically enumerate RPC interfaces of Windows services.
 See example-reports/ for an example output. Valid clients are shown under the `possible_clients` field
 
 ## Usage
+First run `cd symrpc && pip install angrcache\`
 
 ```
 symrpc.py [-h] [-t TIMEOUT] [-s SERVICES [SERVICES ...]] [-r REPORT_DIR] [-c CACHE_NAME] [-l LOGGING_LEVEL] [-e]
