@@ -1,6 +1,16 @@
 
 # SymRPC
 
+Statically enumerate RPC interfaces of Windows services.
+
+## Features
+- Extracts arguments to RpcServerRegisterIf* functions and parses interface structures
+- Extracts arguments authentication and protocol sequence registration functions
+- Symbolically executes interface security callbacks (if available) to extract complex security checks
+- Outputs a list of valid clients that are allowed to the RPC server + any extra checks made by the security callback
+
+See example-reports/ for an example output. Valid clients are shown under the `possible_clients` field
+
 ## Usage
 
 ```
@@ -18,11 +28,11 @@ optional arguments:
   -r REPORT_DIR, --report-dir REPORT_DIR
                         Directory to store analysis results (default: reports)
   -c CACHE_NAME, --cache-name CACHE_NAME
-                        Path to store cached analysis results (default: projectcache\cache)
+                        Path to store cached angr analysis results (e.g. CFGs, loaded PEs, etc...) (default: projectcache\cache)
   -l LOGGING_LEVEL, --logging-level LOGGING_LEVEL
                         Logging level (default: INFO)
-  -e, --symexec         Symbolically execute interface callbacks
   -p SYMBOLS_DIR, --symbols-dir SYMBOLS_DIR
+                        Directory to pdb files containing symbols. Must be in the format [SYMBOLS_DIR]\[dll_name].pdb\[DLL GUID]\[dll_name].pdb
 ```
 
 ---
