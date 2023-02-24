@@ -8,6 +8,7 @@
 !requirements.txt
 !angrcache/**
 !example-reports/**
+!results_analysis_scripts/**
 
 __pycache__
 venv
