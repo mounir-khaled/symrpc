@@ -1,4 +1,4 @@
-Some queries written in jq to find interesting targets. Usage example:
+Some queries written in [jq](https://stedolan.github.io/jq/manual/) to find interesting targets. Usage example:
 
 Find all RPC services that allow remote clients:
 ```
