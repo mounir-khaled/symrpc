@@ -1,0 +1,11 @@
+*
+!*/
+
+!.gitignore
+!symrpc/*
+!README.md
+!LICENSE
+!requirements.txt
+
+__pycache__
+venv
