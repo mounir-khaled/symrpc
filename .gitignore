@@ -6,6 +6,7 @@
 !README.md
 !LICENSE
 !requirements.txt
+!angrcache/*
 
 __pycache__
 venv
