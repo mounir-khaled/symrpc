@@ -140,11 +140,10 @@ if __name__ == "__main__":
     parser.add_argument("-r", "--report-dir", default="reports", help="Directory to store analysis results (default: reports)")
     parser.add_argument("-c", "--cache-name", default=default_cache_path, help="Path to store cached analysis results (default: %s)" % default_cache_path)
     parser.add_argument("-l", "--logging-level", default="INFO", help="Logging level (default: INFO)")
-    parser.add_argument("-e", "--symexec", action="store_true", help="Symbolically execute interface callbacks")
     parser.add_argument("-p", "--symbols-dir", default="")
 
     args = parser.parse_args()
 
     log.setLevel(logging.getLevelName(args.logging_level))
     logging.getLogger("rpc_interface_analysis").setLevel(args.logging_level)
-    analyze_all_services(args.cache_name, args.report_dir, args.timeout, args.services, args.symexec, args.symbols_dir)
+    analyze_all_services(args.cache_name, args.report_dir, args.timeout, args.services, True, args.symbols_dir)
