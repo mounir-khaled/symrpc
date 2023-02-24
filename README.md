@@ -12,8 +12,13 @@ Statically enumerate RPC interfaces of Windows services.
 See example-reports/ for an example output. Valid clients are shown under the `possible_clients` field
 
 ## Usage
-First run `pip install -r requirements.txt && pip install angrcache\`
+To set up a virtual environment run:
 
+`python -m venv venv`
+
+`pip install -r requirements.txt && pip install angrcache\`
+
+Usage:
 ```
 symrpc.py [-h] [-t TIMEOUT] [-s SERVICES [SERVICES ...]] [-r REPORT_DIR] [-c CACHE_NAME] [-l LOGGING_LEVEL] [-e]
                  [-p SYMBOLS_DIR]
