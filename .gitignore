@@ -2,12 +2,14 @@
 !*/
 
 !.gitignore
-!symrpc/*
+!symrpc/**
 !README.md
 !LICENSE
 !requirements.txt
-!angrcache/*
-!example-reports/*
+!angrcache/**
+!example-reports/**
 
 __pycache__
 venv
+build
+*.egg-info
