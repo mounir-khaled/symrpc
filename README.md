@@ -12,7 +12,7 @@ Statically enumerate RPC interfaces of Windows services.
 See example-reports/ for an example output. Valid clients are shown under the `possible_clients` field
 
 ## Usage
-First run `cd symrpc && pip install angrcache\`
+First run `pip install -r requirements.txt && pip install angrcache\`
 
 ```
 symrpc.py [-h] [-t TIMEOUT] [-s SERVICES [SERVICES ...]] [-r REPORT_DIR] [-c CACHE_NAME] [-l LOGGING_LEVEL] [-e]
@@ -35,6 +35,9 @@ optional arguments:
   -p SYMBOLS_DIR, --symbols-dir SYMBOLS_DIR
                         Directory to pdb files containing symbols. Must be in the format [SYMBOLS_DIR]\[dll_name].pdb\[DLL GUID]\[dll_name].pdb
 ```
+
+Example:
+`python ./symrpc.py -s AppInfo -p ./symbols`
 
 ---
    Copyright 2023 Mounir Elgharabawy
