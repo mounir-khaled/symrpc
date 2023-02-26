@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Appinfo",
     "filepath": "C:\\WINDOWS\\system32\\appinfo.dll",
-    "time": 25.46808433532715,
+    "time": 11.203611850738525,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -11,6 +11,7 @@
       {
         "arguments": {
           "Flags": [
+            null,
             {
               "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
               "RPC_IF_ALLOW_LOCAL_ONLY": true,
@@ -21,8 +22,7 @@
               "RPC_IF_OLE": false,
               "RPC_IF_SEC_CACHE_PER_PROC": false,
               "RPC_IF_SEC_NO_CACHE": false
-            },
-            null
+            }
           ],
           "IfCallback": [
             {
@@ -32,17 +32,7 @@
           "IfSpec": [
             {
               "address": 6442602528,
-              "flags": {
-                "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-                "RPC_IF_ALLOW_LOCAL_ONLY": false,
-                "RPC_IF_ALLOW_SECURE_ONLY": false,
-                "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
-                "RPC_IF_ASYNC_CALLBACK": false,
-                "RPC_IF_AUTOLISTEN": false,
-                "RPC_IF_OLE": false,
-                "RPC_IF_SEC_CACHE_PER_PROC": false,
-                "RPC_IF_SEC_NO_CACHE": false
-              },
+              "flags": 100663296,
               "procedure_addresses": [
                 {
                   "address": 6442455376,
@@ -123,6 +113,10 @@
                     "MinorVersion": 0
                   }
                 }
+              },
+              "uuid": {
+                "uuid": "0497B57D-2E66-424F-A0C6-157CD5D41700",
+                "version": "1.0"
               }
             }
           ],
@@ -174,17 +168,7 @@
           "IfSpec": [
             {
               "address": 6442602912,
-              "flags": {
-                "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-                "RPC_IF_ALLOW_LOCAL_ONLY": false,
-                "RPC_IF_ALLOW_SECURE_ONLY": false,
-                "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
-                "RPC_IF_ASYNC_CALLBACK": false,
-                "RPC_IF_AUTOLISTEN": false,
-                "RPC_IF_OLE": false,
-                "RPC_IF_SEC_CACHE_PER_PROC": false,
-                "RPC_IF_SEC_NO_CACHE": false
-              },
+              "flags": 100663296,
               "procedure_addresses": [
                 {
                   "address": 6442474656,
@@ -265,6 +249,10 @@
                     "MinorVersion": 0
                   }
                 }
+              },
+              "uuid": {
+                "uuid": "201EF99A-7FA0-444C-9399-19BA84F12A1A",
+                "version": "1.0"
               }
             }
           ],
@@ -346,17 +334,7 @@
           "IfSpec": [
             {
               "address": 6442602816,
-              "flags": {
-                "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-                "RPC_IF_ALLOW_LOCAL_ONLY": false,
-                "RPC_IF_ALLOW_SECURE_ONLY": false,
-                "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
-                "RPC_IF_ASYNC_CALLBACK": false,
-                "RPC_IF_AUTOLISTEN": false,
-                "RPC_IF_OLE": false,
-                "RPC_IF_SEC_CACHE_PER_PROC": false,
-                "RPC_IF_SEC_NO_CACHE": false
-              },
+              "flags": 100663296,
               "procedure_addresses": [
                 {
                   "address": 6442596272,
@@ -413,6 +391,10 @@
                     "MinorVersion": 0
                   }
                 }
+              },
+              "uuid": {
+                "uuid": "5F54CE7D-5B79-4175-8584-CB65313A0E98",
+                "version": "1.0"
               }
             }
           ],
@@ -468,40 +450,44 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_102_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_901_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_104_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_103_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_902_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 7,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -516,12 +502,44 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_901_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_904_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_905_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -529,47 +547,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_102_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_142_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_144_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_143_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -584,12 +564,47 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_901_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_904_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_907_64{UNINITIALIZED}[31:0] != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff68_908_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -597,50 +612,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_102_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_142_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_182_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_183_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_63_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -655,12 +629,47 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_901_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_904_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_907_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_GetLastError_863_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -668,50 +677,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_102_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_142_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_182_64{UNINITIALIZED}[31:0] != 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_222_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool mem_7fffffffffeff68_221_32{UNINITIALIZED} != 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -726,12 +694,44 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_911_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_913_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_914_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -739,47 +739,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_260_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_261_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_263_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_262_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -794,12 +756,47 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_911_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_913_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_916_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_917_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -807,50 +804,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_260_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_261_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_301_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_303_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_302_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -865,12 +821,50 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_911_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_913_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_916_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_919_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_GetLastError_863_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -878,53 +872,9 @@
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_260_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_261_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_301_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_341_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_342_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_63_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -939,54 +889,38 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_59_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_858_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_58_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_859_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_59_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_859_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_101_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_260_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_911_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_261_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_913_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_301_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_916_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_341_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_919_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED} == global_0x1800330e8_381_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_97_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if mem_7fffffffffeff68_380_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_260_64{UNINITIALIZED}[31:0]) == 0x0>"
+                    "bitvector": "<Bool (if mem_7fffffffffeff68_921_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_911_64{UNINITIALIZED}[31:0]) == 0x0>"
                   }
                 ]
               }
@@ -1016,17 +950,7 @@
           "IfSpec": [
             {
               "address": 6442602720,
-              "flags": {
-                "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-                "RPC_IF_ALLOW_LOCAL_ONLY": false,
-                "RPC_IF_ALLOW_SECURE_ONLY": false,
-                "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
-                "RPC_IF_ASYNC_CALLBACK": false,
-                "RPC_IF_AUTOLISTEN": false,
-                "RPC_IF_OLE": false,
-                "RPC_IF_SEC_CACHE_PER_PROC": false,
-                "RPC_IF_SEC_NO_CACHE": false
-              },
+              "flags": 100663296,
               "procedure_addresses": [
                 {
                   "address": 6442596928,
@@ -1083,6 +1007,10 @@
                     "MinorVersion": 0
                   }
                 }
+              },
+              "uuid": {
+                "uuid": "FD7A0523-DC70-43DD-9B2E-9C5ED48225B1",
+                "version": "1.0"
               }
             }
           ],
@@ -1138,50 +1066,29 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_501_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_966_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_503_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_502_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_967_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
                     "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1199,47 +1106,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_501_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_541_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_543_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_542_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1249,7 +1118,39 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_966_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_969_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_970_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1267,50 +1168,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_501_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_541_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_581_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_582_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_462_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1320,7 +1180,42 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_966_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_969_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_972_64{UNINITIALIZED}[31:0] != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff68_973_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1338,50 +1233,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_501_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_541_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_581_64{UNINITIALIZED}[31:0] != 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_621_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool mem_7fffffffffeff68_620_32{UNINITIALIZED} != 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1391,7 +1245,42 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_966_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_969_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_972_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_GetLastError_928_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1409,47 +1298,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_659_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_660_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_662_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_661_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1459,7 +1310,39 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_976_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_978_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_979_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1477,50 +1360,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_659_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_660_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_700_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_702_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_701_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1530,7 +1372,42 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_976_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_978_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_981_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_982_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1548,53 +1425,9 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_659_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_660_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_700_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_740_64{UNINITIALIZED}[31:0] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_741_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_462_64{UNINITIALIZED}[31:0] == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1604,7 +1437,45 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_976_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_978_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_981_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_984_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_GetLastError_928_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1622,41 +1493,50 @@
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_457_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_924_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_923_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_458_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_924_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_500_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_965_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_659_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_976_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_660_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_978_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_700_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_981_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_740_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_984_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED} == global_0x1800330e8_780_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_496_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if mem_7fffffffffeff68_779_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_659_64{UNINITIALIZED}[31:0]) == 0x0>"
+                    "bitvector": "<Bool (if mem_7fffffffffeff68_986_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_976_64{UNINITIALIZED}[31:0]) == 0x0>"
                   }
                 ]
               }
@@ -1686,17 +1566,7 @@
           "IfSpec": [
             {
               "address": 6442602624,
-              "flags": {
-                "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-                "RPC_IF_ALLOW_LOCAL_ONLY": false,
-                "RPC_IF_ALLOW_SECURE_ONLY": false,
-                "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
-                "RPC_IF_ASYNC_CALLBACK": false,
-                "RPC_IF_AUTOLISTEN": false,
-                "RPC_IF_OLE": false,
-                "RPC_IF_SEC_CACHE_PER_PROC": false,
-                "RPC_IF_SEC_NO_CACHE": false
-              },
+              "flags": 100663296,
               "procedure_addresses": [
                 {
                   "address": 6442595840,
@@ -1753,6 +1623,10 @@
                     "MinorVersion": 0
                   }
                 }
+              },
+              "uuid": {
+                "uuid": "58E604E8-9ADB-4D2E-A464-3B0683FB1480",
+                "version": "1.0"
               }
             }
           ],
@@ -1776,12 +1650,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1791,12 +1660,17 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 1,
+                    "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1808,38 +1682,27 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1031_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_902_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_901_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1032_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -1851,12 +1714,17 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1866,48 +1734,37 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1031_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_940_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1034_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_942_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_941_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1035_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -1919,7 +1776,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -1929,56 +1786,50 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1031_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_940_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1034_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_980_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1037_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_981_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_861_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool mem_7fffffffffeff68_1038_32{UNINITIALIZED} != 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -1990,7 +1841,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -2000,56 +1851,50 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_900_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1031_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_940_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1034_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_980_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1037_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_1020_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool mem_7fffffffffeff68_1019_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool unconstrained_GetLastError_993_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -2061,7 +1906,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -2071,53 +1916,47 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1058_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1041_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1059_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1043_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_1061_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1060_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1044_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -2129,7 +1968,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -2139,56 +1978,50 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1058_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1041_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1059_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1043_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1099_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1046_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_1101_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1100_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1047_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -2200,7 +2033,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -2210,59 +2043,53 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1058_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1041_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1059_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1043_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1099_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1046_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1139_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1049_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_1140_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_GetLastError_861_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_GetLastError_993_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
@@ -2274,7 +2101,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -2284,49 +2111,48 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 6,
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_856_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_989_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_988_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_857_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_989_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_899_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcess_1030_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1058_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1041_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1059_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtOpenProcessToken_1043_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1099_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_NtDuplicateToken_1046_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) == 0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1139_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1049_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED} == global_0x1800330e8_1179_64{UNINITIALIZED}>"
-                  },
-                  {
-                    "bitvector": "<Bool global_0x1800330e8_895_64{UNINITIALIZED}[63:48] == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if mem_7fffffffffeff68_1178_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1058_64{UNINITIALIZED}[31:0]) == 0x0>"
+                    "bitvector": "<Bool (if mem_7fffffffffeff68_1051_32{UNINITIALIZED} == 0x0 then 0x5 else unconstrained_ret_RtlNtStatusToDosErrorNoTeb_1041_64{UNINITIALIZED}[31:0]) == 0x0>"
                   }
                 ]
               }
@@ -2344,14 +2170,14 @@
             {
               "annotations": [
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6c3 id=0x18000f6b9[-2] contextless>}>)",
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x180003458 id=0x180003458[6] contextless>}>)",
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f68c id=0x18000f68c[4] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f666 id=0x18000f666[1] contextless>}>)",
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6fa id=0x18000f6f5[6] contextless>}>)",
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6d7 id=0x18000f6d7[1] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f68c id=0x18000f68c[4] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6e4 id=0x18000f6e4[1] contextless>}>)",
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000342d id=0x180003424[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6fa id=0x18000f6f5[6] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x180003458 id=0x180003458[6] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000338e id=0x180003376[29] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000f6d7 id=0x18000f6d7[1] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x18000342d id=0x180003424[-2] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x18000360a id=0x180003607[11] contextless>}>)"
               ],
               "bitvector": "<BV32 TOP + 0xa[31:0]>"

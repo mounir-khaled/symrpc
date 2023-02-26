@@ -1,0 +1,156 @@
+{
+  "analysis_metadata": {
+    "name": "NcbService",
+    "filepath": "C:\\WINDOWS\\system32\\ncbservice.dll",
+    "time": 3.9172067642211914,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442692608,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442457920,
+                  "name": "KapiRegisterProvider"
+                },
+                {
+                  "address": 6442686096,
+                  "name": "KapiDeregisterProvider"
+                },
+                {
+                  "address": 6442457312,
+                  "name": "KapiUpdateKaSample"
+                },
+                {
+                  "address": 6442458224,
+                  "name": "KapiReceiveKaUpdateRequest"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442701712,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2282739038,
+                    "Data2": 17337,
+                    "Data3": 4576,
+                    "Data4": [
+                      "b1",
+                      "a8",
+                      "cf",
+                      "4e",
+                      "df",
+                      "d7",
+                      "20",
+                      "85"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442701648,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "880FD55E-43B9-11E0-B1A8-CF4EDFD72085",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442497006
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442707752,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442496964
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "analysis_metadata": {
+    "name": "TapiSrv",
+    "filepath": "C:\\WINDOWS\\system32\\tapisrv.dll",
+    "time": 7.7490644454956055,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266da[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1800266f3 id=0x1800266e9[19] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266d6[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1800266f3 id=0x1800266e9[19] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442608361
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallback": [
+            {
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6442704544,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442618288,
+                  "name": "ClientAttach"
+                },
+                {
+                  "address": 6442623232,
+                  "name": "ClientRequest"
+                },
+                {
+                  "address": 6442623520,
+                  "name": "ClientDetach"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442704688,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 794780960,
+                    "Data2": 51782,
+                    "Data3": 4199,
+                    "Data4": [
+                      "b3",
+                      "19",
+                      "00",
+                      "dd",
+                      "01",
+                      "06",
+                      "62",
+                      "da"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442704480,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "2F5F6520-CA46-1067-B319-00DD010662DA",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            {
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442608543
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442729032,
+              "string": "\\pipe\\tapsrv"
+            }
+          ],
+          "MaxCalls": [
+            0,
+            20000,
+            500
+          ],
+          "Protseq": [
+            {
+              "address": 6442729064,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442608016
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442729128,
+              "string": "tapsrvlpc"
+            }
+          ],
+          "MaxCalls": [
+            20000,
+            0,
+            500
+          ],
+          "Protseq": [
+            {
+              "address": 6442729152,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x18002667b id=0x180026678[10] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base + 0xffffffffffffff88>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442608248
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442729032,
+              "string": "\\pipe\\tapsrv"
+            }
+          ],
+          "MaxCalls": [
+            0,
+            20000,
+            500
+          ],
+          "Protseq": [
+            {
+              "address": 6442729064,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442608142
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

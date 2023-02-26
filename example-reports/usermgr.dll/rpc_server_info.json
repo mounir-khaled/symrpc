@@ -1,0 +1,986 @@
+{
+  "analysis_metadata": {
+    "name": "UserManager",
+    "filepath": "C:\\WINDOWS\\system32\\usermgr.dll",
+    "time": 10.199259757995605,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443306992,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442494704,
+                  "name": "svcQueryUserToken"
+                },
+                {
+                  "address": 6443006384,
+                  "name": "svcGetConstrainedUserToken"
+                },
+                {
+                  "address": 6442490928,
+                  "name": "svcIsAllowedToActivateAsUser"
+                },
+                {
+                  "address": 6443006816,
+                  "name": "svcQueryDefaultAccountToken"
+                },
+                {
+                  "address": 6443006864,
+                  "name": "svcQuerySessionVirtualAccountToken"
+                },
+                {
+                  "address": 6443006672,
+                  "name": "svcLaunchShell"
+                },
+                {
+                  "address": 6443006688,
+                  "name": "svcLaunchShellInfrastructureHost"
+                },
+                {
+                  "address": 6443007040,
+                  "name": "svcSetShellInformation"
+                },
+                {
+                  "address": 6443006592,
+                  "name": "svcInformUserLogon"
+                },
+                {
+                  "address": 6443006576,
+                  "name": "svcInformUserLogoff"
+                },
+                {
+                  "address": 6442496784,
+                  "name": "svcQueryUserContext"
+                },
+                {
+                  "address": 6443007088,
+                  "name": "svcUMLogonUser"
+                },
+                {
+                  "address": 6443006832,
+                  "name": "svcQuerySessionUserToken"
+                },
+                {
+                  "address": 6442474112,
+                  "name": "svcGetConstrainedUserTokenFromAppcontainer"
+                },
+                {
+                  "address": 6442487968,
+                  "name": "svcEnumerateSessionUsers"
+                },
+                {
+                  "address": 6443006960,
+                  "name": "svcQueryUserTokenFromName"
+                },
+                {
+                  "address": 6443006896,
+                  "name": "svcQueryUserContextFromName"
+                },
+                {
+                  "address": 6443006992,
+                  "name": "svcQueryUserTokenFromSid"
+                },
+                {
+                  "address": 6443006928,
+                  "name": "svcQueryUserContextFromSid"
+                },
+                {
+                  "address": 6443006704,
+                  "name": "svcOpenProcessHandleForAccess"
+                },
+                {
+                  "address": 6443006752,
+                  "name": "svcOpenProcessTokenForQuery"
+                },
+                {
+                  "address": 6443007328,
+                  "name": "svcUMSetCachedCredentials"
+                },
+                {
+                  "address": 6443007056,
+                  "name": "svcUMGetCachedCredentials"
+                },
+                {
+                  "address": 6443006560,
+                  "name": "svcInformFlags"
+                },
+                {
+                  "address": 6443006176,
+                  "name": "svcChangeSessionUserToken"
+                },
+                {
+                  "address": 6443006256,
+                  "name": "svcConnectLocalUser"
+                },
+                {
+                  "address": 6443006288,
+                  "name": "svcDisconnectLocalUser"
+                },
+                {
+                  "address": 6443006448,
+                  "name": "svcGetImpersonationTokenForContext"
+                },
+                {
+                  "address": 6443006432,
+                  "name": "svcGetDefaultSignInAccount"
+                },
+                {
+                  "address": 6443006208,
+                  "name": "svcClearDefaultSignInAccount"
+                },
+                {
+                  "address": 6443006528,
+                  "name": "svcGetSessionActiveShellUserToken"
+                },
+                {
+                  "address": 6443006144,
+                  "name": "svcChangeSessionActiveShellUser"
+                },
+                {
+                  "address": 6443006608,
+                  "name": "svcIsCandidateUser"
+                },
+                {
+                  "address": 6443006640,
+                  "name": "svcIsEphemeralCandidateUser"
+                },
+                {
+                  "address": 6443006320,
+                  "name": "svcGetCandidateAccountCredz"
+                },
+                {
+                  "address": 6443006224,
+                  "name": "svcConnectCandidateUser"
+                },
+                {
+                  "address": 6443006496,
+                  "name": "svcGetNonCandidateUserSessionIds"
+                },
+                {
+                  "address": 6443006352,
+                  "name": "svcGetCandidateUserSessionIds"
+                },
+                {
+                  "address": 6443007024,
+                  "name": "svcRefreshCandidateUser"
+                },
+                {
+                  "address": 6443006192,
+                  "name": "svcCleanupDisardedCandidateAccounts"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443352864,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2978986678,
+                    "Data2": 22264,
+                    "Data3": 18178,
+                    "Data4": [
+                      "84",
+                      "e0",
+                      "41",
+                      "05",
+                      "32",
+                      "93",
+                      "a8",
+                      "69"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443352432,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "B18FBAB6-56F8-4702-84E0-41053293A869",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442999563}}>}, Atom:<Mem SP-0x40<8> (stack)>, Codeloc:<0x180085f0b id=0x180085f00[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442999552
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443306992,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442494704,
+                  "name": "svcQueryUserToken"
+                },
+                {
+                  "address": 6443006384,
+                  "name": "svcGetConstrainedUserToken"
+                },
+                {
+                  "address": 6442490928,
+                  "name": "svcIsAllowedToActivateAsUser"
+                },
+                {
+                  "address": 6443006816,
+                  "name": "svcQueryDefaultAccountToken"
+                },
+                {
+                  "address": 6443006864,
+                  "name": "svcQuerySessionVirtualAccountToken"
+                },
+                {
+                  "address": 6443006672,
+                  "name": "svcLaunchShell"
+                },
+                {
+                  "address": 6443006688,
+                  "name": "svcLaunchShellInfrastructureHost"
+                },
+                {
+                  "address": 6443007040,
+                  "name": "svcSetShellInformation"
+                },
+                {
+                  "address": 6443006592,
+                  "name": "svcInformUserLogon"
+                },
+                {
+                  "address": 6443006576,
+                  "name": "svcInformUserLogoff"
+                },
+                {
+                  "address": 6442496784,
+                  "name": "svcQueryUserContext"
+                },
+                {
+                  "address": 6443007088,
+                  "name": "svcUMLogonUser"
+                },
+                {
+                  "address": 6443006832,
+                  "name": "svcQuerySessionUserToken"
+                },
+                {
+                  "address": 6442474112,
+                  "name": "svcGetConstrainedUserTokenFromAppcontainer"
+                },
+                {
+                  "address": 6442487968,
+                  "name": "svcEnumerateSessionUsers"
+                },
+                {
+                  "address": 6443006960,
+                  "name": "svcQueryUserTokenFromName"
+                },
+                {
+                  "address": 6443006896,
+                  "name": "svcQueryUserContextFromName"
+                },
+                {
+                  "address": 6443006992,
+                  "name": "svcQueryUserTokenFromSid"
+                },
+                {
+                  "address": 6443006928,
+                  "name": "svcQueryUserContextFromSid"
+                },
+                {
+                  "address": 6443006704,
+                  "name": "svcOpenProcessHandleForAccess"
+                },
+                {
+                  "address": 6443006752,
+                  "name": "svcOpenProcessTokenForQuery"
+                },
+                {
+                  "address": 6443007328,
+                  "name": "svcUMSetCachedCredentials"
+                },
+                {
+                  "address": 6443007056,
+                  "name": "svcUMGetCachedCredentials"
+                },
+                {
+                  "address": 6443006560,
+                  "name": "svcInformFlags"
+                },
+                {
+                  "address": 6443006176,
+                  "name": "svcChangeSessionUserToken"
+                },
+                {
+                  "address": 6443006256,
+                  "name": "svcConnectLocalUser"
+                },
+                {
+                  "address": 6443006288,
+                  "name": "svcDisconnectLocalUser"
+                },
+                {
+                  "address": 6443006448,
+                  "name": "svcGetImpersonationTokenForContext"
+                },
+                {
+                  "address": 6443006432,
+                  "name": "svcGetDefaultSignInAccount"
+                },
+                {
+                  "address": 6443006208,
+                  "name": "svcClearDefaultSignInAccount"
+                },
+                {
+                  "address": 6443006528,
+                  "name": "svcGetSessionActiveShellUserToken"
+                },
+                {
+                  "address": 6443006144,
+                  "name": "svcChangeSessionActiveShellUser"
+                },
+                {
+                  "address": 6443006608,
+                  "name": "svcIsCandidateUser"
+                },
+                {
+                  "address": 6443006640,
+                  "name": "svcIsEphemeralCandidateUser"
+                },
+                {
+                  "address": 6443006320,
+                  "name": "svcGetCandidateAccountCredz"
+                },
+                {
+                  "address": 6443006224,
+                  "name": "svcConnectCandidateUser"
+                },
+                {
+                  "address": 6443006496,
+                  "name": "svcGetNonCandidateUserSessionIds"
+                },
+                {
+                  "address": 6443006352,
+                  "name": "svcGetCandidateUserSessionIds"
+                },
+                {
+                  "address": 6443007024,
+                  "name": "svcRefreshCandidateUser"
+                },
+                {
+                  "address": 6443006192,
+                  "name": "svcCleanupDisardedCandidateAccounts"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443352864,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2978986678,
+                    "Data2": 22264,
+                    "Data3": 18178,
+                    "Data4": [
+                      "84",
+                      "e0",
+                      "41",
+                      "05",
+                      "32",
+                      "93",
+                      "a8",
+                      "69"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443352432,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "B18FBAB6-56F8-4702-84E0-41053293A869",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442999632}}>}, Atom:<Mem SP-0x40<8> (stack)>, Codeloc:<0x180085f50 id=0x180085f45[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442999621
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443397040,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488736,
+                  "name": "svcGetUserMarshalData"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443396664,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 222068512,
+                    "Data2": 7309,
+                    "Data3": 18004,
+                    "Data4": [
+                      "a1",
+                      "b3",
+                      "51",
+                      "56",
+                      "3b",
+                      "29",
+                      "8b",
+                      "da"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443396976,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "0D3C7F20-1C8D-4654-A1B3-51563B298BDA",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442999886}}>}, Atom:<Mem SP-0x40<8> (stack)>, Codeloc:<0x18008604e id=0x180086044[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442999876
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443397040,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488736,
+                  "name": "svcGetUserMarshalData"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443396664,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 222068512,
+                    "Data2": 7309,
+                    "Data3": 18004,
+                    "Data4": [
+                      "a1",
+                      "b3",
+                      "51",
+                      "56",
+                      "3b",
+                      "29",
+                      "8b",
+                      "da"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443396976,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "0D3C7F20-1C8D-4654-A1B3-51563B298BDA",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442999948}}>}, Atom:<Mem SP-0x40<8> (stack)>, Codeloc:<0x18008608c id=0x180086082[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442999938
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443657864,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x180085e1c id=0x180085e1c[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442999324
+      },
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443657864,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x180085e40 id=0x180085e40[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442999360
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

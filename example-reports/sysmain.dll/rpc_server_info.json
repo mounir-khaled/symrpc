@@ -1,0 +1,166 @@
+{
+  "analysis_metadata": {
+    "name": "SysMain",
+    "filepath": "C:\\WINDOWS\\system32\\sysmain.dll",
+    "time": 6.671564102172852,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6443161176
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442764896
+          ],
+          "IfSpec": [
+            {
+              "address": 6443275440,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442568608,
+                  "name": "PfRpcServerExecuteCommand"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443275560,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3045761070,
+                    "Data2": 10372,
+                    "Data3": 20119,
+                    "Data4": [
+                      "81",
+                      "76",
+                      "4e",
+                      "e0",
+                      "6d",
+                      "79",
+                      "41",
+                      "84"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443275216,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "B58AA02E-2884-4E97-8176-4EE06D794184",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            1048576
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442764896": []
+          }
+        },
+        "callsite_address": 6443161259
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 0,
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            0
+          ],
+          "Protseq": [
+            {
+              "address": 6443285008,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6443161326
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

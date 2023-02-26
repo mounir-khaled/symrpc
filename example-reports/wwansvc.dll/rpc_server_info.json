@@ -1,0 +1,595 @@
+{
+  "analysis_metadata": {
+    "name": "WwanSvc",
+    "filepath": "C:\\WINDOWS\\system32\\wwansvc.dll",
+    "time": 21.926888704299927,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6443151494
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443383216,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443152128,
+                  "name": "WwanRpcOpenHandle"
+                },
+                {
+                  "address": 6443152832,
+                  "name": "WwanRpcCloseHandle"
+                },
+                {
+                  "address": 6443152960,
+                  "name": "WwanRpcRegisterNotification"
+                },
+                {
+                  "address": 6443153296,
+                  "name": "WwanRpcAsyncGetNotification"
+                },
+                {
+                  "address": 6443153456,
+                  "name": "WwanRpcEnumerateInterfaces"
+                },
+                {
+                  "address": 6443153536,
+                  "name": "WwanRpcSetInterface"
+                },
+                {
+                  "address": 6443153776,
+                  "name": "WwanRpcQueryInterface"
+                },
+                {
+                  "address": 6443153872,
+                  "name": "WwanRpcScan"
+                },
+                {
+                  "address": 6443153968,
+                  "name": "WwanRpcRegister"
+                },
+                {
+                  "address": 6443154112,
+                  "name": "WwanRpcConnect"
+                },
+                {
+                  "address": 6443154288,
+                  "name": "WwanRpcConnectAdditionalPdpContext"
+                },
+                {
+                  "address": 6443154688,
+                  "name": "WwanRpcDisconnect"
+                },
+                {
+                  "address": 6443154816,
+                  "name": "WwanRpcSetSmsConfiguration"
+                },
+                {
+                  "address": 6443154912,
+                  "name": "WwanRpcSmsRead"
+                },
+                {
+                  "address": 6443155008,
+                  "name": "WwanRpcSmsSend"
+                },
+                {
+                  "address": 6443155104,
+                  "name": "WwanRpcSmsDelete"
+                },
+                {
+                  "address": 6443155200,
+                  "name": "WwanRpcSetProfile"
+                },
+                {
+                  "address": 6443155296,
+                  "name": "WwanRpcDeleteProfile"
+                },
+                {
+                  "address": 6443155376,
+                  "name": "WwanRpcGetProfile"
+                },
+                {
+                  "address": 6443155664,
+                  "name": "WwanRpcGetProfileList"
+                },
+                {
+                  "address": 6443155744,
+                  "name": "WwanRpcGetProfileListByPurpose"
+                },
+                {
+                  "address": 6443155840,
+                  "name": "WwanRpcGetProfileIstream"
+                },
+                {
+                  "address": 6443156320,
+                  "name": "WwanRpcGetProfileMetaData"
+                },
+                {
+                  "address": 6443156544,
+                  "name": "WwanRpcSetProfileMetaData"
+                },
+                {
+                  "address": 6443156848,
+                  "name": "WwanRpcAuthChallenge"
+                },
+                {
+                  "address": 6443157056,
+                  "name": "WwanRpcGetProfileIndex"
+                },
+                {
+                  "address": 6443157120,
+                  "name": "WwanRpcUssdRequest"
+                },
+                {
+                  "address": 6443159376,
+                  "name": "WwanRpcGetProfileHomeProviderName"
+                },
+                {
+                  "address": 6443155472,
+                  "name": "WwanRpcSearchProfile"
+                },
+                {
+                  "address": 6443155568,
+                  "name": "WwanRpcGetProfileState"
+                },
+                {
+                  "address": 6443160256,
+                  "name": "WwanRpcGetDMConfigProfileList"
+                },
+                {
+                  "address": 6443160336,
+                  "name": "WwanRpcGetDMConfigProfile"
+                },
+                {
+                  "address": 6443160432,
+                  "name": "WwanRpcSetDMConfigProfile"
+                },
+                {
+                  "address": 6443160528,
+                  "name": "WwanRpcDeleteDMConfigProfile"
+                },
+                {
+                  "address": 6443160608,
+                  "name": "WwanRpcGetDMConfigBinary"
+                },
+                {
+                  "address": 6443160688,
+                  "name": "WwanRpcSetDMConfigBinary"
+                },
+                {
+                  "address": 6443160768,
+                  "name": "WwanRpcSetNetworkQuietMode"
+                },
+                {
+                  "address": 6443153680,
+                  "name": "WwanRpcQueryInterfaceEx"
+                },
+                {
+                  "address": 6443160848,
+                  "name": "WwanRpcIPv6eHRPDControlSet"
+                },
+                {
+                  "address": 6443160944,
+                  "name": "WwanRpcIPv6eHRPDControlQuery"
+                },
+                {
+                  "address": 6443161040,
+                  "name": "WwanRpcUiccOpenChannel"
+                },
+                {
+                  "address": 6443161136,
+                  "name": "WwanRpcUiccCloseChannel"
+                },
+                {
+                  "address": 6443161232,
+                  "name": "WwanRpcUiccSendApdu"
+                },
+                {
+                  "address": 6443161328,
+                  "name": "WwanRpcUiccSetTerminalCapability"
+                },
+                {
+                  "address": 6443161424,
+                  "name": "WwanRpcActivateNotification"
+                },
+                {
+                  "address": 6443161488,
+                  "name": "WwanRpcModemLogging"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443379264,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3033232913,
+                    "Data2": 44299,
+                    "Data3": 19501,
+                    "Data4": [
+                      "b3",
+                      "5f",
+                      "ff",
+                      "e4",
+                      "57",
+                      "85",
+                      "c7",
+                      "09"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443375696,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "B4CB7611-AD0B-4C2D-B35F-FFE45785C709",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            0
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6443151222
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443376784,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443157232,
+                  "name": "Wwan2RpcOpenHandle"
+                },
+                {
+                  "address": 6443157776,
+                  "name": "Wwan2RpcCloseHandle"
+                },
+                {
+                  "address": 6443157904,
+                  "name": "Wwan2RpcQueryInterfaces"
+                },
+                {
+                  "address": 6443158000,
+                  "name": "Wwan2RpcEnumerateDeviceServices"
+                },
+                {
+                  "address": 6443158096,
+                  "name": "Wwan2RpcRegisterNotification"
+                },
+                {
+                  "address": 6443158432,
+                  "name": "Wwan2RpcAsyncGetNotification"
+                },
+                {
+                  "address": 6443158592,
+                  "name": "Wwan2RpcOpenDeviceServiceCommandSession"
+                },
+                {
+                  "address": 6443158704,
+                  "name": "Wwan2RpcCloseDeviceServiceCommandSession"
+                },
+                {
+                  "address": 6443158816,
+                  "name": "Wwan2RpcSendDeviceServiceCommand"
+                },
+                {
+                  "address": 6443158928,
+                  "name": "Wwan2RpcQueryDeviceServiceSupportedCommands"
+                },
+                {
+                  "address": 6443159040,
+                  "name": "Wwan2RpcOpenDeviceServiceDataSession"
+                },
+                {
+                  "address": 6443159152,
+                  "name": "Wwan2RpcCloseDeviceServiceDataSession"
+                },
+                {
+                  "address": 6443159264,
+                  "name": "Wwan2RpcWriteDeviceServiceData"
+                },
+                {
+                  "address": 6443159808,
+                  "name": "Wwan2RpcSubscribePowerStateEvents"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443378160,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2622936978,
+                    "Data2": 1425,
+                    "Data3": 17457,
+                    "Data4": [
+                      "8d",
+                      "1f",
+                      "68",
+                      "1b",
+                      "fd",
+                      "80",
+                      "e4",
+                      "c0"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443379296,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "9C56D792-0591-4431-8D1F-681BFD80E4C0",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            0
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6443151358
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            0
+          ],
+          "Protseq": [
+            {
+              "address": 6443745248,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6443150813
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

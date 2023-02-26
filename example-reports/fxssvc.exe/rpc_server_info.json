@@ -1,0 +1,1127 @@
+{
+  "analysis_metadata": {
+    "name": "Fax",
+    "filepath": "c:\\windows\\system32\\fxssvc.exe",
+    "time": 41.8215012550354,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 5368860794
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            5368859456
+          ],
+          "IfSpec": [
+            {
+              "address": 5369251696,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5368772384,
+                  "name": "sub_14000f720"
+                },
+                {
+                  "address": 5368771248,
+                  "name": "sub_14000f2b0"
+                },
+                {
+                  "address": 5368771808,
+                  "name": "sub_14000f4e0"
+                },
+                {
+                  "address": 5368773328,
+                  "name": "sub_14000fad0"
+                },
+                {
+                  "address": 5368773680,
+                  "name": "sub_14000fc30"
+                },
+                {
+                  "address": 5368779904,
+                  "name": "sub_140011480"
+                },
+                {
+                  "address": 5368780720,
+                  "name": "sub_1400117b0"
+                },
+                {
+                  "address": 5368781376,
+                  "name": "sub_140011a40"
+                },
+                {
+                  "address": 5368782272,
+                  "name": "sub_140011dc0"
+                },
+                {
+                  "address": 5368783840,
+                  "name": "sub_1400123e0"
+                },
+                {
+                  "address": 5368787616,
+                  "name": "sub_1400132a0"
+                },
+                {
+                  "address": 5368788320,
+                  "name": "sub_140013560"
+                },
+                {
+                  "address": 5368789584,
+                  "name": "sub_140013a50"
+                },
+                {
+                  "address": 5368792000,
+                  "name": "sub_1400143c0"
+                },
+                {
+                  "address": 5368792688,
+                  "name": "sub_140014670"
+                },
+                {
+                  "address": 5368794864,
+                  "name": "sub_140014ef0"
+                },
+                {
+                  "address": 5368795712,
+                  "name": "sub_140015240"
+                },
+                {
+                  "address": 5368793920,
+                  "name": "sub_140014b40"
+                },
+                {
+                  "address": 5368794496,
+                  "name": "sub_140014d80"
+                },
+                {
+                  "address": 5368785664,
+                  "name": "sub_140012b00"
+                },
+                {
+                  "address": 5368786272,
+                  "name": "sub_140012d60"
+                },
+                {
+                  "address": 5368797232,
+                  "name": "sub_140015830"
+                },
+                {
+                  "address": 5368797712,
+                  "name": "sub_140015a10"
+                },
+                {
+                  "address": 5369001280,
+                  "name": "sub_140047540"
+                },
+                {
+                  "address": 5368999984,
+                  "name": "sub_140047030"
+                },
+                {
+                  "address": 5369002192,
+                  "name": "sub_1400478d0"
+                },
+                {
+                  "address": 5368806224,
+                  "name": "sub_140017b50"
+                },
+                {
+                  "address": 5368800080,
+                  "name": "sub_140016350"
+                },
+                {
+                  "address": 5368820624,
+                  "name": "sub_14001b390"
+                },
+                {
+                  "address": 5368820240,
+                  "name": "sub_14001b210"
+                },
+                {
+                  "address": 5368796208,
+                  "name": "sub_140015430"
+                },
+                {
+                  "address": 5368804704,
+                  "name": "sub_140017560"
+                },
+                {
+                  "address": 5368806464,
+                  "name": "sub_140017c40"
+                },
+                {
+                  "address": 5368806704,
+                  "name": "sub_140017d30"
+                },
+                {
+                  "address": 5368807184,
+                  "name": "sub_140017f10"
+                },
+                {
+                  "address": 5368807904,
+                  "name": "sub_1400181e0"
+                },
+                {
+                  "address": 5368809216,
+                  "name": "sub_140018700"
+                },
+                {
+                  "address": 5368809472,
+                  "name": "sub_140018800"
+                },
+                {
+                  "address": 5368809984,
+                  "name": "sub_140018a00"
+                },
+                {
+                  "address": 5368810432,
+                  "name": "sub_140018bc0"
+                },
+                {
+                  "address": 5368810928,
+                  "name": "sub_140018db0"
+                },
+                {
+                  "address": 5368811104,
+                  "name": "sub_140018e60"
+                },
+                {
+                  "address": 5368811184,
+                  "name": "sub_140018eb0"
+                },
+                {
+                  "address": 5368811264,
+                  "name": "sub_140018f00"
+                },
+                {
+                  "address": 5368811808,
+                  "name": "sub_140019120"
+                },
+                {
+                  "address": 5368814304,
+                  "name": "sub_140019ae0"
+                },
+                {
+                  "address": 5368816560,
+                  "name": "sub_14001a3b0"
+                },
+                {
+                  "address": 5368817072,
+                  "name": "sub_14001a5b0"
+                },
+                {
+                  "address": 5368815920,
+                  "name": "sub_14001a130"
+                },
+                {
+                  "address": 5369082544,
+                  "name": "sub_14005b2b0"
+                },
+                {
+                  "address": 5369082832,
+                  "name": "sub_14005b3d0"
+                },
+                {
+                  "address": 5369096704,
+                  "name": "sub_14005ea00"
+                },
+                {
+                  "address": 5369097472,
+                  "name": "sub_14005ed00"
+                },
+                {
+                  "address": 5369098688,
+                  "name": "sub_14005f1c0"
+                },
+                {
+                  "address": 5369099584,
+                  "name": "sub_14005f540"
+                },
+                {
+                  "address": 5369100128,
+                  "name": "sub_14005f760"
+                },
+                {
+                  "address": 5369111632,
+                  "name": "sub_140062450"
+                },
+                {
+                  "address": 5369113632,
+                  "name": "sub_140062c20"
+                },
+                {
+                  "address": 5369114464,
+                  "name": "sub_140062f60"
+                },
+                {
+                  "address": 5369116704,
+                  "name": "sub_140063820"
+                },
+                {
+                  "address": 5368823088,
+                  "name": "sub_14001bd30"
+                },
+                {
+                  "address": 5368824304,
+                  "name": "sub_14001c1f0"
+                },
+                {
+                  "address": 5368824560,
+                  "name": "sub_14001c2f0"
+                },
+                {
+                  "address": 5368826704,
+                  "name": "sub_14001cb50"
+                },
+                {
+                  "address": 5368826832,
+                  "name": "sub_14001cbd0"
+                },
+                {
+                  "address": 5368831040,
+                  "name": "sub_14001dc40"
+                },
+                {
+                  "address": 5368833568,
+                  "name": "sub_14001e620"
+                },
+                {
+                  "address": 5368834976,
+                  "name": "sub_14001eba0"
+                },
+                {
+                  "address": 5368836000,
+                  "name": "sub_14001efa0"
+                },
+                {
+                  "address": 5368837792,
+                  "name": "sub_14001f6a0"
+                },
+                {
+                  "address": 5368839264,
+                  "name": "sub_14001fc60"
+                },
+                {
+                  "address": 5368839760,
+                  "name": "sub_14001fe50"
+                },
+                {
+                  "address": 5368840224,
+                  "name": "sub_140020020"
+                },
+                {
+                  "address": 5368840560,
+                  "name": "sub_140020170"
+                },
+                {
+                  "address": 5368840816,
+                  "name": "sub_140020270"
+                },
+                {
+                  "address": 5368843728,
+                  "name": "sub_140020dd0"
+                },
+                {
+                  "address": 5368844064,
+                  "name": "sub_140020f20"
+                },
+                {
+                  "address": 5368844448,
+                  "name": "sub_1400210a0"
+                },
+                {
+                  "address": 5368844928,
+                  "name": "sub_140021280"
+                },
+                {
+                  "address": 5368845760,
+                  "name": "sub_1400215c0"
+                },
+                {
+                  "address": 5368770640,
+                  "name": "sub_14000f050"
+                },
+                {
+                  "address": 5369001360,
+                  "name": "sub_140047590"
+                },
+                {
+                  "address": 5368846512,
+                  "name": "sub_1400218b0"
+                },
+                {
+                  "address": 5368846880,
+                  "name": "sub_140021a20"
+                },
+                {
+                  "address": 5368846896,
+                  "name": "sub_140021a30"
+                },
+                {
+                  "address": 5368847104,
+                  "name": "sub_140021b00"
+                },
+                {
+                  "address": 5368847360,
+                  "name": "sub_140021c00"
+                },
+                {
+                  "address": 5368820400,
+                  "name": "sub_14001b2b0"
+                },
+                {
+                  "address": 5368820800,
+                  "name": "sub_14001b440"
+                },
+                {
+                  "address": 5368833728,
+                  "name": "sub_14001e6c0"
+                },
+                {
+                  "address": 5368831200,
+                  "name": "sub_14001dce0"
+                },
+                {
+                  "address": 5368831424,
+                  "name": "sub_14001ddc0"
+                },
+                {
+                  "address": 5368843216,
+                  "name": "sub_140020bd0"
+                },
+                {
+                  "address": 5368759568,
+                  "name": "sub_14000c510"
+                },
+                {
+                  "address": 5368760592,
+                  "name": "sub_14000c910"
+                },
+                {
+                  "address": 5368762064,
+                  "name": "sub_14000ced0"
+                },
+                {
+                  "address": 5368761024,
+                  "name": "sub_14000cac0"
+                },
+                {
+                  "address": 5369053696,
+                  "name": "sub_140054200"
+                },
+                {
+                  "address": 5369054224,
+                  "name": "sub_140054410"
+                },
+                {
+                  "address": 5369001440,
+                  "name": "sub_1400475e0"
+                },
+                {
+                  "address": 5369000064,
+                  "name": "sub_140047080"
+                },
+                {
+                  "address": 5369002608,
+                  "name": "sub_140047a70"
+                },
+                {
+                  "address": 5368765344,
+                  "name": "sub_14000dba0"
+                },
+                {
+                  "address": 5368834944,
+                  "name": "sub_14001eb80"
+                },
+                {
+                  "address": 5369053360,
+                  "name": "sub_1400540b0"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 5369253664,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3926536549,
+                    "Data2": 18484,
+                    "Data3": 4562,
+                    "Data4": [
+                      "a6",
+                      "f8",
+                      "00",
+                      "c0",
+                      "4f",
+                      "a3",
+                      "46",
+                      "cc"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 4,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369253696,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "EA0A3165-4834-11D2-A6F8-00C04FA346CC",
+                "version": "4.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "5368859456": []
+          }
+        },
+        "callsite_address": 5368860488
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            5368859456
+          ],
+          "IfSpec": [
+            {
+              "address": 5369251696,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5368772384,
+                  "name": "sub_14000f720"
+                },
+                {
+                  "address": 5368771248,
+                  "name": "sub_14000f2b0"
+                },
+                {
+                  "address": 5368771808,
+                  "name": "sub_14000f4e0"
+                },
+                {
+                  "address": 5368773328,
+                  "name": "sub_14000fad0"
+                },
+                {
+                  "address": 5368773680,
+                  "name": "sub_14000fc30"
+                },
+                {
+                  "address": 5368779904,
+                  "name": "sub_140011480"
+                },
+                {
+                  "address": 5368780720,
+                  "name": "sub_1400117b0"
+                },
+                {
+                  "address": 5368781376,
+                  "name": "sub_140011a40"
+                },
+                {
+                  "address": 5368782272,
+                  "name": "sub_140011dc0"
+                },
+                {
+                  "address": 5368783840,
+                  "name": "sub_1400123e0"
+                },
+                {
+                  "address": 5368787616,
+                  "name": "sub_1400132a0"
+                },
+                {
+                  "address": 5368788320,
+                  "name": "sub_140013560"
+                },
+                {
+                  "address": 5368789584,
+                  "name": "sub_140013a50"
+                },
+                {
+                  "address": 5368792000,
+                  "name": "sub_1400143c0"
+                },
+                {
+                  "address": 5368792688,
+                  "name": "sub_140014670"
+                },
+                {
+                  "address": 5368794864,
+                  "name": "sub_140014ef0"
+                },
+                {
+                  "address": 5368795712,
+                  "name": "sub_140015240"
+                },
+                {
+                  "address": 5368793920,
+                  "name": "sub_140014b40"
+                },
+                {
+                  "address": 5368794496,
+                  "name": "sub_140014d80"
+                },
+                {
+                  "address": 5368785664,
+                  "name": "sub_140012b00"
+                },
+                {
+                  "address": 5368786272,
+                  "name": "sub_140012d60"
+                },
+                {
+                  "address": 5368797232,
+                  "name": "sub_140015830"
+                },
+                {
+                  "address": 5368797712,
+                  "name": "sub_140015a10"
+                },
+                {
+                  "address": 5369001280,
+                  "name": "sub_140047540"
+                },
+                {
+                  "address": 5368999984,
+                  "name": "sub_140047030"
+                },
+                {
+                  "address": 5369002192,
+                  "name": "sub_1400478d0"
+                },
+                {
+                  "address": 5368806224,
+                  "name": "sub_140017b50"
+                },
+                {
+                  "address": 5368800080,
+                  "name": "sub_140016350"
+                },
+                {
+                  "address": 5368820624,
+                  "name": "sub_14001b390"
+                },
+                {
+                  "address": 5368820240,
+                  "name": "sub_14001b210"
+                },
+                {
+                  "address": 5368796208,
+                  "name": "sub_140015430"
+                },
+                {
+                  "address": 5368804704,
+                  "name": "sub_140017560"
+                },
+                {
+                  "address": 5368806464,
+                  "name": "sub_140017c40"
+                },
+                {
+                  "address": 5368806704,
+                  "name": "sub_140017d30"
+                },
+                {
+                  "address": 5368807184,
+                  "name": "sub_140017f10"
+                },
+                {
+                  "address": 5368807904,
+                  "name": "sub_1400181e0"
+                },
+                {
+                  "address": 5368809216,
+                  "name": "sub_140018700"
+                },
+                {
+                  "address": 5368809472,
+                  "name": "sub_140018800"
+                },
+                {
+                  "address": 5368809984,
+                  "name": "sub_140018a00"
+                },
+                {
+                  "address": 5368810432,
+                  "name": "sub_140018bc0"
+                },
+                {
+                  "address": 5368810928,
+                  "name": "sub_140018db0"
+                },
+                {
+                  "address": 5368811104,
+                  "name": "sub_140018e60"
+                },
+                {
+                  "address": 5368811184,
+                  "name": "sub_140018eb0"
+                },
+                {
+                  "address": 5368811264,
+                  "name": "sub_140018f00"
+                },
+                {
+                  "address": 5368811808,
+                  "name": "sub_140019120"
+                },
+                {
+                  "address": 5368814304,
+                  "name": "sub_140019ae0"
+                },
+                {
+                  "address": 5368816560,
+                  "name": "sub_14001a3b0"
+                },
+                {
+                  "address": 5368817072,
+                  "name": "sub_14001a5b0"
+                },
+                {
+                  "address": 5368815920,
+                  "name": "sub_14001a130"
+                },
+                {
+                  "address": 5369082544,
+                  "name": "sub_14005b2b0"
+                },
+                {
+                  "address": 5369082832,
+                  "name": "sub_14005b3d0"
+                },
+                {
+                  "address": 5369096704,
+                  "name": "sub_14005ea00"
+                },
+                {
+                  "address": 5369097472,
+                  "name": "sub_14005ed00"
+                },
+                {
+                  "address": 5369098688,
+                  "name": "sub_14005f1c0"
+                },
+                {
+                  "address": 5369099584,
+                  "name": "sub_14005f540"
+                },
+                {
+                  "address": 5369100128,
+                  "name": "sub_14005f760"
+                },
+                {
+                  "address": 5369111632,
+                  "name": "sub_140062450"
+                },
+                {
+                  "address": 5369113632,
+                  "name": "sub_140062c20"
+                },
+                {
+                  "address": 5369114464,
+                  "name": "sub_140062f60"
+                },
+                {
+                  "address": 5369116704,
+                  "name": "sub_140063820"
+                },
+                {
+                  "address": 5368823088,
+                  "name": "sub_14001bd30"
+                },
+                {
+                  "address": 5368824304,
+                  "name": "sub_14001c1f0"
+                },
+                {
+                  "address": 5368824560,
+                  "name": "sub_14001c2f0"
+                },
+                {
+                  "address": 5368826704,
+                  "name": "sub_14001cb50"
+                },
+                {
+                  "address": 5368826832,
+                  "name": "sub_14001cbd0"
+                },
+                {
+                  "address": 5368831040,
+                  "name": "sub_14001dc40"
+                },
+                {
+                  "address": 5368833568,
+                  "name": "sub_14001e620"
+                },
+                {
+                  "address": 5368834976,
+                  "name": "sub_14001eba0"
+                },
+                {
+                  "address": 5368836000,
+                  "name": "sub_14001efa0"
+                },
+                {
+                  "address": 5368837792,
+                  "name": "sub_14001f6a0"
+                },
+                {
+                  "address": 5368839264,
+                  "name": "sub_14001fc60"
+                },
+                {
+                  "address": 5368839760,
+                  "name": "sub_14001fe50"
+                },
+                {
+                  "address": 5368840224,
+                  "name": "sub_140020020"
+                },
+                {
+                  "address": 5368840560,
+                  "name": "sub_140020170"
+                },
+                {
+                  "address": 5368840816,
+                  "name": "sub_140020270"
+                },
+                {
+                  "address": 5368843728,
+                  "name": "sub_140020dd0"
+                },
+                {
+                  "address": 5368844064,
+                  "name": "sub_140020f20"
+                },
+                {
+                  "address": 5368844448,
+                  "name": "sub_1400210a0"
+                },
+                {
+                  "address": 5368844928,
+                  "name": "sub_140021280"
+                },
+                {
+                  "address": 5368845760,
+                  "name": "sub_1400215c0"
+                },
+                {
+                  "address": 5368770640,
+                  "name": "sub_14000f050"
+                },
+                {
+                  "address": 5369001360,
+                  "name": "sub_140047590"
+                },
+                {
+                  "address": 5368846512,
+                  "name": "sub_1400218b0"
+                },
+                {
+                  "address": 5368846880,
+                  "name": "sub_140021a20"
+                },
+                {
+                  "address": 5368846896,
+                  "name": "sub_140021a30"
+                },
+                {
+                  "address": 5368847104,
+                  "name": "sub_140021b00"
+                },
+                {
+                  "address": 5368847360,
+                  "name": "sub_140021c00"
+                },
+                {
+                  "address": 5368820400,
+                  "name": "sub_14001b2b0"
+                },
+                {
+                  "address": 5368820800,
+                  "name": "sub_14001b440"
+                },
+                {
+                  "address": 5368833728,
+                  "name": "sub_14001e6c0"
+                },
+                {
+                  "address": 5368831200,
+                  "name": "sub_14001dce0"
+                },
+                {
+                  "address": 5368831424,
+                  "name": "sub_14001ddc0"
+                },
+                {
+                  "address": 5368843216,
+                  "name": "sub_140020bd0"
+                },
+                {
+                  "address": 5368759568,
+                  "name": "sub_14000c510"
+                },
+                {
+                  "address": 5368760592,
+                  "name": "sub_14000c910"
+                },
+                {
+                  "address": 5368762064,
+                  "name": "sub_14000ced0"
+                },
+                {
+                  "address": 5368761024,
+                  "name": "sub_14000cac0"
+                },
+                {
+                  "address": 5369053696,
+                  "name": "sub_140054200"
+                },
+                {
+                  "address": 5369054224,
+                  "name": "sub_140054410"
+                },
+                {
+                  "address": 5369001440,
+                  "name": "sub_1400475e0"
+                },
+                {
+                  "address": 5369000064,
+                  "name": "sub_140047080"
+                },
+                {
+                  "address": 5369002608,
+                  "name": "sub_140047a70"
+                },
+                {
+                  "address": 5368765344,
+                  "name": "sub_14000dba0"
+                },
+                {
+                  "address": 5368834944,
+                  "name": "sub_14001eb80"
+                },
+                {
+                  "address": 5369053360,
+                  "name": "sub_1400540b0"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 5369253664,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3926536549,
+                    "Data2": 18484,
+                    "Data3": 4562,
+                    "Data4": [
+                      "a6",
+                      "f8",
+                      "00",
+                      "c0",
+                      "4f",
+                      "a3",
+                      "46",
+                      "cc"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 4,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369253696,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "EA0A3165-4834-11D2-A6F8-00C04FA346CC",
+                "version": "4.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "5368859456": []
+          }
+        },
+        "callsite_address": 5368860500
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x140024ec4 id=0x140024ec4[2] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 5369268744,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 5368860368
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x140024ec4 id=0x140024ec4[2] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 5369268744,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 5368860382
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

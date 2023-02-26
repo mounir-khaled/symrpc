@@ -1,0 +1,628 @@
+{
+  "analysis_metadata": {
+    "name": "Spooler",
+    "filepath": "c:\\windows\\system32\\spoolsv.exe",
+    "time": 10.554779529571533,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 5368978051
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [],
+          "IfSpec": [
+            {
+              "address": 5369331344,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5369049712,
+                  "name": "IRPCRemoteObject_Create"
+                },
+                {
+                  "address": 5369049760,
+                  "name": "IRPCRemoteObject_Delete"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 18446744073709551615,
+                "DispatchTable": 5369331728,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2922579611,
+                    "Data2": 41640,
+                    "Data3": 18158,
+                    "Data4": [
+                      "a2",
+                      "35",
+                      "dd",
+                      "fd",
+                      "33",
+                      "9b",
+                      "e2",
+                      "81"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369331664,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "AE33069B-A2A8-46EE-A235-DDFD339BE281",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MgrEpv": [
+            5369459488
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x140047118 id=0x140047118[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf",
+          "possible_clients": {}
+        },
+        "callsite_address": 5369000216
+      },
+      {
+        "arguments": {
+          "Flags": [],
+          "IfSpec": [
+            {
+              "address": 5369331344,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5369049712,
+                  "name": "IRPCRemoteObject_Create"
+                },
+                {
+                  "address": 5369049760,
+                  "name": "IRPCRemoteObject_Delete"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 18446744073709551615,
+                "DispatchTable": 5369331728,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2922579611,
+                    "Data2": 41640,
+                    "Data3": 18158,
+                    "Data4": [
+                      "a2",
+                      "35",
+                      "dd",
+                      "fd",
+                      "33",
+                      "9b",
+                      "e2",
+                      "81"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369331664,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "AE33069B-A2A8-46EE-A235-DDFD339BE281",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MgrEpv": [
+            5369459520
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x14004f818 id=0x14004f818[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf",
+          "possible_clients": {}
+        },
+        "callsite_address": 5369034776
+      },
+      {
+        "arguments": {
+          "Flags": [],
+          "IfSpec": [
+            {
+              "address": 5369331344,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5369049712,
+                  "name": "IRPCRemoteObject_Create"
+                },
+                {
+                  "address": 5369049760,
+                  "name": "IRPCRemoteObject_Delete"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 18446744073709551615,
+                "DispatchTable": 5369331728,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2922579611,
+                    "Data2": 41640,
+                    "Data3": 18158,
+                    "Data4": [
+                      "a2",
+                      "35",
+                      "dd",
+                      "fd",
+                      "33",
+                      "9b",
+                      "e2",
+                      "81"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369331664,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "AE33069B-A2A8-46EE-A235-DDFD339BE281",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MgrEpv": [
+            5369459504
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x140050308 id=0x140050308[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf",
+          "possible_clients": {}
+        },
+        "callsite_address": 5369037576
+      },
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallbackFn": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369000179}}>}, Atom:<Mem SP-0x28<8> (stack)>, Codeloc:<0x1400470f3 id=0x1400470de[30] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x1400470de id=0x1400470de[3] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369000188}}>}, Atom:<Mem SP-0x38<4> (stack)>, Codeloc:<0x1400470fc id=0x1400470de[44] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369000184}}>}, Atom:<Mem SP-0x30<4> (stack)>, Codeloc:<0x1400470f8 id=0x1400470de[37] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x1400470e1 id=0x1400470de[8] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP + 0x8>"
+            }
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1400470e5 id=0x1400470de[12] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 5369000158
+      },
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallbackFn": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369034739}}>}, Atom:<Mem SP-0x28<8> (stack)>, Codeloc:<0x14004f7f3 id=0x14004f7de[30] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x14004f7de id=0x14004f7de[3] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369034748}}>}, Atom:<Mem SP-0x38<4> (stack)>, Codeloc:<0x14004f7fc id=0x14004f7de[44] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369034744}}>}, Atom:<Mem SP-0x30<4> (stack)>, Codeloc:<0x14004f7f8 id=0x14004f7de[37] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x14004f7e1 id=0x14004f7de[8] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP + 0x8>"
+            }
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x14004f7e5 id=0x14004f7de[12] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 5369034718
+      },
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallbackFn": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369037539}}>}, Atom:<Mem SP-0x28<8> (stack)>, Codeloc:<0x1400502e3 id=0x1400502ce[30] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x1400502ce id=0x1400502ce[3] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369037548}}>}, Atom:<Mem SP-0x38<4> (stack)>, Codeloc:<0x1400502ec id=0x1400502ce[44] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5369037544}}>}, Atom:<Mem SP-0x30<4> (stack)>, Codeloc:<0x1400502e8 id=0x1400502ce[37] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x1400502d1 id=0x1400502ce[8] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP + 0x8>"
+            }
+          ],
+          "MgrTypeUuid": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1400502d5 id=0x1400502ce[12] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 5369037518
+      }
+    ],
+    "protseq_usage": [],
+    "rpc_constraints": {}
+  }
+}

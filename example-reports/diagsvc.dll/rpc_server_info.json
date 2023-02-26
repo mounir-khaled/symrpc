@@ -1,0 +1,185 @@
+{
+  "analysis_metadata": {
+    "name": "diagsvc",
+    "filepath": "C:\\WINDOWS\\system32\\diagsvc.dll",
+    "time": 1.8250443935394287,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442474231}}>}, Atom:<Mem SP-0x178<8> (stack)>, Codeloc:<0x180005af7 id=0x180005ae1[22] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6442604320,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442476320,
+                  "name": "Server_InvokeDiagnosticAction"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442604288,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 4258552100,
+                    "Data2": 30794,
+                    "Data3": 18844,
+                    "Data4": [
+                      "ae",
+                      "e9",
+                      "08",
+                      "13",
+                      "85",
+                      "0c",
+                      "e1",
+                      "82"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 0,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442604224,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "FDD45924-784A-499C-AEE9-0813850CE182",
+                "version": "0.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442474239}}>}, Atom:<Mem SP-0x180<4> (stack)>, Codeloc:<0x180005aff id=0x180005ae1[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442474239}}>}, Atom:<Mem SP-0x180<4> (stack)>, Codeloc:<0x180005aff id=0x180005ae1[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442474239}}>}, Atom:<Mem SP-0x180<4> (stack)>, Codeloc:<0x180005aff id=0x180005ae1[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442474239}}>}, Atom:<Mem SP-0x180<4> (stack)>, Codeloc:<0x180005aff id=0x180005ae1[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442474209
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 64<8>>, Codeloc:<0x180005889 id=0x180005838[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 112<8>>, Codeloc:<0x1800058b4 id=0x1800058b0[11] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1800058bf id=0x1800058b0[20] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP + 0xa[31:0]>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 6442610920,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442473648
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

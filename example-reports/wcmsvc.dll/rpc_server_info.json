@@ -1,0 +1,98 @@
+{
+  "analysis_metadata": {
+    "name": "Wcmsvc",
+    "filepath": "C:\\WINDOWS\\system32\\wcmsvc.dll",
+    "time": 14.770625352859497,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442461504
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:[External ['0x1800484c0']]}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442747092}}>}, Atom:<Mem SP+0xfffffffffffffff0<8> (stack)>, Codeloc:<0x1800484d4 id=0x1800484c0[38] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442461504": []
+          }
+        },
+        "callsite_address": 6442747072
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443222608,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x18004ce26 id=0x18004ce26[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442765862
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

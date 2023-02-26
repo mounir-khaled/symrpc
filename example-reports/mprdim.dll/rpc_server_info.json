@@ -1,0 +1,461 @@
+{
+  "analysis_metadata": {
+    "name": "RemoteAccess",
+    "filepath": "C:\\WINDOWS\\system32\\mprdim.dll",
+    "time": 2.5483956336975098,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442827952,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442456928,
+                  "name": "RMprAdminServerGetInfo"
+                },
+                {
+                  "address": 6442458000,
+                  "name": "RRasAdminConnectionEnum"
+                },
+                {
+                  "address": 6442458384,
+                  "name": "RRasAdminConnectionGetInfo"
+                },
+                {
+                  "address": 6442458768,
+                  "name": "RRasAdminConnectionClearStats"
+                },
+                {
+                  "address": 6442459056,
+                  "name": "RRasAdminPortEnum"
+                },
+                {
+                  "address": 6442459280,
+                  "name": "RRasAdminPortGetInfo"
+                },
+                {
+                  "address": 6442459456,
+                  "name": "RRasAdminPortClearStats"
+                },
+                {
+                  "address": 6442459584,
+                  "name": "RRasAdminPortReset"
+                },
+                {
+                  "address": 6442459712,
+                  "name": "RRasAdminPortDisconnect"
+                },
+                {
+                  "address": 6442462608,
+                  "name": "RRouterInterfaceTransportSetGlobalInfo"
+                },
+                {
+                  "address": 6442462800,
+                  "name": "RRouterInterfaceTransportGetGlobalInfo"
+                },
+                {
+                  "address": 6442467472,
+                  "name": "RRouterInterfaceGetHandle"
+                },
+                {
+                  "address": 6442463936,
+                  "name": "RRouterInterfaceCreate"
+                },
+                {
+                  "address": 6442466400,
+                  "name": "RRouterInterfaceGetInfo"
+                },
+                {
+                  "address": 6442467056,
+                  "name": "RRouterInterfaceSetInfo"
+                },
+                {
+                  "address": 6442467600,
+                  "name": "RRouterInterfaceDelete"
+                },
+                {
+                  "address": 6442467744,
+                  "name": "RRouterInterfaceTransportRemove"
+                },
+                {
+                  "address": 6442468560,
+                  "name": "RRouterInterfaceTransportAdd"
+                },
+                {
+                  "address": 6442468144,
+                  "name": "RRouterInterfaceTransportGetInfo"
+                },
+                {
+                  "address": 6442468960,
+                  "name": "RRouterInterfaceTransportSetInfo"
+                },
+                {
+                  "address": 6442469360,
+                  "name": "RRouterInterfaceEnum"
+                },
+                {
+                  "address": 6442470800,
+                  "name": "RRouterInterfaceConnect"
+                },
+                {
+                  "address": 6442470960,
+                  "name": "RRouterInterfaceDisconnect"
+                },
+                {
+                  "address": 6442469504,
+                  "name": "RRouterInterfaceUpdateRoutes"
+                },
+                {
+                  "address": 6442470672,
+                  "name": "RRouterInterfaceQueryUpdateResult"
+                },
+                {
+                  "address": 6442471088,
+                  "name": "RRouterInterfaceUpdatePhonebookInfo"
+                },
+                {
+                  "address": 6442491616,
+                  "name": "RMIBEntryCreate"
+                },
+                {
+                  "address": 6442491888,
+                  "name": "RMIBEntryDelete"
+                },
+                {
+                  "address": 6442492160,
+                  "name": "RMIBEntrySet"
+                },
+                {
+                  "address": 6442492432,
+                  "name": "RMIBEntryGet"
+                },
+                {
+                  "address": 6442492752,
+                  "name": "RMIBEntryGetFirst"
+                },
+                {
+                  "address": 6442493072,
+                  "name": "RMIBEntryGetNext"
+                },
+                {
+                  "address": 6442493392,
+                  "name": "RMIBGetTrapInfo"
+                },
+                {
+                  "address": 6442493712,
+                  "name": "RMIBSetTrapInfo"
+                },
+                {
+                  "address": 6442459824,
+                  "name": "RRasAdminConnectionNotification"
+                },
+                {
+                  "address": 6442460256,
+                  "name": "RRasAdminSendUserMessage"
+                },
+                {
+                  "address": 6442461472,
+                  "name": "RRouterDeviceEnum"
+                },
+                {
+                  "address": 6442462064,
+                  "name": "RRouterInterfaceTransportCreate"
+                },
+                {
+                  "address": 6442467216,
+                  "name": "RRouterInterfaceDeviceGetInfo"
+                },
+                {
+                  "address": 6442467344,
+                  "name": "RRouterInterfaceDeviceSetInfo"
+                },
+                {
+                  "address": 6442471344,
+                  "name": "RRouterInterfaceSetCredentialsEx"
+                },
+                {
+                  "address": 6442471536,
+                  "name": "RRouterInterfaceGetCredentialsEx"
+                },
+                {
+                  "address": 6442460400,
+                  "name": "RRasAdminConnectionRemoveQuarantine"
+                },
+                {
+                  "address": 6442457680,
+                  "name": "RMprAdminServerSetInfo"
+                },
+                {
+                  "address": 6442457424,
+                  "name": "RMprAdminServerGetInfoEx"
+                },
+                {
+                  "address": 6442457840,
+                  "name": "RRasAdminConnectionEnumEx"
+                },
+                {
+                  "address": 6442458560,
+                  "name": "RRasAdminConnectionGetInfoEx"
+                },
+                {
+                  "address": 6442457296,
+                  "name": "RMprAdminServerSetInfoEx"
+                },
+                {
+                  "address": 6442458912,
+                  "name": "RRasAdminUpdateConnection"
+                },
+                {
+                  "address": 6442471648,
+                  "name": "RRouterInterfaceSetCredentialsLocal"
+                },
+                {
+                  "address": 6442471664,
+                  "name": "RRouterInterfaceGetCredentialsLocal"
+                },
+                {
+                  "address": 6442465664,
+                  "name": "RRouterInterfaceGetCustomInfoEx"
+                },
+                {
+                  "address": 6442466032,
+                  "name": "RRouterInterfaceSetCustomInfoEx"
+                },
+                {
+                  "address": 6442472416,
+                  "name": "RRouterAdminIsMultiTenancyEnabled"
+                },
+                {
+                  "address": 6442472544,
+                  "name": "RRouterAdminGetRoutingDomainId"
+                },
+                {
+                  "address": 6442473200,
+                  "name": "RRouterAdminInterfaceEnumEx"
+                },
+                {
+                  "address": 6442473648,
+                  "name": "RRouterAdminInterfaceCreateEx"
+                },
+                {
+                  "address": 6442473808,
+                  "name": "RRouterAdminInterfaceGetInfoEx"
+                },
+                {
+                  "address": 6442474272,
+                  "name": "RRouterAdminInterfaceSetInfoEx"
+                },
+                {
+                  "address": 6442473952,
+                  "name": "RRouterAdminInterfaceGetStatisticsEx"
+                },
+                {
+                  "address": 6442474128,
+                  "name": "RRouterAdminInterfaceClearStatisticsEx"
+                },
+                {
+                  "address": 6442478960,
+                  "name": "RRouterMarkServerOffline"
+                },
+                {
+                  "address": 6442474416,
+                  "name": "RRouterAdminRoutingDomainsEnumEx"
+                },
+                {
+                  "address": 6442474592,
+                  "name": "RRouterAdminRoutingDomainGetConfigEx"
+                },
+                {
+                  "address": 6442475184,
+                  "name": "RRouterAdminRoutingDomainSetConfigEx"
+                },
+                {
+                  "address": 6442477440,
+                  "name": "RRouterAdminAddRoutingDomainEx"
+                },
+                {
+                  "address": 6442477952,
+                  "name": "RRouterAdminDeleteRoutingDomainEx"
+                },
+                {
+                  "address": 6442458176,
+                  "name": "RRasAdminRoutingDomainConnectionEnumEx"
+                },
+                {
+                  "address": 6442478496,
+                  "name": "RRouterProtocolAction"
+                },
+                {
+                  "address": 6442479344,
+                  "name": "RRouterGetProtocolStatistics"
+                },
+                {
+                  "address": 6442472480,
+                  "name": "RRouterAdminIsModernStackEnabled"
+                },
+                {
+                  "address": 6442471216,
+                  "name": "RRouterInterfaceAddIkev2Policy"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442835448,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2399793152,
+                    "Data2": 47085,
+                    "Data3": 4558,
+                    "Data4": [
+                      "bb",
+                      "d2",
+                      "00",
+                      "00",
+                      "1a",
+                      "18",
+                      "1c",
+                      "ad"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 0,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442833440,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "8F09F000-B7ED-11CE-BBD2-00001A181CAD",
+                "version": "0.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442524535
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442869952,
+              "string": "\\PIPE\\ROUTER"
+            }
+          ],
+          "MaxCalls": [
+            1
+          ],
+          "Protseq": [
+            {
+              "address": 6442869984,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442524420
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442869912,
+              "string": "RemoteAccessLrpc"
+            }
+          ],
+          "MaxCalls": [
+            1
+          ],
+          "Protseq": [
+            {
+              "address": 6442905288,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442524489
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

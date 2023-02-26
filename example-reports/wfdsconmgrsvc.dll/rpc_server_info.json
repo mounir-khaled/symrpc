@@ -1,0 +1,224 @@
+{
+  "analysis_metadata": {
+    "name": "WFDSConMgrSvc",
+    "filepath": "C:\\WINDOWS\\system32\\wfdsconmgrsvc.dll",
+    "time": 6.938549280166626,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442474773
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442476288
+          ],
+          "IfSpec": [
+            {
+              "address": 6442967072,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442469072,
+                  "name": "WFDSConMgrOpenSessionContextRPC"
+                },
+                {
+                  "address": 6442469312,
+                  "name": "WFDSConMgrOpenSessionContextForMacAddressRPC"
+                },
+                {
+                  "address": 6442469552,
+                  "name": "WFDSConMgrOpenSessionContextForNotificationRPC"
+                },
+                {
+                  "address": 6442469776,
+                  "name": "WFDSConMgrCloseSessionContextRPC"
+                },
+                {
+                  "address": 6442469952,
+                  "name": "WFDSConMgrGetOpenSessionListRPC"
+                },
+                {
+                  "address": 6442470320,
+                  "name": "WFDSConMgrConnectRPC"
+                },
+                {
+                  "address": 6442470608,
+                  "name": "WFDSConMgrWriteCeremonyDataRPC"
+                },
+                {
+                  "address": 6442470912,
+                  "name": "WFDSConMgrReadCeremonyDataRPC"
+                },
+                {
+                  "address": 6442471216,
+                  "name": "WFDSConMgrConnectTransportRPC"
+                },
+                {
+                  "address": 6442472352,
+                  "name": "WFDSConMgrSetAllowRemoteInputRPC"
+                },
+                {
+                  "address": 6442472640,
+                  "name": "WFDSConMgrQueryStatusRPC"
+                },
+                {
+                  "address": 6442473200,
+                  "name": "WFDSConMgrQueryCorrelationIdRPC"
+                },
+                {
+                  "address": 6442473744,
+                  "name": "WFDSConMgrDisconnectRPC"
+                },
+                {
+                  "address": 6442474016,
+                  "name": "WFDSConMgrDisconnectTransportRPC"
+                },
+                {
+                  "address": 6442474304,
+                  "name": "WFDSConMgrAsyncGetNotificationRPC"
+                },
+                {
+                  "address": 6442471504,
+                  "name": "WFDSConMgrIntCompleteInfracastConnectionRPC"
+                },
+                {
+                  "address": 6442471776,
+                  "name": "WFDSConMgrIntGetInfracastBackchannelParamsRPC"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442969088,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2678501366,
+                    "Data2": 57517,
+                    "Data3": 18655,
+                    "Data4": [
+                      "a6",
+                      "b4",
+                      "e6",
+                      "4b",
+                      "e6",
+                      "6a",
+                      "17",
+                      "a1"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442967168,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "9FA6AFF6-E0AD-48DF-A6B4-E64BE66A17A1",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442476288": []
+          }
+        },
+        "callsite_address": 6442474804
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442979800,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442474731
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

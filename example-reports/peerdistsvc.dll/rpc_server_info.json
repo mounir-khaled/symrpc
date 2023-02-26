@@ -1,0 +1,252 @@
+{
+  "analysis_metadata": {
+    "name": "PeerDistSvc",
+    "filepath": "C:\\WINDOWS\\system32\\peerdistsvc.dll",
+    "time": 11.616069793701172,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6443839520
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6443838944
+          ],
+          "IfSpec": [
+            {
+              "address": 6443982112,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443842384,
+                  "name": "PeerDistStartupRPC"
+                },
+                {
+                  "address": 6443843360,
+                  "name": "PeerDistShutdownRPC"
+                },
+                {
+                  "address": 6443843680,
+                  "name": "PeerDistGetServiceStatusRPC"
+                },
+                {
+                  "address": 6443844336,
+                  "name": "PeerDistServerPublishStreamRPC"
+                },
+                {
+                  "address": 6443845216,
+                  "name": "PeerDistServerPublishAddToStreamRPC"
+                },
+                {
+                  "address": 6443846000,
+                  "name": "PeerDistServerPublishCompleteStreamRPC"
+                },
+                {
+                  "address": 6443844864,
+                  "name": "PeerDistServerCloseStreamHandleRPC"
+                },
+                {
+                  "address": 6443846512,
+                  "name": "PeerDistServerUnpublishRPC"
+                },
+                {
+                  "address": 6443846880,
+                  "name": "PeerDistServerOpenContentInformationRPC"
+                },
+                {
+                  "address": 6443847456,
+                  "name": "PeerDistServerRetrieveContentInformationRPC"
+                },
+                {
+                  "address": 6443848032,
+                  "name": "PeerDistServerCloseContentInfoRPC"
+                },
+                {
+                  "address": 6443848432,
+                  "name": "PeerDistClientOpenContentRPC"
+                },
+                {
+                  "address": 6443848864,
+                  "name": "PeerDistClientCloseContentRPC"
+                },
+                {
+                  "address": 6443849216,
+                  "name": "PeerDistClientAddContentInformationRPC"
+                },
+                {
+                  "address": 6443849744,
+                  "name": "PeerDistClientCompleteContentInformationRPC"
+                },
+                {
+                  "address": 6443850272,
+                  "name": "PeerDistClientAddDataRPC"
+                },
+                {
+                  "address": 6443850944,
+                  "name": "PeerDistClientBlockReadRPC"
+                },
+                {
+                  "address": 6443851600,
+                  "name": "PeerDistClientStreamReadRPC"
+                },
+                {
+                  "address": 6443854048,
+                  "name": "PeerDistClientIsFlashCrowdRPC"
+                },
+                {
+                  "address": 6443852224,
+                  "name": "PeerDistClientFlushContentRPC"
+                },
+                {
+                  "address": 6443852528,
+                  "name": "PeerDistFlushContentRPC"
+                },
+                {
+                  "address": 6443852928,
+                  "name": "PeerDistQueryCacheInformationRPC"
+                },
+                {
+                  "address": 6443853280,
+                  "name": "PeerDistConfigureCacheDatabaseRPC"
+                },
+                {
+                  "address": 6443853760,
+                  "name": "PeerDistForceConfigurationRefreshRPC"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443980792,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 365770832,
+                    "Data2": 10442,
+                    "Data3": 4558,
+                    "Data4": [
+                      "a4",
+                      "e8",
+                      "00",
+                      "aa",
+                      "00",
+                      "61",
+                      "16",
+                      "cb"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443980576,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "15CD3850-28CA-11CE-A4E8-00AA006116CB",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6443838944": []
+          }
+        },
+        "callsite_address": 6443839595
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6444137344,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6443839440
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

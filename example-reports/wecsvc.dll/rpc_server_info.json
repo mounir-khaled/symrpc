@@ -1,0 +1,184 @@
+{
+  "analysis_metadata": {
+    "name": "Wecsvc",
+    "filepath": "C:\\WINDOWS\\system32\\wecsvc.dll",
+    "time": 3.4348154067993164,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442459081
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442458864
+          ],
+          "IfSpec": [
+            {
+              "address": 6442602800,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442461056,
+                  "name": "EcRpcGetSubscriptionNames"
+                },
+                {
+                  "address": 6442461136,
+                  "name": "EcRpcGetSubscription"
+                },
+                {
+                  "address": 6442461216,
+                  "name": "EcRpcPutSubscription"
+                },
+                {
+                  "address": 6442461296,
+                  "name": "EcRpcDeleteSubscription"
+                },
+                {
+                  "address": 6442461456,
+                  "name": "EcRpcGetSubscriptionRunTimeStatus"
+                },
+                {
+                  "address": 6442461552,
+                  "name": "EcRpcGetSubscriptionRunTimeEventSources"
+                },
+                {
+                  "address": 6442461376,
+                  "name": "EcRpcRetrySubscription"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442603792,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1766920097,
+                    "Data2": 12185,
+                    "Data3": 20203,
+                    "Data4": [
+                      "a4",
+                      "ff",
+                      "af",
+                      "25",
+                      "9f",
+                      "0f",
+                      "97",
+                      "49"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442603264,
+                "Length": 96,
+                "RpcProtseqEndpoint": 6442601848,
+                "RpcProtseqEndpointCount": 1,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "69510FA1-2F99-4EEB-A4FF-AF259F0F9749",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            100
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442458864": []
+          }
+        },
+        "callsite_address": 6442459115
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442609304,
+              "string": "wecsvc"
+            }
+          ],
+          "MaxCalls": [
+            20
+          ],
+          "Protseq": [
+            {
+              "address": 6442609288,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442459024
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

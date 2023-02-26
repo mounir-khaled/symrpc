@@ -1,0 +1,290 @@
+{
+  "analysis_metadata": {
+    "name": "vmcompute",
+    "filepath": "c:\\windows\\system32\\vmcompute.exe",
+    "time": 19.018903017044067,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 5371128512,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5370534784,
+                  "name": "HcsRpc_EnumerateSystems"
+                },
+                {
+                  "address": 5370535872,
+                  "name": "HcsRpc_CreateSystem"
+                },
+                {
+                  "address": 5370537104,
+                  "name": "HcsRpc_OpenSystem"
+                },
+                {
+                  "address": 5370537856,
+                  "name": "HcsRpc_StartSystem"
+                },
+                {
+                  "address": 5370539136,
+                  "name": "HcsRpc_ShutdownSystem"
+                },
+                {
+                  "address": 5370539920,
+                  "name": "HcsRpc_TerminateSystem"
+                },
+                {
+                  "address": 5370540736,
+                  "name": "HcsRpc_PauseSystem"
+                },
+                {
+                  "address": 5370541920,
+                  "name": "HcsRpc_ResumeSystem"
+                },
+                {
+                  "address": 5370543104,
+                  "name": "HcsRpc_SaveSystem"
+                },
+                {
+                  "address": 5370544496,
+                  "name": "HcsRpc_CrashSystem"
+                },
+                {
+                  "address": 5370545552,
+                  "name": "HcsRpc_GetSystemProperties"
+                },
+                {
+                  "address": 5370546896,
+                  "name": "HcsRpc_ModifySystem"
+                },
+                {
+                  "address": 5370548304,
+                  "name": "HcsRpc_RegisterSystemNotifications"
+                },
+                {
+                  "address": 5370549216,
+                  "name": "HcsRpc_UnregisterSystemNotifications"
+                },
+                {
+                  "address": 5370549632,
+                  "name": "HcsRpc_QuerySystemNotification"
+                },
+                {
+                  "address": 5370550672,
+                  "name": "HcsRpc_CloseSystem"
+                },
+                {
+                  "address": 5370865552,
+                  "name": "HcsRpc_CreateProcess"
+                },
+                {
+                  "address": 5370867536,
+                  "name": "HcsRpc_OpenProcess"
+                },
+                {
+                  "address": 5370868176,
+                  "name": "HcsRpc_SignalProcess"
+                },
+                {
+                  "address": 5370869760,
+                  "name": "HcsRpc_GetProcessInfo"
+                },
+                {
+                  "address": 5370870976,
+                  "name": "HcsRpc_GetProcessProperties"
+                },
+                {
+                  "address": 5370871008,
+                  "name": "HcsRpc_ModifyProcess"
+                },
+                {
+                  "address": 5370872032,
+                  "name": "HcsRpc_RegisterProcessNotifications"
+                },
+                {
+                  "address": 5370872912,
+                  "name": "HcsRpc_UnregisterProcessNotifications"
+                },
+                {
+                  "address": 5370873328,
+                  "name": "HcsRpc_QueryProcessNotification"
+                },
+                {
+                  "address": 5370874368,
+                  "name": "HcsRpc_CloseProcess"
+                },
+                {
+                  "address": 5370891136,
+                  "name": "HcsRpc_GetServiceProperties"
+                },
+                {
+                  "address": 5370891360,
+                  "name": "HcsRpc_ModifyServiceSettings"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 5371129680,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3886159535,
+                    "Data2": 7873,
+                    "Data3": 17535,
+                    "Data4": [
+                      "8d",
+                      "3f",
+                      "a8",
+                      "72",
+                      "78",
+                      "db",
+                      "56",
+                      "4d"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5371130352,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E7A216AF-1EC1-447F-8D3F-A87278DB564D",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 5370516020
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 5371247808,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 5370515917
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

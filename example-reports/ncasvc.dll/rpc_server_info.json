@@ -1,0 +1,687 @@
+{
+  "analysis_metadata": {
+    "name": "NcaSvc",
+    "filepath": "C:\\WINDOWS\\system32\\ncasvc.dll",
+    "time": 3.6164917945861816,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18001c92f id=0x18001c92f[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442567983
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallback": [
+            6442565488
+          ],
+          "IfSpec": [
+            {
+              "address": 6442576608,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442565744,
+                  "name": "Rpc_NcaEngineOpen"
+                },
+                {
+                  "address": 6442565584,
+                  "name": "Rpc_NcaEngineClose"
+                },
+                {
+                  "address": 6442566800,
+                  "name": "Rpc_NcaNetworkOpen"
+                },
+                {
+                  "address": 6442566640,
+                  "name": "Rpc_NcaNetworkClose"
+                },
+                {
+                  "address": 6442566992,
+                  "name": "Rpc_NcaStatusEventSubscribe"
+                },
+                {
+                  "address": 6442567184,
+                  "name": "Rpc_NcaStatusEventSubscriptionGetLastEvent"
+                },
+                {
+                  "address": 6442567408,
+                  "name": "Rpc_NcaStatusEventUnsubscribe"
+                },
+                {
+                  "address": 6442566096,
+                  "name": "Rpc_NcaGetConfig"
+                },
+                {
+                  "address": 6442567584,
+                  "name": "Rpc_NcaToggleNamePreferenceState"
+                },
+                {
+                  "address": 6442565904,
+                  "name": "Rpc_NcaExecuteAndCaptureLogs"
+                },
+                {
+                  "address": 6442566432,
+                  "name": "Rpc_NcaGetEvidenceCollectorResult"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442576576,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1425632533,
+                    "Data2": 55719,
+                    "Data3": 17442,
+                    "Data4": [
+                      "bd",
+                      "32",
+                      "8b",
+                      "0c",
+                      "eb",
+                      "d0",
+                      "04",
+                      "00"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442576512,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "54F96D15-D9A7-4422-BD32-8B0CEBD00400",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442565488": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180028980_481_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180028980_481_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180028980_484_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 0
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180028980_484_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0] == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442569470
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18001ce6c id=0x18001ce58[26] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442569304
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

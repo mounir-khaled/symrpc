@@ -1,0 +1,931 @@
+{
+  "analysis_metadata": {
+    "name": "Audiosrv",
+    "filepath": "C:\\WINDOWS\\system32\\audiosrv.dll",
+    "time": 11.408115148544312,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            {
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6443798192,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442523616,
+                  "name": "AudioServerGetMixFormat"
+                },
+                {
+                  "address": 6442503104,
+                  "name": "AudioServerIsFormatSupported"
+                },
+                {
+                  "address": 6442457488,
+                  "name": "AudioServerGetDevicePeriod"
+                },
+                {
+                  "address": 6443367600,
+                  "name": "AudioServerIsOffloadCapable"
+                },
+                {
+                  "address": 6442499424,
+                  "name": "AudioServerInitialize"
+                },
+                {
+                  "address": 6442769344,
+                  "name": "AudioServerDisconnect"
+                },
+                {
+                  "address": 6442738528,
+                  "name": "AudioServerGetAudioSession"
+                },
+                {
+                  "address": 6442499520,
+                  "name": "AudioServerCreateStream"
+                },
+                {
+                  "address": 6442498976,
+                  "name": "AudioServerStartStream"
+                },
+                {
+                  "address": 6442521168,
+                  "name": "AudioServerStopStream"
+                },
+                {
+                  "address": 6443368464,
+                  "name": "AudioServerPreStartStream"
+                },
+                {
+                  "address": 6443370912,
+                  "name": "AudioServerStartStreamAborted"
+                },
+                {
+                  "address": 6443369104,
+                  "name": "AudioServerResetEndpoint"
+                },
+                {
+                  "address": 6442780784,
+                  "name": "AudioServerDestroyStream"
+                },
+                {
+                  "address": 6443365024,
+                  "name": "AudioServerGetStreamLatency"
+                },
+                {
+                  "address": 6443370512,
+                  "name": "AudioServerSetStreamSampleRate"
+                },
+                {
+                  "address": 6442484016,
+                  "name": "AudioServerGetChannelCount"
+                },
+                {
+                  "address": 6443370080,
+                  "name": "AudioServerSetChannelVolume"
+                },
+                {
+                  "address": 6443360448,
+                  "name": "AudioServerGetChannelVolume"
+                },
+                {
+                  "address": 6442458752,
+                  "name": "AudioServerSetAllVolumes"
+                },
+                {
+                  "address": 6442523152,
+                  "name": "AudioServerGetAllVolumes"
+                },
+                {
+                  "address": 6443369312,
+                  "name": "AudioServerSetAllInitialVolumesWithRamp"
+                },
+                {
+                  "address": 6443287968,
+                  "name": "AudioSessionGetId"
+                },
+                {
+                  "address": 6443288096,
+                  "name": "AudioSessionGetInstanceId"
+                },
+                {
+                  "address": 6443288800,
+                  "name": "AudioSessionGetStreamSwitchId"
+                },
+                {
+                  "address": 6443288656,
+                  "name": "AudioSessionGetProcessId"
+                },
+                {
+                  "address": 6442498640,
+                  "name": "AudioSessionGetState"
+                },
+                {
+                  "address": 6443288368,
+                  "name": "AudioSessionGetLastActivation"
+                },
+                {
+                  "address": 6443288512,
+                  "name": "AudioSessionGetLastInactivation"
+                },
+                {
+                  "address": 6443288944,
+                  "name": "AudioSessionIsSystemSoundsSession"
+                },
+                {
+                  "address": 6443287568,
+                  "name": "AudioSessionGetDisplayOptions"
+                },
+                {
+                  "address": 6443287424,
+                  "name": "AudioSessionGetDisplayName"
+                },
+                {
+                  "address": 6443290608,
+                  "name": "AudioSessionSetDisplayName"
+                },
+                {
+                  "address": 6443287824,
+                  "name": "AudioSessionGetIconPath"
+                },
+                {
+                  "address": 6443290768,
+                  "name": "AudioSessionSetIconPath"
+                },
+                {
+                  "address": 6442483456,
+                  "name": "AudioSessionGetGroupingParam"
+                },
+                {
+                  "address": 6442483584,
+                  "name": "AudioSessionSetGroupingParam"
+                },
+                {
+                  "address": 6442741392,
+                  "name": "AudioSessionGetVolume"
+                },
+                {
+                  "address": 6442483712,
+                  "name": "AudioSessionSetVolume"
+                },
+                {
+                  "address": 6442741264,
+                  "name": "AudioSessionGetMute"
+                },
+                {
+                  "address": 6442483872,
+                  "name": "AudioSessionSetMute"
+                },
+                {
+                  "address": 6443287136,
+                  "name": "AudioSessionGetChannelCount"
+                },
+                {
+                  "address": 6443290416,
+                  "name": "AudioSessionSetChannelVolume"
+                },
+                {
+                  "address": 6443287280,
+                  "name": "AudioSessionGetChannelVolume"
+                },
+                {
+                  "address": 6443290224,
+                  "name": "AudioSessionSetAllVolumes"
+                },
+                {
+                  "address": 6443286992,
+                  "name": "AudioSessionGetAllVolumes"
+                },
+                {
+                  "address": 6443289488,
+                  "name": "AudioSessionPropertyStoreCommit"
+                },
+                {
+                  "address": 6443289616,
+                  "name": "AudioSessionPropertyStoreGetAt"
+                },
+                {
+                  "address": 6443289760,
+                  "name": "AudioSessionPropertyStoreGetCount"
+                },
+                {
+                  "address": 6443289904,
+                  "name": "AudioSessionPropertyStoreGetValue"
+                },
+                {
+                  "address": 6443290064,
+                  "name": "AudioSessionPropertyStoreSetValue"
+                },
+                {
+                  "address": 6442741136,
+                  "name": "AudioSessionSetDuckingPreference"
+                },
+                {
+                  "address": 6443287680,
+                  "name": "AudioSessionGetDuckingState"
+                },
+                {
+                  "address": 6443288224,
+                  "name": "AudioSessionGetIsComms"
+                },
+                {
+                  "address": 6442484960,
+                  "name": "AudioSessionDestroy"
+                },
+                {
+                  "address": 6443289344,
+                  "name": "AudioSessionMeterGetPeakValue"
+                },
+                {
+                  "address": 6443289200,
+                  "name": "AudioSessionMeterGetMeteringChannelCount"
+                },
+                {
+                  "address": 6443289056,
+                  "name": "AudioSessionMeterGetChannelsPeakValues"
+                },
+                {
+                  "address": 6442460880,
+                  "name": "AudioSessionSetWindowId"
+                },
+                {
+                  "address": 6443340864,
+                  "name": "PolicyConfigGetMixFormat"
+                },
+                {
+                  "address": 6442787360,
+                  "name": "PolicyConfigGetDeviceFormat"
+                },
+                {
+                  "address": 6443340352,
+                  "name": "PolicyConfigGetDeviceFormatForConnector"
+                },
+                {
+                  "address": 6443342352,
+                  "name": "PolicyConfigSetDeviceFormat"
+                },
+                {
+                  "address": 6443341856,
+                  "name": "PolicyConfigResetDeviceFormat"
+                },
+                {
+                  "address": 6443341200,
+                  "name": "PolicyConfigGetProcessingPeriod"
+                },
+                {
+                  "address": 6443343936,
+                  "name": "PolicyConfigSetProcessingPeriod"
+                },
+                {
+                  "address": 6443341488,
+                  "name": "PolicyConfigGetShareMode"
+                },
+                {
+                  "address": 6443344352,
+                  "name": "PolicyConfigSetShareMode"
+                },
+                {
+                  "address": 6443341344,
+                  "name": "PolicyConfigGetPropertyValue"
+                },
+                {
+                  "address": 6443344208,
+                  "name": "PolicyConfigSetPropertyValue"
+                },
+                {
+                  "address": 6443342224,
+                  "name": "PolicyConfigSetDefaultEndpoint"
+                },
+                {
+                  "address": 6443343632,
+                  "name": "PolicyConfigSetEndpointVisibility"
+                },
+                {
+                  "address": 6443343504,
+                  "name": "PolicyConfigSetEndpointAbilityToBeDefault"
+                },
+                {
+                  "address": 6443341952,
+                  "name": "PolicyConfigSetAccessibilityAudioMonoMixState"
+                },
+                {
+                  "address": 6443339248,
+                  "name": "PolicyConfigGetAccessibilityAudioMonoMixState"
+                },
+                {
+                  "address": 6443344496,
+                  "name": "PolicyConfigValidateSpatialAudioSettings"
+                },
+                {
+                  "address": 6443341760,
+                  "name": "PolicyConfigReportSpatialLicenseChanged"
+                },
+                {
+                  "address": 6443343744,
+                  "name": "PolicyConfigSetMixedRealitySpatialAudioFormatPolicy"
+                },
+                {
+                  "address": 6443339344,
+                  "name": "PolicyConfigGetDeviceFormatAndSpatialSettings"
+                },
+                {
+                  "address": 6443342848,
+                  "name": "PolicyConfigSetDeviceSpatialSettings"
+                },
+                {
+                  "address": 6443339216,
+                  "name": "PolicyConfigAddDynamicRoutingRule"
+                },
+                {
+                  "address": 6443341728,
+                  "name": "PolicyConfigRemoveDynamicRoutingRule"
+                },
+                {
+                  "address": 6443344464,
+                  "name": "PolicyConfigUpdateDynamicRoutingRule"
+                },
+                {
+                  "address": 6443340704,
+                  "name": "PolicyConfigGetDynamicRoutingRule"
+                },
+                {
+                  "address": 6442522016,
+                  "name": "GetAudioSessionManager"
+                },
+                {
+                  "address": 6442626992,
+                  "name": "AudioSessionManagerDestroy"
+                },
+                {
+                  "address": 6443303936,
+                  "name": "AudioSessionManagerGetAudioSessions"
+                },
+                {
+                  "address": 6442567152,
+                  "name": "AudioSessionManagerGetCurrentSession"
+                },
+                {
+                  "address": 6443304208,
+                  "name": "AudioSessionManagerGetExistingSession"
+                },
+                {
+                  "address": 6443304592,
+                  "name": "AudioSessionManagerGetSessionForStreamSwitch"
+                },
+                {
+                  "address": 6443303488,
+                  "name": "AudioSessionManagerAddAudioSessionClientNotification"
+                },
+                {
+                  "address": 6443303632,
+                  "name": "AudioSessionManagerDeleteAudioSessionClientNotification"
+                },
+                {
+                  "address": 6442740048,
+                  "name": "AudioSessionManagerAddVolumeDuckNotification"
+                },
+                {
+                  "address": 6443303744,
+                  "name": "AudioSessionManagerDeleteVolumeDuckNotification"
+                },
+                {
+                  "address": 6442793216,
+                  "name": "AudioVolumeConnect"
+                },
+                {
+                  "address": 6442789568,
+                  "name": "AudioVolumeDisconnect"
+                },
+                {
+                  "address": 6443255856,
+                  "name": "AudioVolumeQueryHardwareSupport"
+                },
+                {
+                  "address": 6443255696,
+                  "name": "AudioVolumeGetVolumeRange"
+                },
+                {
+                  "address": 6443255088,
+                  "name": "AudioVolumeGetChannelCount"
+                },
+                {
+                  "address": 6443256288,
+                  "name": "AudioVolumeSetMasterVolumeLevel"
+                },
+                {
+                  "address": 6443256432,
+                  "name": "AudioVolumeSetMasterVolumeLevelScalar"
+                },
+                {
+                  "address": 6443255456,
+                  "name": "AudioVolumeGetMasterVolumeLevel"
+                },
+                {
+                  "address": 6442794608,
+                  "name": "AudioVolumeGetMasterVolumeLevelScalar"
+                },
+                {
+                  "address": 6443255968,
+                  "name": "AudioVolumeSetChannelVolumeLevel"
+                },
+                {
+                  "address": 6443256128,
+                  "name": "AudioVolumeSetChannelVolumeLevelScalar"
+                },
+                {
+                  "address": 6443255200,
+                  "name": "AudioVolumeGetChannelVolumeLevel"
+                },
+                {
+                  "address": 6443255328,
+                  "name": "AudioVolumeGetChannelVolumeLevelScalar"
+                },
+                {
+                  "address": 6443256576,
+                  "name": "AudioVolumeSetMute"
+                },
+                {
+                  "address": 6442794496,
+                  "name": "AudioVolumeGetMute"
+                },
+                {
+                  "address": 6442794032,
+                  "name": "AudioVolumeAddMasterVolumeNotification"
+                },
+                {
+                  "address": 6442789408,
+                  "name": "AudioVolumeDeleteMasterVolumeNotification"
+                },
+                {
+                  "address": 6443254976,
+                  "name": "AudioMeterGetPeakValue"
+                },
+                {
+                  "address": 6443254864,
+                  "name": "AudioMeterGetMeteringChannelCount"
+                },
+                {
+                  "address": 6443254736,
+                  "name": "AudioMeterGetChannelsPeakValues"
+                },
+                {
+                  "address": 6443255568,
+                  "name": "AudioVolumeGetStepInfo"
+                },
+                {
+                  "address": 6443256848,
+                  "name": "AudioVolumeStepUp"
+                },
+                {
+                  "address": 6443256720,
+                  "name": "AudioVolumeStepDown"
+                },
+                {
+                  "address": 6443359920,
+                  "name": "AudioServerGetBufferSizeLimits"
+                },
+                {
+                  "address": 6443370320,
+                  "name": "AudioServerSetLastBufferInProgress"
+                },
+                {
+                  "address": 6443368016,
+                  "name": "AudioServerIsRawStreamSupported"
+                },
+                {
+                  "address": 6442512864,
+                  "name": "AudioServerDeriveStreamCategory"
+                },
+                {
+                  "address": 6443365232,
+                  "name": "AudioServerGetStreamVpoContext"
+                },
+                {
+                  "address": 6443363056,
+                  "name": "AudioServerGetEndpointVpoContext"
+                },
+                {
+                  "address": 6443358416,
+                  "name": "AudioServerCloseVpoContext"
+                },
+                {
+                  "address": 6443360656,
+                  "name": "AudioServerGetCurrentSharedModeEnginePeriod"
+                },
+                {
+                  "address": 6443363952,
+                  "name": "AudioServerGetSharedModeEnginePeriod"
+                },
+                {
+                  "address": 6443368944,
+                  "name": "AudioServerRequestSpatialDynamicObjects"
+                },
+                {
+                  "address": 6443369696,
+                  "name": "AudioServerSetAmbMetadata"
+                },
+                {
+                  "address": 6443369536,
+                  "name": "AudioServerSetAmbHeadTracking"
+                },
+                {
+                  "address": 6443358976,
+                  "name": "AudioServerGetAmbHeadTracking"
+                },
+                {
+                  "address": 6443369856,
+                  "name": "AudioServerSetAmbRotation"
+                },
+                {
+                  "address": 6443440848,
+                  "name": "asm_GetApplicationSubmixContext"
+                },
+                {
+                  "address": 6443441376,
+                  "name": "asm_GetApplicationSubmixContextFromPID"
+                },
+                {
+                  "address": 6443441104,
+                  "name": "asm_GetApplicationSubmixContextForProcessTree"
+                },
+                {
+                  "address": 6442914800,
+                  "name": "asm_GetApplicationSubmixContextForExcludedProcessTree"
+                },
+                {
+                  "address": 6443439744,
+                  "name": "asm_ApplicationSubmixContextDestroy"
+                },
+                {
+                  "address": 6443441968,
+                  "name": "asm_GetApplicationSubmixes"
+                },
+                {
+                  "address": 6443439840,
+                  "name": "asm_ApplicationSubmixDestroy"
+                },
+                {
+                  "address": 6443439952,
+                  "name": "asm_AudioServerGetApplicationSubmixFormat"
+                },
+                {
+                  "address": 6443440256,
+                  "name": "asm_AudioServerGetApplicationSubmixPeriod"
+                },
+                {
+                  "address": 6443440144,
+                  "name": "asm_AudioServerGetApplicationSubmixId"
+                },
+                {
+                  "address": 6443441648,
+                  "name": "asm_GetApplicationSubmixFromId"
+                },
+                {
+                  "address": 6443440448,
+                  "name": "asm_AudioServerInitializeStream"
+                },
+                {
+                  "address": 6443372912,
+                  "name": "AudioServerTelephonyControlStartSession"
+                },
+                {
+                  "address": 6443372160,
+                  "name": "AudioServerTelephonyControlIsSessionStarted"
+                },
+                {
+                  "address": 6443371120,
+                  "name": "AudioServerTelephonyControlEndSession"
+                },
+                {
+                  "address": 6443372608,
+                  "name": "AudioServerTelephonyControlSetRoutingPolicy"
+                },
+                {
+                  "address": 6443371856,
+                  "name": "AudioServerTelephonyControlGetRoutingPolicy"
+                },
+                {
+                  "address": 6443372368,
+                  "name": "AudioServerTelephonyControlSetCallState"
+                },
+                {
+                  "address": 6443371216,
+                  "name": "AudioServerTelephonyControlGetCallState"
+                },
+                {
+                  "address": 6443372256,
+                  "name": "AudioServerTelephonyControlProviderChange"
+                },
+                {
+                  "address": 6443372480,
+                  "name": "AudioServerTelephonyControlSetMute"
+                },
+                {
+                  "address": 6443371568,
+                  "name": "AudioServerTelephonyControlGetMute"
+                },
+                {
+                  "address": 6443372704,
+                  "name": "AudioServerTelephonyControlSetVOIPMute"
+                },
+                {
+                  "address": 6443371952,
+                  "name": "AudioServerTelephonyControlGetVOIPMute"
+                },
+                {
+                  "address": 6443372800,
+                  "name": "AudioServerTelephonyControlSetVolume"
+                },
+                {
+                  "address": 6443371472,
+                  "name": "AudioServerTelephonyControlGetMaxCallInstanceCount"
+                },
+                {
+                  "address": 6443372048,
+                  "name": "AudioServerTelephonyControlGetValidTelephonyInstance"
+                },
+                {
+                  "address": 6443359136,
+                  "name": "AudioServerGetAudioHistoryProducerHandle"
+                },
+                {
+                  "address": 6443368672,
+                  "name": "AudioServerReleaseAudioHistoryProducerHandle"
+                },
+                {
+                  "address": 6443359360,
+                  "name": "AudioServerGetAudioHistoryProducerInfo"
+                },
+                {
+                  "address": 6443368288,
+                  "name": "AudioServerPopulateAudioHistoryForStream"
+                },
+                {
+                  "address": 6443340736,
+                  "name": "PolicyConfigGetEndpointExtendedSpatialLicenseInfo"
+                },
+                {
+                  "address": 6443341600,
+                  "name": "PolicyConfigGetSpatialSpeakerProtectionOverrideValue"
+                },
+                {
+                  "address": 6443358560,
+                  "name": "AudioServerCreateStreamConnection"
+                },
+                {
+                  "address": 6443368832,
+                  "name": "AudioServerReleaseStreamConnection"
+                },
+                {
+                  "address": 6443370736,
+                  "name": "AudioServerStartStopStreamConnection"
+                },
+                {
+                  "address": 6442904432,
+                  "name": "AudioServerSetDuckingOptionsForCurrentStream"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443810560,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1603490422,
+                    "Data2": 7291,
+                    "Data3": 18165,
+                    "Data4": [
+                      "ac",
+                      "77",
+                      "07",
+                      "77",
+                      "59",
+                      "00",
+                      "1d",
+                      "2b"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 8
+                  }
+                },
+                "InterpreterInfo": 6443810496,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "5F935276-1C7B-46F5-AC77-077759001D2B",
+                "version": "2.8"
+              }
+            }
+          ],
+          "MaxCalls": [
+            {
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MaxRpcSize": [
+            {
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442858751
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442737248
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180063ce4 id=0x180063cbb[39] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442859707}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x180063cbb id=0x180063cbb[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442737248": []
+          }
+        },
+        "callsite_address": 6442859707
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443879456,
+              "string": "AudioClientRpc"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443879488,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x1800638d1 id=0x1800638d1[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442858705
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x180063c8b id=0x180063c81[9] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443879488,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x180063c81 id=0x180063c81[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442859649
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

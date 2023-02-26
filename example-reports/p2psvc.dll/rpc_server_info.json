@@ -1,0 +1,306 @@
+{
+  "analysis_metadata": {
+    "name": "p2psvc",
+    "filepath": "C:\\WINDOWS\\system32\\p2psvc.dll",
+    "time": 9.637537240982056,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442746614
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442744992
+          ],
+          "IfSpec": [
+            {
+              "address": 6442827248,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442520928,
+                  "name": "PeerGroupCreateRpc"
+                },
+                {
+                  "address": 6442521152,
+                  "name": "PeerGroupOpenRpc"
+                },
+                {
+                  "address": 6442521392,
+                  "name": "PeerGroupJoinRpc"
+                },
+                {
+                  "address": 6442521632,
+                  "name": "PeerGroupPasswordJoinRpc"
+                },
+                {
+                  "address": 6442522352,
+                  "name": "PeerGroupConnectRpc"
+                },
+                {
+                  "address": 6442522512,
+                  "name": "PeerGroupCloseRpc"
+                },
+                {
+                  "address": 6442522608,
+                  "name": "PeerGroupDeleteRpc"
+                },
+                {
+                  "address": 6442522832,
+                  "name": "PeerGroupCreateInvitationRpc"
+                },
+                {
+                  "address": 6442523168,
+                  "name": "PeerGroupCreatePasswordInvitationRpc"
+                },
+                {
+                  "address": 6442523424,
+                  "name": "PeerGroupGetStatusRpc"
+                },
+                {
+                  "address": 6442523680,
+                  "name": "PeerGroupGetPropertiesRpc"
+                },
+                {
+                  "address": 6442523936,
+                  "name": "PeerGroupSetPropertiesRpc"
+                },
+                {
+                  "address": 6442524528,
+                  "name": "PeerGroupEnumConnectionsRpc"
+                },
+                {
+                  "address": 6442524192,
+                  "name": "PeerGroupEnumMembersRpc"
+                },
+                {
+                  "address": 6442524864,
+                  "name": "PeerGroupOpenDirectConnectionRpc"
+                },
+                {
+                  "address": 6442525168,
+                  "name": "PeerGroupCloseDirectConnectionRpc"
+                },
+                {
+                  "address": 6442525408,
+                  "name": "PeerGroupSendDataRpc"
+                },
+                {
+                  "address": 6442525728,
+                  "name": "PeerGroupRegisterEventRpc"
+                },
+                {
+                  "address": 6442526288,
+                  "name": "PeerGroupUnregisterEventRpc"
+                },
+                {
+                  "address": 6442526512,
+                  "name": "PeerGroupGetEventDataRpc"
+                },
+                {
+                  "address": 6442526784,
+                  "name": "PeerGroupGetRecordRpc"
+                },
+                {
+                  "address": 6442527056,
+                  "name": "PeerGroupAddRecordRpc"
+                },
+                {
+                  "address": 6442527328,
+                  "name": "PeerGroupUpdateRecordRpc"
+                },
+                {
+                  "address": 6442527600,
+                  "name": "PeerGroupDeleteRecordRpc"
+                },
+                {
+                  "address": 6442527856,
+                  "name": "PeerGroupEnumRecordsRpc"
+                },
+                {
+                  "address": 6442528192,
+                  "name": "PeerGroupSearchRecordsRpc"
+                },
+                {
+                  "address": 6442528528,
+                  "name": "PeerGroupExportDatabaseRpc"
+                },
+                {
+                  "address": 6442528784,
+                  "name": "PeerGroupImportDatabaseRpc"
+                },
+                {
+                  "address": 6442529600,
+                  "name": "PeerGroupUniversalTimeToPeerTimeRpc"
+                },
+                {
+                  "address": 6442529328,
+                  "name": "PeerGroupPeerTimeToUniversalTimeRpc"
+                },
+                {
+                  "address": 6442529872,
+                  "name": "PeerGetItemCountRpc"
+                },
+                {
+                  "address": 6442530432,
+                  "name": "PeerGetNextMemberInfoItemRpc"
+                },
+                {
+                  "address": 6442530560,
+                  "name": "PeerGetNextConnectionInfoItemRpc"
+                },
+                {
+                  "address": 6442530688,
+                  "name": "PeerGetNextRecordItemRpc"
+                },
+                {
+                  "address": 6442530816,
+                  "name": "PeerEndEnumerationRpc"
+                },
+                {
+                  "address": 6442529040,
+                  "name": "PeerGroupIssueCredentialsRpc"
+                },
+                {
+                  "address": 6442531024,
+                  "name": "PeerGroupConnectByAddressRpc"
+                },
+                {
+                  "address": 6442531264,
+                  "name": "PeerGroupResumePasswordAuthenticationRpc"
+                },
+                {
+                  "address": 6442531504,
+                  "name": "PeerGroupHandlePowerEventRpc"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442822512,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1060227358,
+                    "Data2": 9541,
+                    "Data3": 19323,
+                    "Data4": [
+                      "93",
+                      "11",
+                      "95",
+                      "29",
+                      "e8",
+                      "bf",
+                      "fe",
+                      "f6"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442821744,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "3F31C91E-2545-4B7B-9311-9529E8BFFEF6",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442744992": []
+          }
+        },
+        "callsite_address": 6442746690
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442845800,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442746536
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

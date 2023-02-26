@@ -1,0 +1,278 @@
+{
+  "analysis_metadata": {
+    "name": "SharedAccess",
+    "filepath": "C:\\WINDOWS\\system32\\ipnathlp.dll",
+    "time": 6.941883087158203,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0,
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442660587}}>}, Atom:<Mem SP-0x128<8> (stack)>, Codeloc:<0x1800332eb id=0x1800332d4[22] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6442976752,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442662560,
+                  "name": "IpNatHlpRpcServerGetConnectedDevices"
+                },
+                {
+                  "address": 6442664224,
+                  "name": "IpNatHlpRpcServerStartSharing"
+                },
+                {
+                  "address": 6442664688,
+                  "name": "IpNatHlpRpcServerStopSharing"
+                },
+                {
+                  "address": 6442665024,
+                  "name": "IpNatHlpRpcServerStartDhcpServer"
+                },
+                {
+                  "address": 6442665248,
+                  "name": "IpNatHlpRpcServerStopDhcpServer"
+                },
+                {
+                  "address": 6442665520,
+                  "name": "IpNatHlpRpcServerUpdateSharingSettingsFromStorage"
+                },
+                {
+                  "address": 6442668288,
+                  "name": "V2IpNatHlpRpcServerStartSharingByInternalPrefix"
+                },
+                {
+                  "address": 6442668640,
+                  "name": "V2IpNatHlpRpcServerStopSharingByInternalPrefix"
+                },
+                {
+                  "address": 6442668896,
+                  "name": "V2IpNatHlpRpcServerStartDhcpServer"
+                },
+                {
+                  "address": 6442669344,
+                  "name": "V2IpNatHlpRpcServerStopDhcpServer"
+                },
+                {
+                  "address": 6442669728,
+                  "name": "V2IpNatHlpRpcServerStartDnsServer"
+                },
+                {
+                  "address": 6442670032,
+                  "name": "V2IpNatHlpRpcServerStopDnsServer"
+                },
+                {
+                  "address": 6442670592,
+                  "name": "V2IpNatHlpRpcServerEnumDhcpState"
+                },
+                {
+                  "address": 6442671008,
+                  "name": "V2IpNatHlpRpcServerEnumDnsState"
+                },
+                {
+                  "address": 6442666672,
+                  "name": "V2IpNatHlpRpcServerCreateStaticMapping"
+                },
+                {
+                  "address": 6442667376,
+                  "name": "V2IpNatHlpRpcServerDeleteStaticMapping"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442977608,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3863714542,
+                    "Data2": 62322,
+                    "Data3": 17170,
+                    "Data4": [
+                      "9a",
+                      "14",
+                      "8f",
+                      "15",
+                      "02",
+                      "b5",
+                      "c8",
+                      "e3"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442978096,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E64B9AEE-F372-4312-9A14-8F1502B5C8E3",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0,
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442660595}}>}, Atom:<Mem SP-0x130<4> (stack)>, Codeloc:<0x1800332f3 id=0x1800332d4[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442660595}}>}, Atom:<Mem SP-0x130<4> (stack)>, Codeloc:<0x1800332f3 id=0x1800332d4[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442660595}}>}, Atom:<Mem SP-0x130<4> (stack)>, Codeloc:<0x1800332f3 id=0x1800332d4[32] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0,
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442660576}}>}, Atom:<Mem SP-0x120<8> (stack)>, Codeloc:<0x1800332e0 id=0x1800332d4[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442660564
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442988232,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0,
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x18003327c id=0x180033277[6] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442660471
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

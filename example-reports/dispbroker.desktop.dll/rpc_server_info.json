@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "DispBrokerDesktopSvc",
+    "filepath": "C:\\WINDOWS\\system32\\dispbroker.desktop.dll",
+    "time": 3.585498332977295,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -24,48 +24,73 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442653482}}>}, Atom:<Mem SP+0x30<8> (stack)>, Codeloc:<0x18003172a id=0x180031725[10] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442740752,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442654800,
+                  "name": "ColorManagementRpcServerOpenFromMonitorId"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
+                  "address": 6442655120,
+                  "name": "ColorManagementRpcServerClose"
                 },
                 {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
+                  "address": 6442655200,
+                  "name": "ColorManagementRpcServerGetDisplayActiveColorProfile"
                 },
                 {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442655584,
+                  "name": "ColorManagementRpcServerSetDisplayColorGdiLut"
+                },
+                {
+                  "address": 6442656640,
+                  "name": "ColorManagementRpcServerGetDisplayColorGdiLut"
+                },
+                {
+                  "address": 6442657248,
+                  "name": "ColorManagementRpcServerSetDisplayColorLut"
+                },
+                {
+                  "address": 6442657552,
+                  "name": "ColorManagementRpcServerGetDisplayColorLut"
+                },
+                {
+                  "address": 6442658080,
+                  "name": "ColorManagementRpcServerSetDisplayColorMatrix"
+                },
+                {
+                  "address": 6442658384,
+                  "name": "ColorManagementRpcServerGetDisplayColorMatrix"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442742000,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 1352386478,
+                    "Data2": 30654,
+                    "Data3": 20200,
                     "Data4": [
-                      "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "b0",
+                      "7c",
+                      "0d",
+                      "09",
+                      "6b",
+                      "b4",
+                      "43",
+                      "45"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +98,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442741024,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +125,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "509BC7AE-77BE-4EE8-B07C-0D096BB44345",
                 "version": "1.0"
               }
             }
@@ -109,7 +134,12 @@
             1234
           ],
           "MaxRpcSize": [
-            4294967295
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442653487}}>}, Atom:<Mem SP+0x28<4> (stack)>, Codeloc:<0x18003172f id=0x180031725[17] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
           ],
           "MgrEpv": [
             0
@@ -118,72 +148,60 @@
             0
           ],
           "SecurityDescriptor": [
-            0
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442653477}}>}, Atom:<Mem SP+0x38<8> (stack)>, Codeloc:<0x180031725 id=0x180031725[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442492080": [
+            "0": [
               {
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
-                  }
-                ]
+                "extra_constraints": []
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442653477
       }
     ],
     "protseq_usage": [
@@ -194,7 +212,7 @@
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442760040,
               "string": "ncalrpc"
             }
           ],
@@ -203,7 +221,25 @@
           ],
           "api_function": "RpcServerUseProtseqW"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442653421
+      },
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442760040,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442653415
       }
     ],
     "rpc_constraints": {}

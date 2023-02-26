@@ -1,0 +1,493 @@
+{
+  "analysis_metadata": {
+    "name": "PolicyAgent",
+    "filepath": "C:\\WINDOWS\\system32\\ipsecsvc.dll",
+    "time": 4.411860227584839,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442475667
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            },
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442458928
+          ],
+          "IfSpec": [
+            {
+              "address": 6442839904,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442480400,
+                  "name": "RpcAddTransportFilter"
+                },
+                {
+                  "address": 6442480944,
+                  "name": "RpcDeleteTransportFilter"
+                },
+                {
+                  "address": 6442481232,
+                  "name": "RpcEnumTransportFilters"
+                },
+                {
+                  "address": 6442481808,
+                  "name": "RpcSetTransportFilter"
+                },
+                {
+                  "address": 6442482320,
+                  "name": "RpcGetTransportFilter"
+                },
+                {
+                  "address": 6442482688,
+                  "name": "RpcAddQMPolicy"
+                },
+                {
+                  "address": 6442483120,
+                  "name": "RpcDeleteQMPolicy"
+                },
+                {
+                  "address": 6442483472,
+                  "name": "RpcEnumQMPolicies"
+                },
+                {
+                  "address": 6442483952,
+                  "name": "RpcSetQMPolicy"
+                },
+                {
+                  "address": 6442484368,
+                  "name": "RpcGetQMPolicy"
+                },
+                {
+                  "address": 6442484944,
+                  "name": "RpcAddMMPolicy"
+                },
+                {
+                  "address": 6442485376,
+                  "name": "RpcDeleteMMPolicy"
+                },
+                {
+                  "address": 6442485728,
+                  "name": "RpcEnumMMPolicies"
+                },
+                {
+                  "address": 6442486176,
+                  "name": "RpcSetMMPolicy"
+                },
+                {
+                  "address": 6442486592,
+                  "name": "RpcGetMMPolicy"
+                },
+                {
+                  "address": 6442487184,
+                  "name": "RpcAddMMFilter"
+                },
+                {
+                  "address": 6442487760,
+                  "name": "RpcDeleteMMFilter"
+                },
+                {
+                  "address": 6442488048,
+                  "name": "RpcEnumMMFilters"
+                },
+                {
+                  "address": 6442488624,
+                  "name": "RpcSetMMFilter"
+                },
+                {
+                  "address": 6442489136,
+                  "name": "RpcGetMMFilter"
+                },
+                {
+                  "address": 6442489488,
+                  "name": "RpcMatchMMFilter"
+                },
+                {
+                  "address": 6442490384,
+                  "name": "RpcMatchTransportFilter"
+                },
+                {
+                  "address": 6442491072,
+                  "name": "RpcGetQMPolicyByID"
+                },
+                {
+                  "address": 6442491664,
+                  "name": "RpcGetMMPolicyByID"
+                },
+                {
+                  "address": 6442492240,
+                  "name": "RpcAddMMAuthMethods"
+                },
+                {
+                  "address": 6442492800,
+                  "name": "RpcDeleteMMAuthMethods"
+                },
+                {
+                  "address": 6442493120,
+                  "name": "RpcEnumMMAuthMethods"
+                },
+                {
+                  "address": 6442493696,
+                  "name": "RpcSetMMAuthMethods"
+                },
+                {
+                  "address": 6442495856,
+                  "name": "RpcGetMMAuthMethods"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442504544,
+                  "name": "RpcEnumMMSAs"
+                },
+                {
+                  "address": 6442494288,
+                  "name": "RpcDeleteMMSAs"
+                },
+                {
+                  "address": 6442503424,
+                  "name": "RpcDeleteQMSAs"
+                },
+                {
+                  "address": 6442496608,
+                  "name": "RpcQueryIKEStatistics"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442496288,
+                  "name": "RpcQueryIPSecStatistics"
+                },
+                {
+                  "address": 6442505344,
+                  "name": "RpcEnumQMSAs"
+                },
+                {
+                  "address": 6442497408,
+                  "name": "RpcAddTunnelFilter"
+                },
+                {
+                  "address": 6442497936,
+                  "name": "RpcDeleteTunnelFilter"
+                },
+                {
+                  "address": 6442498272,
+                  "name": "RpcEnumTunnelFilters"
+                },
+                {
+                  "address": 6442498832,
+                  "name": "RpcSetTunnelFilter"
+                },
+                {
+                  "address": 6442499296,
+                  "name": "RpcGetTunnelFilter"
+                },
+                {
+                  "address": 6442499984,
+                  "name": "RpcMatchTunnelFilter"
+                },
+                {
+                  "address": 6442500592,
+                  "name": "RpcOpenMMFilterHandle"
+                },
+                {
+                  "address": 6442501104,
+                  "name": "RpcCloseMMFilterHandle"
+                },
+                {
+                  "address": 6442501392,
+                  "name": "RpcOpenTransportFilterHandle"
+                },
+                {
+                  "address": 6442501904,
+                  "name": "RpcCloseTransportFilterHandle"
+                },
+                {
+                  "address": 6442502192,
+                  "name": "RpcOpenTunnelFilterHandle"
+                },
+                {
+                  "address": 6442502656,
+                  "name": "RpcCloseTunnelFilterHandle"
+                },
+                {
+                  "address": 6442502944,
+                  "name": "RpcEnumIpsecInterfaces"
+                },
+                {
+                  "address": 6442494272,
+                  "name": "RpcInitiateIKENegotiation"
+                },
+                {
+                  "address": 6442494864,
+                  "name": "RpcSetConfigurationVariables"
+                },
+                {
+                  "address": 6442495456,
+                  "name": "RpcGetConfigurationVariables"
+                },
+                {
+                  "address": 6442503952,
+                  "name": "RpcQuerySpdPolicyState"
+                },
+                {
+                  "address": 6442505872,
+                  "name": "RpcAddMMFilterEx"
+                },
+                {
+                  "address": 6442506400,
+                  "name": "RpcEnumMMFiltersEx"
+                },
+                {
+                  "address": 6442506976,
+                  "name": "RpcSetMMFilterEx"
+                },
+                {
+                  "address": 6442507440,
+                  "name": "RpcGetMMFilterEx"
+                },
+                {
+                  "address": 6442507808,
+                  "name": "RpcMatchMMFilterEx"
+                },
+                {
+                  "address": 6442508656,
+                  "name": "RpcOpenMMFilterHandleEx"
+                },
+                {
+                  "address": 6442509136,
+                  "name": "RpcAddTransportFilterEx"
+                },
+                {
+                  "address": 6442509632,
+                  "name": "RpcEnumTransportFiltersEx"
+                },
+                {
+                  "address": 6442510208,
+                  "name": "RpcSetTransportFilterEx"
+                },
+                {
+                  "address": 6442510688,
+                  "name": "RpcGetTransportFilterEx"
+                },
+                {
+                  "address": 6442511056,
+                  "name": "RpcMatchTransportFilterEx"
+                },
+                {
+                  "address": 6442511712,
+                  "name": "RpcOpenTransportFilterHandleEx"
+                },
+                {
+                  "address": 6442512192,
+                  "name": "RpcQueryRemoteFWRunning"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442823680,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 305419896,
+                    "Data2": 4660,
+                    "Data3": 43981,
+                    "Data4": [
+                      "ef",
+                      "00",
+                      "01",
+                      "23",
+                      "45",
+                      "67",
+                      "89",
+                      "ab"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442834224,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "12345678-1234-ABCD-EF00-0123456789AB",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442458928": []
+          }
+        },
+        "callsite_address": 6442475702
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442863264,
+              "string": "ipsec"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442862320,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442475893
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442863264,
+              "string": "ipsec"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442862320,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442475889
+      },
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442862336,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442475783
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

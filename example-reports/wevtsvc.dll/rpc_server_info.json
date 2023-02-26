@@ -1,0 +1,611 @@
+{
+  "analysis_metadata": {
+    "name": "EventLog",
+    "filepath": "C:\\WINDOWS\\system32\\wevtsvc.dll",
+    "time": 16.960564851760864,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180055e80 id=0x180055e78[23] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180055e80 id=0x180055e78[23] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base + 0xffffffffffffffb8>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442802808
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            16
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180055ec3 id=0x180055ebb[23] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180055ec3 id=0x180055ebb[23] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base + 0xffffffffffffffb8>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442802875
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442502368
+          ],
+          "IfSpec": [
+            {
+              "address": 6443424224,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443403760,
+                  "name": "ElfrClearELFW"
+                },
+                {
+                  "address": 6443401200,
+                  "name": "ElfrBackupELFW"
+                },
+                {
+                  "address": 6442521792,
+                  "name": "ElfrCloseEL"
+                },
+                {
+                  "address": 6442625392,
+                  "name": "ElfrDeregisterEventSource"
+                },
+                {
+                  "address": 6443405024,
+                  "name": "ElfrNumberOfRecords"
+                },
+                {
+                  "address": 6443405760,
+                  "name": "ElfrOldestRecord"
+                },
+                {
+                  "address": 6443401872,
+                  "name": "ElfrChangeNotify"
+                },
+                {
+                  "address": 6442521968,
+                  "name": "ElfrOpenELW"
+                },
+                {
+                  "address": 6442625792,
+                  "name": "ElfrRegisterEventSourceW"
+                },
+                {
+                  "address": 6443407136,
+                  "name": "ElfrOpenBELW"
+                },
+                {
+                  "address": 6443408896,
+                  "name": "ElfrReadELW"
+                },
+                {
+                  "address": 6443410160,
+                  "name": "ElfrReportEventW"
+                },
+                {
+                  "address": 6443403248,
+                  "name": "ElfrClearELFA"
+                },
+                {
+                  "address": 6443400688,
+                  "name": "ElfrBackupELFA"
+                },
+                {
+                  "address": 6443408320,
+                  "name": "ElfrOpenELA"
+                },
+                {
+                  "address": 6442740864,
+                  "name": "ElfrRegisterEventSourceA"
+                },
+                {
+                  "address": 6443406528,
+                  "name": "ElfrOpenBELA"
+                },
+                {
+                  "address": 6443408592,
+                  "name": "ElfrReadELA"
+                },
+                {
+                  "address": 6443409280,
+                  "name": "ElfrReportEventA"
+                },
+                {
+                  "address": 6443409200,
+                  "name": "ElfrRegisterClusterSvc"
+                },
+                {
+                  "address": 6443404544,
+                  "name": "ElfrDeregisterClusterSvc"
+                },
+                {
+                  "address": 6443410576,
+                  "name": "ElfrWriteClusterEvents"
+                },
+                {
+                  "address": 6442519008,
+                  "name": "ElfrGetLogInformation"
+                },
+                {
+                  "address": 6443404624,
+                  "name": "ElfrFlushEL"
+                },
+                {
+                  "address": 6443409696,
+                  "name": "ElfrReportEventAndSourceW"
+                },
+                {
+                  "address": 6442500160,
+                  "name": "ElfrReportEventExW"
+                },
+                {
+                  "address": 6443409776,
+                  "name": "ElfrReportEventExA"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443427632,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2183610332,
+                    "Data2": 58154,
+                    "Data3": 6339,
+                    "Data4": [
+                      "3f",
+                      "78",
+                      "82",
+                      "79",
+                      "29",
+                      "dc",
+                      "23",
+                      "ea"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 0,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443427568,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "82273FDC-E32A-18C3-3F78-827929DC23EA",
+                "version": "0.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442802963}}>}, Atom:<Mem SP-0xc0<4> (stack)>, Codeloc:<0x180055f13 id=0x180055efe[26] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442802963}}>}, Atom:<Mem SP-0xc0<4> (stack)>, Codeloc:<0x180055f13 id=0x180055efe[26] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            },
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442802963}}>}, Atom:<Mem SP-0xc0<4> (stack)>, Codeloc:<0x180055f13 id=0x180055efe[26] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442802946}}>}, Atom:<Mem SP-0xb0<8> (stack)>, Codeloc:<0x180055f02 id=0x180055efe[10] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442502368": []
+          }
+        },
+        "callsite_address": 6442802942
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442502304
+          ],
+          "IfSpec": [
+            {
+              "address": 6443424128,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442513632,
+                  "name": "EvtRpcRegisterRemoteSubscription"
+                },
+                {
+                  "address": 6442695296,
+                  "name": "_EvtRpcRemoteSubscriptionNextAsync"
+                },
+                {
+                  "address": 6442741376,
+                  "name": "_EvtRpcRemoteSubscriptionNext"
+                },
+                {
+                  "address": 6442742224,
+                  "name": "_EvtRpcRemoteSubscriptionWaitAsync"
+                },
+                {
+                  "address": 6443178048,
+                  "name": "EvtRpcRegisterControllableOperation"
+                },
+                {
+                  "address": 6442472704,
+                  "name": "_EvtRpcRegisterLogQuery"
+                },
+                {
+                  "address": 6443173504,
+                  "name": "EvtRpcClearLog"
+                },
+                {
+                  "address": 6443174128,
+                  "name": "EvtRpcExportLog"
+                },
+                {
+                  "address": 6443176624,
+                  "name": "EvtRpcLocalizeExportLog"
+                },
+                {
+                  "address": 6442718192,
+                  "name": "_EvtRpcMessageRender"
+                },
+                {
+                  "address": 6442716752,
+                  "name": "_EvtRpcMessageRenderDefault"
+                },
+                {
+                  "address": 6442696928,
+                  "name": "_EvtRpcQueryNext"
+                },
+                {
+                  "address": 6442525568,
+                  "name": "_EvtRpcQuerySeek"
+                },
+                {
+                  "address": 6442632672,
+                  "name": "_EvtRpcClose"
+                },
+                {
+                  "address": 6442462112,
+                  "name": "_EvtRpcCancel"
+                },
+                {
+                  "address": 6442464016,
+                  "name": "_EvtRpcAssertConfig"
+                },
+                {
+                  "address": 6442457808,
+                  "name": "_EvtRpcRetractConfig"
+                },
+                {
+                  "address": 6442744640,
+                  "name": "_EvtRpcOpenLogHandle"
+                },
+                {
+                  "address": 6442731984,
+                  "name": "_EvtRpcGetLogFileInfo"
+                },
+                {
+                  "address": 6442732592,
+                  "name": "_EvtRpcGetChannelList"
+                },
+                {
+                  "address": 6442744928,
+                  "name": "_EvtRpcGetChannelConfig"
+                },
+                {
+                  "address": 6443177264,
+                  "name": "EvtRpcPutChannelConfig"
+                },
+                {
+                  "address": 6442731712,
+                  "name": "_EvtRpcGetPublisherList"
+                },
+                {
+                  "address": 6443176048,
+                  "name": "EvtRpcGetPublisherListForChannel"
+                },
+                {
+                  "address": 6442633120,
+                  "name": "_EvtRpcGetPublisherMetadata"
+                },
+                {
+                  "address": 6442717200,
+                  "name": "_EvtRpcGetPublisherResourceMetadata"
+                },
+                {
+                  "address": 6443174960,
+                  "name": "EvtRpcGetEventMetadataEnum"
+                },
+                {
+                  "address": 6443175488,
+                  "name": "EvtRpcGetNextEventMetadata"
+                },
+                {
+                  "address": 6442713952,
+                  "name": "_EvtRpcGetClassicLogDisplayName"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443427536,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 4139692023,
+                    "Data2": 7705,
+                    "Data3": 20411,
+                    "Data4": [
+                      "9f",
+                      "8f",
+                      "b8",
+                      "9e",
+                      "20",
+                      "18",
+                      "33",
+                      "7c"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443427472,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "F6BEAFF7-1E19-4FBB-9F8F-B89E2018337C",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442502304": []
+          }
+        },
+        "callsite_address": 6442803044
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            20
+          ],
+          "Policy": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x180050ec9 id=0x180050eb2[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base - 0x28>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 6443449928,
+              "string": "ncacn_ip_tcp"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqExW"
+        },
+        "callsite_address": 6442782386
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443458120,
+              "string": "eventlog"
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x180055d13 id=0x180055d0a[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x180055d81 id=0x180055d76[14] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP + 0xa[31:0]>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 6443460976,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x180055d76 id=0x180055d76[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442802550
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443460704,
+              "string": "\\pipe\\eventlog"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443460680,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x180055de6 id=0x180055de6[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442802662
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

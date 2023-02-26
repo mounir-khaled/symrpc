@@ -1,0 +1,242 @@
+{
+  "analysis_metadata": {
+    "name": "MSiSCSI",
+    "filepath": "C:\\WINDOWS\\system32\\iscsiexe.dll",
+    "time": 5.056581258773804,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442584720,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442461552,
+                  "name": "DiscGetInitiatorList"
+                },
+                {
+                  "address": 6442461248,
+                  "name": "DiscGetTargets"
+                },
+                {
+                  "address": 6442461984,
+                  "name": "DiscGetTargetInfo"
+                },
+                {
+                  "address": 6442462160,
+                  "name": "DiscLoginTarget"
+                },
+                {
+                  "address": 6442462416,
+                  "name": "DiscLogoutTarget"
+                },
+                {
+                  "address": 6442462848,
+                  "name": "DiscRefreshAll"
+                },
+                {
+                  "address": 6442463024,
+                  "name": "DiscRefreshInitiator"
+                },
+                {
+                  "address": 6442462608,
+                  "name": "DiscSessionIdToHBA"
+                },
+                {
+                  "address": 6442463104,
+                  "name": "DiscStaticTarget"
+                },
+                {
+                  "address": 6442466064,
+                  "name": "DiscSNS"
+                },
+                {
+                  "address": 6442463920,
+                  "name": "DiscTargetPortal"
+                },
+                {
+                  "address": 6442465344,
+                  "name": "DiscReportTargetPortals"
+                },
+                {
+                  "address": 6442466720,
+                  "name": "DiscPresharedKey"
+                },
+                {
+                  "address": 6442461424,
+                  "name": "DiscGetIKEInformation"
+                },
+                {
+                  "address": 6442467072,
+                  "name": "DiscAddConnection"
+                },
+                {
+                  "address": 6442467952,
+                  "name": "DiscRemoveConnection"
+                },
+                {
+                  "address": 6442468288,
+                  "name": "DiscSetTunnelOuterModeAddress"
+                },
+                {
+                  "address": 6442468512,
+                  "name": "DiscInitiatorSharedSecret"
+                },
+                {
+                  "address": 6442469344,
+                  "name": "DiscRadiusSharedSecret"
+                },
+                {
+                  "address": 6442468624,
+                  "name": "DiscInitiatorNodeName"
+                },
+                {
+                  "address": 6442468704,
+                  "name": "DiscGetInitiatorNodeName"
+                },
+                {
+                  "address": 6442468832,
+                  "name": "DiscSetupPersistentDevices"
+                },
+                {
+                  "address": 6442469120,
+                  "name": "DiscGetTargetPortals"
+                },
+                {
+                  "address": 6442469776,
+                  "name": "DiscRADIUSServer"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442583784,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 4251695441,
+                    "Data2": 51248,
+                    "Data3": 18228,
+                    "Data4": [
+                      "bf",
+                      "2c",
+                      "18",
+                      "ba",
+                      "6e",
+                      "c7",
+                      "ab",
+                      "49"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442584336,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "FD6BB951-C830-4734-BF2C-18BA6EC7AB49",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442534952
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442594568,
+              "string": "iscsisrvRpcEndpoint"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442594608,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442534906
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

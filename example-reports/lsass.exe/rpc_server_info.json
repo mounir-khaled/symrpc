@@ -1,0 +1,256 @@
+{
+  "analysis_metadata": {
+    "name": "EFS",
+    "filepath": "c:\\windows\\system32\\lsass.exe",
+    "time": 1.7962329387664795,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            5368714224
+          ],
+          "IfSpec": [
+            {
+              "address": 5368737792,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 5368713776,
+                  "name": "LsaLookuprOpenPolicy2"
+                },
+                {
+                  "address": 5368713840,
+                  "name": "LsaLookuprClose"
+                },
+                {
+                  "address": 5368713664,
+                  "name": "LsaLookuprTranslateSids2"
+                },
+                {
+                  "address": 5368713952,
+                  "name": "LsaLookuprTranslateNames3"
+                },
+                {
+                  "address": 5368714320,
+                  "name": "LsaLookuprManageCache"
+                },
+                {
+                  "address": 5368714080,
+                  "name": "LsaLookuprGetDomainInfo"
+                },
+                {
+                  "address": 5368714272,
+                  "name": "LsaLookuprUserAccountType"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 5368738256,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 4220127017,
+                    "Data2": 11524,
+                    "Data3": 18008,
+                    "Data4": [
+                      "be",
+                      "93",
+                      "27",
+                      "b4",
+                      "ad",
+                      "55",
+                      "3f",
+                      "ac"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5368738192,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "FB8A0729-2D04-4658-BE93-27B4AD553FAC",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            1048576
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "5368714224": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_5918_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_5919_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x14000d6f0_5953_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} + 0x50 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} + 0x50 == 0xffffffffe0000050>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffe0000050_5954_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_5918_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_5919_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_5919_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 5368723108
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 5368744816,
+              "string": "\\pipe\\lsass"
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1400035fb id=0x1400035e0[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x140003616 id=0x14000360a[14] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP + 0xa[31:0]>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 5368744792,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 5368722954
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 5368744760,
+              "string": "lsapolicylookup"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 5368744744,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 5368723059
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

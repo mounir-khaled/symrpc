@@ -1,0 +1,275 @@
+{
+  "analysis_metadata": {
+    "name": "dot3svc",
+    "filepath": "C:\\WINDOWS\\system32\\dot3svc.dll",
+    "time": 2.857738971710205,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            16
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442488121
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            16
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180009184 id=0x180009184[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442488196
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442488274
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442485920
+          ],
+          "IfSpec": [
+            {
+              "address": 6442689040,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442489072,
+                  "name": "RpcOpenHandle"
+                },
+                {
+                  "address": 6442490032,
+                  "name": "RpcCloseHandle"
+                },
+                {
+                  "address": 6442490928,
+                  "name": "RpcEnumInterfaces"
+                },
+                {
+                  "address": 6442490960,
+                  "name": "RpcSetInterface"
+                },
+                {
+                  "address": 6442491056,
+                  "name": "RpcGetInterfaceState"
+                },
+                {
+                  "address": 6442491296,
+                  "name": "RpcReConnect"
+                },
+                {
+                  "address": 6442491376,
+                  "name": "RpcRegisterNotification"
+                },
+                {
+                  "address": 6442490448,
+                  "name": "RpcAsyncGetNotification"
+                },
+                {
+                  "address": 6442491888,
+                  "name": "RpcSetProfile"
+                },
+                {
+                  "address": 6442492192,
+                  "name": "RpcGetProfile"
+                },
+                {
+                  "address": 6442492464,
+                  "name": "RpcGetCurrentProfile"
+                },
+                {
+                  "address": 6442492736,
+                  "name": "RpcDeleteProfile"
+                },
+                {
+                  "address": 6442492992,
+                  "name": "RpcUIResponse"
+                },
+                {
+                  "address": 6442493248,
+                  "name": "RpcQueryUIRequest"
+                },
+                {
+                  "address": 6442493696,
+                  "name": "RpcSetProfileEapUserData"
+                },
+                {
+                  "address": 6442496176,
+                  "name": "RpcAsyncDoPlap"
+                },
+                {
+                  "address": 6442496688,
+                  "name": "RpcQueryPlapCredentials"
+                },
+                {
+                  "address": 6442496912,
+                  "name": "RpcCancelPlap"
+                },
+                {
+                  "address": 6442498352,
+                  "name": "RpcGetProfileEapUserDataInfo"
+                },
+                {
+                  "address": 6442499088,
+                  "name": "RpcSetAutoConfigParameter"
+                },
+                {
+                  "address": 6442499264,
+                  "name": "RpcQueryAutoConfigParameter"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442689008,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 467514022,
+                    "Data2": 49347,
+                    "Data3": 16830,
+                    "Data4": [
+                      "87",
+                      "03",
+                      "dd",
+                      "bd",
+                      "f4",
+                      "f0",
+                      "e8",
+                      "0a"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442688944,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "1BDDB2A6-C0C3-41BE-8703-DDBDF4F0E80A",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442485920": []
+          }
+        },
+        "callsite_address": 6442488350
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442695744,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442487908
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

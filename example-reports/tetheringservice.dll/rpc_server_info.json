@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "icssvc",
+    "filepath": "C:\\WINDOWS\\system32\\tetheringservice.dll",
+    "time": 2.4463698863983154,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -14,7 +14,7 @@
             {
               "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
               "RPC_IF_ALLOW_LOCAL_ONLY": true,
-              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
               "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
               "RPC_IF_ASYNC_CALLBACK": false,
               "RPC_IF_AUTOLISTEN": true,
@@ -24,48 +24,96 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            0
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442638592,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442477536,
+                  "name": "TetheringSvcGetSharingState"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
+                  "address": 6442477568,
+                  "name": "TetheringSvcGetDefaultInterface"
                 },
                 {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
+                  "address": 6442477632,
+                  "name": "TetheringSvcStartSharing"
                 },
                 {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442477936,
+                  "name": "TetheringSvcStopSharing"
+                },
+                {
+                  "address": 6442478016,
+                  "name": "TetheringSvcGetLastApiError"
+                },
+                {
+                  "address": 6442478048,
+                  "name": "TetheringSvcGetConfiguration"
+                },
+                {
+                  "address": 6442478080,
+                  "name": "TetheringSvcSetConfiguration"
+                },
+                {
+                  "address": 6442478176,
+                  "name": "TetheringSvcGetPeerList"
+                },
+                {
+                  "address": 6442478224,
+                  "name": "TetheringSvcGetSharedInterfaceIndices"
+                },
+                {
+                  "address": 6442478256,
+                  "name": "TetheringSvcGetMaxClientCount"
+                },
+                {
+                  "address": 6442478608,
+                  "name": "TetheringSvcAuthorize"
+                },
+                {
+                  "address": 6442478640,
+                  "name": "TetheringSvcGetErrorString"
+                },
+                {
+                  "address": 6442478736,
+                  "name": "TetheringSvcRpcSetPreferredInterface"
+                },
+                {
+                  "address": 6442478784,
+                  "name": "TetheringSvcRpcGetPreferredInterface"
+                },
+                {
+                  "address": 6442478896,
+                  "name": "TetheringSvcGetIsPeerlessTimeoutEnabled"
+                },
+                {
+                  "address": 6442478944,
+                  "name": "TetheringSvcSetIsPeerlessTimeoutEnabled"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442636928,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 3758893477,
+                    "Data2": 3938,
+                    "Data3": 19844,
                     "Data4": [
-                      "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "b7",
+                      "f0",
+                      "d2",
+                      "38",
+                      "7e",
+                      "41",
+                      "ed",
+                      "18"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +121,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442637344,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +148,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "E00C29A5-0F62-4D84-B7F0-D2387E41ED18",
                 "version": "1.0"
               }
             }
@@ -109,7 +157,7 @@
             1234
           ],
           "MaxRpcSize": [
-            4294967295
+            0
           ],
           "MgrEpv": [
             0
@@ -122,68 +170,20 @@
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442492080": [
+            "0": [
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
-                  }
-                ]
+                "extra_constraints": []
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442476655
       }
     ],
     "protseq_usage": [
@@ -194,7 +194,7 @@
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442645768,
               "string": "ncalrpc"
             }
           ],
@@ -203,7 +203,7 @@
           ],
           "api_function": "RpcServerUseProtseqW"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442476525
       }
     ],
     "rpc_constraints": {}

@@ -1,0 +1,262 @@
+{
+  "analysis_metadata": {
+    "name": "BDESVC",
+    "filepath": "C:\\WINDOWS\\system32\\bdesvc.dll",
+    "time": 8.98929214477539,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442474507
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442885200,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442703680,
+                  "name": "BdeSvcApipAddRecoveryPassword"
+                },
+                {
+                  "address": 6442706992,
+                  "name": "BdeSvcApipConversionEncrypt"
+                },
+                {
+                  "address": 6442716768,
+                  "name": "BdeSvcApipEventTrigger"
+                },
+                {
+                  "address": 6442704192,
+                  "name": "BdeSvcApipChangeProtector"
+                },
+                {
+                  "address": 6442707168,
+                  "name": "BdeSvcApipConversionEncryptEx"
+                },
+                {
+                  "address": 6442706768,
+                  "name": "BdeSvcApipCheckADSchema"
+                },
+                {
+                  "address": 6442721440,
+                  "name": "BdeSvcApipQueryCachedEASProtectionStatus"
+                },
+                {
+                  "address": 6442707936,
+                  "name": "BdeSvcApipDoTurnOnDeviceEncryption"
+                },
+                {
+                  "address": 6442711920,
+                  "name": "BdeSvcApipEnableSilentDeviceEncryption"
+                },
+                {
+                  "address": 6442708272,
+                  "name": "BdeSvcApipEnableSilentBitLocker"
+                },
+                {
+                  "address": 6442720080,
+                  "name": "BdeSvcApipIsEncryptableFDVPresent"
+                },
+                {
+                  "address": 6442721536,
+                  "name": "BdeSvcApipRotateRecoveryPasswords"
+                },
+                {
+                  "address": 6442719280,
+                  "name": "BdeSvcApipGetRotateRecoveryPasswordsStatus"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442893584,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2924856512,
+                    "Data2": 25806,
+                    "Data3": 4573,
+                    "Data4": [
+                      "ad",
+                      "8b",
+                      "08",
+                      "00",
+                      "20",
+                      "0c",
+                      "9a",
+                      "66"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442893520,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "AE55C4C0-64CE-11DD-AD8B-0800200C9A66",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442474360
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            0
+          ],
+          "Protseq": [
+            {
+              "address": 6442901736,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442474445
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

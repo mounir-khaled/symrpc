@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "DsSvc",
+    "filepath": "C:\\WINDOWS\\system32\\dssvc.dll",
+    "time": 1.5499463081359863,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -24,48 +24,64 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            0
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442559632,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442469360,
+                  "name": "RpcDSSCreateSharedFileToken"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
+                  "address": 6442469888,
+                  "name": "RpcDSSGetSharedFileName"
                 },
                 {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
+                  "address": 6442470208,
+                  "name": "RpcDSSGetSharingTokenInformation"
                 },
                 {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442470672,
+                  "name": "RpcDSSDelegateSharingToken"
+                },
+                {
+                  "address": 6442471120,
+                  "name": "RpcDSSRemoveSharingToken"
+                },
+                {
+                  "address": 6442471536,
+                  "name": "RpcDSSOpenSharedFile"
+                },
+                {
+                  "address": 6442472016,
+                  "name": "RpcDSSCopyFromSharedFile"
+                },
+                {
+                  "address": 6442472448,
+                  "name": "RpcDSSRemoveExpiredTokens"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442559728,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 3209546002,
+                    "Data2": 58671,
+                    "Data3": 18692,
                     "Data4": [
-                      "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "8e",
+                      "be",
+                      "93",
+                      "17",
+                      "c1",
+                      "bd",
+                      "d4",
+                      "97"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +89,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442559232,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +116,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "BF4DC912-E52F-4904-8EBE-9317C1BDD497",
                 "version": "1.0"
               }
             }
@@ -109,7 +125,7 @@
             1234
           ],
           "MaxRpcSize": [
-            4294967295
+            0
           ],
           "MgrEpv": [
             0
@@ -122,68 +138,51 @@
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442492080": [
+            "0": [
               {
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
-                  }
-                ]
+                "extra_constraints": []
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442535940
       }
     ],
     "protseq_usage": [
@@ -194,16 +193,22 @@
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442581904,
               "string": "ncalrpc"
             }
           ],
           "SecurityDescriptor": [
-            0
+            0,
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x180014af6 id=0x180014af6[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
           ],
           "api_function": "RpcServerUseProtseqW"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442535670
       }
     ],
     "rpc_constraints": {}

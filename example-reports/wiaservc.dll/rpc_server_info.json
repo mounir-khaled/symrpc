@@ -1,0 +1,225 @@
+{
+  "analysis_metadata": {
+    "name": "stisvc",
+    "filepath": "C:\\WINDOWS\\system32\\wiaservc.dll",
+    "time": 279.3099763393402,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442564505
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442577600
+          ],
+          "IfSpec": [
+            {
+              "address": 6442983920,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442779040,
+                  "name": "R_StiApiGetVersion"
+                },
+                {
+                  "address": 6442777872,
+                  "name": "R_StiApiEnableHwNotifications"
+                },
+                {
+                  "address": 6442778336,
+                  "name": "R_StiApiGetHwNotificationState"
+                },
+                {
+                  "address": 6442779280,
+                  "name": "R_StiApiLaunchApplication"
+                },
+                {
+                  "address": 6442780592,
+                  "name": "R_StiApiOpenDevice"
+                },
+                {
+                  "address": 6442781328,
+                  "name": "R_StiApiSubscribe"
+                },
+                {
+                  "address": 6442778720,
+                  "name": "R_StiApiGetLastNotificationData"
+                },
+                {
+                  "address": 6442781664,
+                  "name": "R_StiApiUnSubscribe"
+                },
+                {
+                  "address": 6442777616,
+                  "name": "R_StiApiCloseDevice"
+                },
+                {
+                  "address": 6442779888,
+                  "name": "R_StiApiLockDevice"
+                },
+                {
+                  "address": 6442781968,
+                  "name": "R_StiApiUnlockDevice"
+                },
+                {
+                  "address": 6442782592,
+                  "name": "R_WiaGetEventDataAsync"
+                },
+                {
+                  "address": 6442499632,
+                  "name": "OpenClientConnection"
+                },
+                {
+                  "address": 6442777472,
+                  "name": "CloseClientConnection"
+                },
+                {
+                  "address": 6442481920,
+                  "name": "RegisterUnregisterForEventNotification"
+                },
+                {
+                  "address": 6442460944,
+                  "name": "WiaGetRuntimetEventDataAsync"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442986448,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 2356833760,
+                    "Data2": 30861,
+                    "Data3": 4560,
+                    "Data4": [
+                      "9e",
+                      "df",
+                      "44",
+                      "45",
+                      "53",
+                      "54",
+                      "00",
+                      "00"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442985776,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "8C7A6DE0-788D-11D0-9EDF-444553540000",
+                "version": "2.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442577600": []
+          }
+        },
+        "callsite_address": 6442564319
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443072152,
+              "string": "STI_LRPC"
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "Protseq": [
+            {
+              "address": 6443071304,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x18001ba6f id=0x18001ba6a[5] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base - 0x90>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442564202
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

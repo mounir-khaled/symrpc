@@ -1,0 +1,397 @@
+{
+  "analysis_metadata": {
+    "name": "Dnscache",
+    "filepath": "C:\\WINDOWS\\system32\\dnsrslvr.dll",
+    "time": 8.086377382278442,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442509184
+          ],
+          "IfSpec": [
+            {
+              "address": 6442708992,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442631424,
+                  "name": "R_ReadCache"
+                },
+                {
+                  "address": 6442455840,
+                  "name": "R_ResolverGetConfig"
+                },
+                {
+                  "address": 6442629632,
+                  "name": "R_ResolverFlushCache"
+                },
+                {
+                  "address": 6442455120,
+                  "name": "R_ResolverFlushCacheEntry"
+                },
+                {
+                  "address": 6442464448,
+                  "name": "R_ResolverQuery"
+                },
+                {
+                  "address": 6442628672,
+                  "name": "R_DnsRegisterLocal"
+                },
+                {
+                  "address": 6442628400,
+                  "name": "R_DnsDeRegisterLocal"
+                },
+                {
+                  "address": 6442457392,
+                  "name": "R_DnsStartMulticastQuery"
+                },
+                {
+                  "address": 6442496144,
+                  "name": "R_DnsGetMulticastData"
+                },
+                {
+                  "address": 6442499744,
+                  "name": "R_DnsStopMulticastQuery"
+                },
+                {
+                  "address": 6442502336,
+                  "name": "R_ResolverSimpleOp"
+                },
+                {
+                  "address": 6442507520,
+                  "name": "R_DnsGetProxyInformation"
+                },
+                {
+                  "address": 6442628592,
+                  "name": "R_DnsGetPolicyTableInfo"
+                },
+                {
+                  "address": 6442533904,
+                  "name": "R_DnsSetConnectionPolicyInfo"
+                },
+                {
+                  "address": 6442533968,
+                  "name": "R_DnsDeleteConnectionPolicyInfo"
+                },
+                {
+                  "address": 6442628656,
+                  "name": "R_DnsGetSettingsImpHandle"
+                },
+                {
+                  "address": 6442628656,
+                  "name": "R_DnsGetSettingsImpHandle"
+                },
+                {
+                  "address": 6442629616,
+                  "name": "R_DnsSetSettings"
+                },
+                {
+                  "address": 6442629616,
+                  "name": "R_DnsSetSettings"
+                },
+                {
+                  "address": 6442628544,
+                  "name": "R_DnsGetInterfaceSettingsImpHandle"
+                },
+                {
+                  "address": 6442628544,
+                  "name": "R_DnsGetInterfaceSettingsImpHandle"
+                },
+                {
+                  "address": 6442629136,
+                  "name": "R_DnsSetInterfaceSettingsImpHandle"
+                },
+                {
+                  "address": 6442629136,
+                  "name": "R_DnsSetInterfaceSettingsImpHandle"
+                },
+                {
+                  "address": 6442478000,
+                  "name": "R_DnsGetAdaptersInfo"
+                },
+                {
+                  "address": 6442629184,
+                  "name": "R_DnsSetNrptRules"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442715440,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1165454081,
+                    "Data2": 22870,
+                    "Data3": 17541,
+                    "Data4": [
+                      "9f",
+                      "80",
+                      "f4",
+                      "28",
+                      "f7",
+                      "d6",
+                      "01",
+                      "29"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442715376,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "45776B01-5956-4485-9F80-F428F7D60129",
+                "version": "2.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            6442732368
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442509184": []
+          }
+        },
+        "callsite_address": 6442524649
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442673936
+          ],
+          "IfSpec": [
+            {
+              "address": 6442709600,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442674672,
+                  "name": "s_HvsiK_CloseHandle"
+                },
+                {
+                  "address": 6442675040,
+                  "name": "s_HvsiK_JoinHandles"
+                },
+                {
+                  "address": 6442674304,
+                  "name": "s_HvsiK_CloneHandle"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442712496,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3123116035,
+                    "Data2": 61589,
+                    "Data3": 16617,
+                    "Data4": [
+                      "b5",
+                      "e1",
+                      "0a",
+                      "fc",
+                      "44",
+                      "e1",
+                      "84",
+                      "79"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442712432,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "BA26F803-F095-40E9-B5E1-0AFC44E18479",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442673936": [
+              {
+                "call_attributes": [
+                  {
+                    "KernelModeCaller": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7770_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7771_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeffa0_7820_64{UNINITIALIZED} == 0xd000000000000000>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442674176
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442733248,
+              "string": "DNSResolver"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442733232,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            6442732368
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442524588
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442753872,
+              "string": "IHvsiKLrpcEp001"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442733232,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442674108
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

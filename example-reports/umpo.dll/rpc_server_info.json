@@ -1,0 +1,284 @@
+{
+  "analysis_metadata": {
+    "name": "Power",
+    "filepath": "C:\\WINDOWS\\system32\\umpo.dll",
+    "time": 2.3696632385253906,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442545232,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442521088,
+                  "name": "UmpoRpcGetPowerConfiguration"
+                },
+                {
+                  "address": 6442521856,
+                  "name": "UmpoRpcReadFromSystemPowerKey"
+                },
+                {
+                  "address": 6442460688,
+                  "name": "UmpoRpcReadFromUserPowerKey"
+                },
+                {
+                  "address": 6442458320,
+                  "name": "UmpoRpcReadACValue"
+                },
+                {
+                  "address": 6442521648,
+                  "name": "UmpoRpcReadDCValue"
+                },
+                {
+                  "address": 6442523568,
+                  "name": "UmpoRpcWriteToSystemPowerKey"
+                },
+                {
+                  "address": 6442523696,
+                  "name": "UmpoRpcWriteToUserPowerKey"
+                },
+                {
+                  "address": 6442519664,
+                  "name": "UmpoRpcApplyPowerRequestOverride"
+                },
+                {
+                  "address": 6442519872,
+                  "name": "UmpoRpcApplyPowerSetting"
+                },
+                {
+                  "address": 6442481728,
+                  "name": "UmpoRpcSetActiveScheme"
+                },
+                {
+                  "address": 6442461072,
+                  "name": "UmpoRpcGetActiveScheme"
+                },
+                {
+                  "address": 6442522928,
+                  "name": "UmpoRpcSetActiveOverlayScheme"
+                },
+                {
+                  "address": 6442520480,
+                  "name": "UmpoRpcGetActualOverlayScheme"
+                },
+                {
+                  "address": 6442520800,
+                  "name": "UmpoRpcGetEffectiveOverlayScheme"
+                },
+                {
+                  "address": 6442520960,
+                  "name": "UmpoRpcGetOverlaySchemes"
+                },
+                {
+                  "address": 6442522192,
+                  "name": "UmpoRpcRestoreDefaultScheme"
+                },
+                {
+                  "address": 6442522304,
+                  "name": "UmpoRpcRestoreDefaultSchemesAll"
+                },
+                {
+                  "address": 6442520304,
+                  "name": "UmpoRpcDuplicateScheme"
+                },
+                {
+                  "address": 6442520224,
+                  "name": "UmpoRpcDeleteScheme"
+                },
+                {
+                  "address": 6442521152,
+                  "name": "UmpoRpcImportScheme"
+                },
+                {
+                  "address": 6442522096,
+                  "name": "UmpoRpcReplaceDefaultPowerSchemes"
+                },
+                {
+                  "address": 6442460240,
+                  "name": "UmpoRpcLegacyEventRegisterNotification"
+                },
+                {
+                  "address": 6442459984,
+                  "name": "UmpoRpcEnumerate"
+                },
+                {
+                  "address": 6442522016,
+                  "name": "UmpoRpcReadSecurityDescriptor"
+                },
+                {
+                  "address": 6442523488,
+                  "name": "UmpoRpcWriteSecurityDescriptor"
+                },
+                {
+                  "address": 6442461984,
+                  "name": "UmpoRpcSettingAccessCheck"
+                },
+                {
+                  "address": 6442520208,
+                  "name": "UmpoRpcCreateSetting"
+                },
+                {
+                  "address": 6442520192,
+                  "name": "UmpoRpcCreatePossibleSetting"
+                },
+                {
+                  "address": 6442522064,
+                  "name": "UmpoRpcRemoveSetting"
+                },
+                {
+                  "address": 6442523872,
+                  "name": "UmpoSetExpectedUserAwayIntervals"
+                },
+                {
+                  "address": 6442519520,
+                  "name": "UmpoClearExpectedUserAwayIntervals"
+                },
+                {
+                  "address": 6442519584,
+                  "name": "UmpoGetMinUserAwayPredictionInterval"
+                },
+                {
+                  "address": 6442520656,
+                  "name": "UmpoRpcGetAdaptiveStandbyDiagnostics"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442549752,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1822129046,
+                    "Data2": 17832,
+                    "Data3": 19658,
+                    "Data4": [
+                      "9e",
+                      "b3",
+                      "e2",
+                      "1c",
+                      "cf",
+                      "8b",
+                      "5a",
+                      "89"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 1
+                  }
+                },
+                "InterpreterInfo": 6442549072,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "6C9B7B96-45A8-4CCA-9EB3-E21CCF8B5A89",
+                "version": "1.1"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442522796
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442563168,
+              "string": "umpo"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442563184,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442522747
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

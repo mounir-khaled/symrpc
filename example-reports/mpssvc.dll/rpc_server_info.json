@@ -1,0 +1,154 @@
+{
+  "analysis_metadata": {
+    "name": "mpssvc",
+    "filepath": "C:\\WINDOWS\\system32\\mpssvc.dll",
+    "time": 6.978520631790161,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18003379c id=0x18003379c[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442661788
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallback": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442661479}}>}, Atom:<Mem SP-0x348<8> (stack)>, Codeloc:<0x180033667 id=0x180033649[63] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180033682 id=0x180033649[95] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442661449
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x180033625 id=0x180033610[40] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442661392
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

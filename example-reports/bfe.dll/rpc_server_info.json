@@ -1,0 +1,1954 @@
+{
+  "analysis_metadata": {
+    "name": "bfe",
+    "filepath": "C:\\WINDOWS\\system32\\bfe.dll",
+    "time": 28.323301315307617,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442513536
+          ],
+          "IfSpec": [
+            {
+              "address": 6442932672,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442468560,
+                  "name": "BfeRpcGetNextNotificationBatch"
+                },
+                {
+                  "address": 6442699856,
+                  "name": "BfeRpcNotifyComplete"
+                },
+                {
+                  "address": 6442479072,
+                  "name": "BfeRpcEngineOpen"
+                },
+                {
+                  "address": 6442460144,
+                  "name": "BfeRpcEngineClose"
+                },
+                {
+                  "address": 6442468704,
+                  "name": "BfeRpcEngineGetOption"
+                },
+                {
+                  "address": 6442596528,
+                  "name": "BfeRpcEngineSetOption"
+                },
+                {
+                  "address": 6442696592,
+                  "name": "BfeRpcEngineGetSecurityInfo"
+                },
+                {
+                  "address": 6442696784,
+                  "name": "BfeRpcEngineSetSecurityInfo"
+                },
+                {
+                  "address": 6442702672,
+                  "name": "BfeRpcSessionCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442467600,
+                  "name": "BfeRpcTransactionBegin"
+                },
+                {
+                  "address": 6442513408,
+                  "name": "BfeRpcTransactionCommit"
+                },
+                {
+                  "address": 6442703184,
+                  "name": "BfeRpcTransactionAbort"
+                },
+                {
+                  "address": 6442562864,
+                  "name": "BfeRpcProviderAdd"
+                },
+                {
+                  "address": 6442702208,
+                  "name": "BfeRpcProviderDeleteByKey"
+                },
+                {
+                  "address": 6442702240,
+                  "name": "BfeRpcProviderGetByKey"
+                },
+                {
+                  "address": 6442702160,
+                  "name": "BfeRpcProviderCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442702272,
+                  "name": "BfeRpcProviderGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442702320,
+                  "name": "BfeRpcProviderSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442702368,
+                  "name": "BfeRpcProviderSubscribeChanges"
+                },
+                {
+                  "address": 6442702464,
+                  "name": "BfeRpcProviderUnsubscribeChanges"
+                },
+                {
+                  "address": 6442702432,
+                  "name": "BfeRpcProviderSubscriptionsGet"
+                },
+                {
+                  "address": 6442562768,
+                  "name": "BfeRpcProviderContextAdd"
+                },
+                {
+                  "address": 6442701760,
+                  "name": "BfeRpcProviderContextDeleteById"
+                },
+                {
+                  "address": 6442701792,
+                  "name": "BfeRpcProviderContextDeleteByKey"
+                },
+                {
+                  "address": 6442701824,
+                  "name": "BfeRpcProviderContextGetById"
+                },
+                {
+                  "address": 6442701872,
+                  "name": "BfeRpcProviderContextGetByKey"
+                },
+                {
+                  "address": 6442701712,
+                  "name": "BfeRpcProviderContextCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442701920,
+                  "name": "BfeRpcProviderContextGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442701968,
+                  "name": "BfeRpcProviderContextSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442702016,
+                  "name": "BfeRpcProviderContextSubscribeChanges"
+                },
+                {
+                  "address": 6442702128,
+                  "name": "BfeRpcProviderContextUnsubscribeChanges"
+                },
+                {
+                  "address": 6442702080,
+                  "name": "BfeRpcProviderContextSubscriptionsGet"
+                },
+                {
+                  "address": 6442562928,
+                  "name": "BfeRpcSubLayerAdd"
+                },
+                {
+                  "address": 6442702864,
+                  "name": "BfeRpcSubLayerDeleteByKey"
+                },
+                {
+                  "address": 6442702896,
+                  "name": "BfeRpcSubLayerGetByKey"
+                },
+                {
+                  "address": 6442702816,
+                  "name": "BfeRpcSubLayerCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442702944,
+                  "name": "BfeRpcSubLayerGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442702992,
+                  "name": "BfeRpcSubLayerSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442703040,
+                  "name": "BfeRpcSubLayerSubscribeChanges"
+                },
+                {
+                  "address": 6442703152,
+                  "name": "BfeRpcSubLayerUnsubscribeChanges"
+                },
+                {
+                  "address": 6442703104,
+                  "name": "BfeRpcSubLayerSubscriptionsGet"
+                },
+                {
+                  "address": 6442698832,
+                  "name": "BfeRpcLayerGetById"
+                },
+                {
+                  "address": 6442698880,
+                  "name": "BfeRpcLayerGetByKey"
+                },
+                {
+                  "address": 6442698784,
+                  "name": "BfeRpcLayerCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442698928,
+                  "name": "BfeRpcLayerGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442698976,
+                  "name": "BfeRpcLayerSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442562992,
+                  "name": "BfeRpcCalloutAdd"
+                },
+                {
+                  "address": 6442694304,
+                  "name": "BfeRpcCalloutDeleteById"
+                },
+                {
+                  "address": 6442694336,
+                  "name": "BfeRpcCalloutDeleteByKey"
+                },
+                {
+                  "address": 6442694368,
+                  "name": "BfeRpcCalloutGetById"
+                },
+                {
+                  "address": 6442694416,
+                  "name": "BfeRpcCalloutGetByKey"
+                },
+                {
+                  "address": 6442694256,
+                  "name": "BfeRpcCalloutCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442694464,
+                  "name": "BfeRpcCalloutGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442694512,
+                  "name": "BfeRpcCalloutSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442694560,
+                  "name": "BfeRpcCalloutSubscribeChanges"
+                },
+                {
+                  "address": 6442694672,
+                  "name": "BfeRpcCalloutUnsubscribeChanges"
+                },
+                {
+                  "address": 6442694624,
+                  "name": "BfeRpcCalloutSubscriptionsGet"
+                },
+                {
+                  "address": 6442494768,
+                  "name": "BfeRpcFilterAdd"
+                },
+                {
+                  "address": 6442493488,
+                  "name": "BfeRpcFilterDeleteById"
+                },
+                {
+                  "address": 6442538240,
+                  "name": "BfeRpcFilterDeleteByKey"
+                },
+                {
+                  "address": 6442696960,
+                  "name": "BfeRpcFilterGetById"
+                },
+                {
+                  "address": 6442492048,
+                  "name": "BfeRpcFilterGetByKey"
+                },
+                {
+                  "address": 6442589648,
+                  "name": "BfeRpcFilterCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442697008,
+                  "name": "BfeRpcFilterGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442697056,
+                  "name": "BfeRpcFilterSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442546096,
+                  "name": "BfeRpcFilterSubscribeChanges"
+                },
+                {
+                  "address": 6442697152,
+                  "name": "BfeRpcFilterUnsubscribeChanges"
+                },
+                {
+                  "address": 6442697104,
+                  "name": "BfeRpcFilterSubscriptionsGet"
+                },
+                {
+                  "address": 6442689216,
+                  "name": "BfeRpcBfeIPsecOffloadDone"
+                },
+                {
+                  "address": 6442687696,
+                  "name": "BfeRpcBfeIPsecDosFWUsed"
+                },
+                {
+                  "address": 6442689088,
+                  "name": "BfeRpcBfeIPsecGetStatistics"
+                },
+                {
+                  "address": 6442690816,
+                  "name": "BfeRpcBfeIPsecSaContextCreate"
+                },
+                {
+                  "address": 6442691152,
+                  "name": "BfeRpcBfeIPsecSaContextDeleteById"
+                },
+                {
+                  "address": 6442691344,
+                  "name": "BfeRpcBfeIPsecSaContextGetById"
+                },
+                {
+                  "address": 6442691456,
+                  "name": "BfeRpcBfeIPsecSaContextGetOrSetSpi"
+                },
+                {
+                  "address": 6442690288,
+                  "name": "BfeRpcBfeIPsecSaContextAddInbound"
+                },
+                {
+                  "address": 6442690544,
+                  "name": "BfeRpcBfeIPsecSaContextAddOutbound"
+                },
+                {
+                  "address": 6442692016,
+                  "name": "BfeRpcBfeIPsecSaContextUpdate"
+                },
+                {
+                  "address": 6442691248,
+                  "name": "BfeRpcBfeIPsecSaContextExpire"
+                },
+                {
+                  "address": 6442690992,
+                  "name": "BfeRpcBfeIPsecSaContextCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442691600,
+                  "name": "BfeRpcBfeIPsecSaContextSubscribe"
+                },
+                {
+                  "address": 6442691920,
+                  "name": "BfeRpcBfeIPsecSaContextUnsubscribe"
+                },
+                {
+                  "address": 6442691808,
+                  "name": "BfeRpcBfeIPsecSaContextSubscriptionsGet"
+                },
+                {
+                  "address": 6442692160,
+                  "name": "BfeRpcBfeIPsecSaCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442692320,
+                  "name": "BfeRpcBfeIPsecSaDbGetSecurityInfo"
+                },
+                {
+                  "address": 6442692512,
+                  "name": "BfeRpcBfeIPsecSaDbSetSecurityInfo"
+                },
+                {
+                  "address": 6442687984,
+                  "name": "BfeRpcBfeIPsecDospGetStatistics"
+                },
+                {
+                  "address": 6442688288,
+                  "name": "BfeRpcBfeIPsecDospStateCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442688448,
+                  "name": "BfeRpcBfeIPsecDospStateDestroyEnumHandle"
+                },
+                {
+                  "address": 6442687792,
+                  "name": "BfeRpcBfeIPsecDospGetSecurityInfo"
+                },
+                {
+                  "address": 6442688112,
+                  "name": "BfeRpcBfeIPsecDospSetSecurityInfo"
+                },
+                {
+                  "address": 6442699024,
+                  "name": "BfeRpcNetEventCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442699392,
+                  "name": "BfeRpcNetEventsGetSecurityInfo"
+                },
+                {
+                  "address": 6442699680,
+                  "name": "BfeRpcNetEventsSetSecurityInfo"
+                },
+                {
+                  "address": 6442545552,
+                  "name": "BfeRpcNetEventSubscribe"
+                },
+                {
+                  "address": 6442699296,
+                  "name": "BfeRpcNetEventUnsubscribe"
+                },
+                {
+                  "address": 6442699184,
+                  "name": "BfeRpcNetEventSubscriptionsGet"
+                },
+                {
+                  "address": 6442699584,
+                  "name": "BfeRpcNetEventsLost"
+                },
+                {
+                  "address": 6442695216,
+                  "name": "BfeRpcConnectionGetById"
+                },
+                {
+                  "address": 6442695072,
+                  "name": "BfeRpcConnectionGetByIPsecInfo"
+                },
+                {
+                  "address": 6442695328,
+                  "name": "BfeRpcConnectionGetByS2STunnelId"
+                },
+                {
+                  "address": 6442694928,
+                  "name": "BfeRpcConnectionCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442695648,
+                  "name": "BfeRpcConnectionGetSecurityInfo"
+                },
+                {
+                  "address": 6442695840,
+                  "name": "BfeRpcConnectionSetSecurityInfo"
+                },
+                {
+                  "address": 6442695472,
+                  "name": "BfeRpcConnectionGetS2STunnelId"
+                },
+                {
+                  "address": 6442696016,
+                  "name": "BfeRpcConnectionSubscribe"
+                },
+                {
+                  "address": 6442696304,
+                  "name": "BfeRpcConnectionUnsubscribe"
+                },
+                {
+                  "address": 6442696192,
+                  "name": "BfeRpcConnectionSubscriptionsGet"
+                },
+                {
+                  "address": 6442696400,
+                  "name": "BfeRpcConnectionsLost"
+                },
+                {
+                  "address": 6442694704,
+                  "name": "BfeRpcClassify"
+                },
+                {
+                  "address": 6442686464,
+                  "name": "BfeRpcAddLayerReplica"
+                },
+                {
+                  "address": 6442696496,
+                  "name": "BfeRpcDeleteLayerReplica"
+                },
+                {
+                  "address": 6442702496,
+                  "name": "BfeRpcSecureSocketAdd"
+                },
+                {
+                  "address": 6442693504,
+                  "name": "BfeRpcBfeIPsecTunnelDeleteByKey"
+                },
+                {
+                  "address": 6442692816,
+                  "name": "BfeRpcBfeIPsecTunnelAdd"
+                },
+                {
+                  "address": 6442693264,
+                  "name": "BfeRpcBfeIPsecTunnelAddConditions"
+                },
+                {
+                  "address": 6442689344,
+                  "name": "BfeRpcBfeIPsecS2STunnelAddConditions"
+                },
+                {
+                  "address": 6442689904,
+                  "name": "BfeRpcBfeIPsecS2STunnelRemoveConditions"
+                },
+                {
+                  "address": 6442693504,
+                  "name": "BfeRpcBfeIPsecTunnelDeleteByKey"
+                },
+                {
+                  "address": 6442689600,
+                  "name": "BfeRpcBfeIPsecS2STunnelAddInterfaceToCompartment"
+                },
+                {
+                  "address": 6442689760,
+                  "name": "BfeRpcBfeIPsecS2STunnelGetInterfaceForCompartment"
+                },
+                {
+                  "address": 6442690144,
+                  "name": "BfeRpcBfeIPsecS2STunnelRemoveInterfaceFromCompartment"
+                },
+                {
+                  "address": 6442692688,
+                  "name": "BfeRpcBfeIPsecSaInitiateAsync"
+                },
+                {
+                  "address": 6442701520,
+                  "name": "BfeRpcOpenToken"
+                },
+                {
+                  "address": 6442694880,
+                  "name": "BfeRpcCloseToken"
+                },
+                {
+                  "address": 6442687264,
+                  "name": "BfeRpcAleExplicitCredentialsQuery"
+                },
+                {
+                  "address": 6442686752,
+                  "name": "BfeRpcAleEndpointGetById"
+                },
+                {
+                  "address": 6442686592,
+                  "name": "BfeRpcAleEndpointCreateEnumHandle"
+                },
+                {
+                  "address": 6442593856,
+                  "name": "BfeRpcConnectionEnum"
+                },
+                {
+                  "address": 6442596944,
+                  "name": "BfeRpcCalloutDestroyEnumHandle"
+                },
+                {
+                  "address": 6442686896,
+                  "name": "BfeRpcAleEndpointGetSecurityInfo"
+                },
+                {
+                  "address": 6442687088,
+                  "name": "BfeRpcAleEndpointSetSecurityInfo"
+                },
+                {
+                  "address": 6442687376,
+                  "name": "BfeRpcAleGetPortStatus"
+                },
+                {
+                  "address": 6442697360,
+                  "name": "BfeRpcIsUserAuthConfigured"
+                },
+                {
+                  "address": 6442698432,
+                  "name": "BfeRpcKeyModuleAdd"
+                },
+                {
+                  "address": 6442698544,
+                  "name": "BfeRpcKeyModuleDeleteByKey"
+                },
+                {
+                  "address": 6442698640,
+                  "name": "BfeRpcKeyModuleUpdateAcquire"
+                },
+                {
+                  "address": 6442697392,
+                  "name": "BfeRpcKeyDictatorCheck"
+                },
+                {
+                  "address": 6442697184,
+                  "name": "BfeRpcGetKeyFromDictator"
+                },
+                {
+                  "address": 6442699968,
+                  "name": "BfeRpcNotifyKey"
+                },
+                {
+                  "address": 6442697552,
+                  "name": "BfeRpcKeyManagerAdd"
+                },
+                {
+                  "address": 6442697856,
+                  "name": "BfeRpcKeyManagerDeleteByKey"
+                },
+                {
+                  "address": 6442698320,
+                  "name": "BfeRpcKeyManagersGet"
+                },
+                {
+                  "address": 6442697952,
+                  "name": "BfeRpcKeyManagerGetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442698128,
+                  "name": "BfeRpcKeyManagerSetSecurityInfoByKey"
+                },
+                {
+                  "address": 6442704704,
+                  "name": "BfeRpcvSwitchEventFire"
+                },
+                {
+                  "address": 6442705120,
+                  "name": "BfeRpcvSwitchEventsGetSecurityInfo"
+                },
+                {
+                  "address": 6442705312,
+                  "name": "BfeRpcvSwitchEventsSetSecurityInfo"
+                },
+                {
+                  "address": 6442704800,
+                  "name": "BfeRpcvSwitchEventSubscribe"
+                },
+                {
+                  "address": 6442705024,
+                  "name": "BfeRpcvSwitchEventUnsubscribe"
+                },
+                {
+                  "address": 6442704992,
+                  "name": "BfeRpcvSwitchEventSubscriptionsGet"
+                },
+                {
+                  "address": 6442688624,
+                  "name": "BfeRpcBfeIPsecDriverInitiateAcquire"
+                },
+                {
+                  "address": 6442688480,
+                  "name": "BfeRpcBfeIPsecDriverExpire"
+                },
+                {
+                  "address": 6442688976,
+                  "name": "BfeRpcBfeIPsecDriverSaOffloaded"
+                },
+                {
+                  "address": 6442688880,
+                  "name": "BfeRpcBfeIPsecDriverProcessClearTextResponse"
+                },
+                {
+                  "address": 6442693536,
+                  "name": "BfeRpcBfeProcessNameResolutionEvent"
+                },
+                {
+                  "address": 6442703712,
+                  "name": "BfeRpcVpnTriggerEventFire"
+                },
+                {
+                  "address": 6442703808,
+                  "name": "BfeRpcVpnTriggerEventSubscribe"
+                },
+                {
+                  "address": 6442704016,
+                  "name": "BfeRpcVpnTriggerEventUnsubscribe"
+                },
+                {
+                  "address": 6442703296,
+                  "name": "BfeRpcVpnTriggerAddAppSids"
+                },
+                {
+                  "address": 6442704208,
+                  "name": "BfeRpcVpnTriggerRemoveAppSids"
+                },
+                {
+                  "address": 6442703408,
+                  "name": "BfeRpcVpnTriggerAddFilePaths"
+                },
+                {
+                  "address": 6442704288,
+                  "name": "BfeRpcVpnTriggerRemoveFilePaths"
+                },
+                {
+                  "address": 6442703520,
+                  "name": "BfeRpcVpnTriggerAddSecurityDescriptor"
+                },
+                {
+                  "address": 6442704368,
+                  "name": "BfeRpcVpnTriggerRemoveSecurityDescriptor"
+                },
+                {
+                  "address": 6442704528,
+                  "name": "BfeRpcVpnTriggerSetStateDisconnected"
+                },
+                {
+                  "address": 6442704112,
+                  "name": "BfeRpcVpnTriggerInitializeNrptTriggering"
+                },
+                {
+                  "address": 6442704624,
+                  "name": "BfeRpcVpnTriggerUninitializeNrptTriggering"
+                },
+                {
+                  "address": 6442704448,
+                  "name": "BfeRpcVpnTriggerResetNrptTriggering"
+                },
+                {
+                  "address": 6442703616,
+                  "name": "BfeRpcVpnTriggerConfigureParameters"
+                },
+                {
+                  "address": 6442694224,
+                  "name": "BfeRpcBitmapIndexGet"
+                },
+                {
+                  "address": 6442694192,
+                  "name": "BfeRpcBitmapIndexFree"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442997456,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3712549925,
+                    "Data2": 21285,
+                    "Data3": 17765,
+                    "Data4": [
+                      "b7",
+                      "74",
+                      "7e",
+                      "27",
+                      "d6",
+                      "c0",
+                      "9c",
+                      "24"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442997392,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "DD490425-5325-4565-B774-7E27D6C09C24",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442513536": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x0 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x0 == 0xffffffffff000000>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:1] == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x4 == 0xffffffffff000004>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x1>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:2] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[1:0] <= 2)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x8 == 0xffffffffff000008>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x2>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:2] == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0xc == 0xffffffffff00000c>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x3>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:3] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[2:0] <= 4)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x10 == 0xffffffffff000010>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x4>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:3] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[2:0] <= 5)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x14 == 0xffffffffff000014>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x5>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:3] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[2:0] <= 6)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x18 == 0xffffffffff000018>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x6>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:3] == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x1c == 0xffffffffff00001c>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x7>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:4] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[3:0] <= 9)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x24 == 0xffffffffff000024>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x9>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:4] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[3:0] <= 10)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x28 == 0xffffffffff000028>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0xa>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:4] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[3:0] <= 11)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x2c == 0xffffffffff00002c>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0xb>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 4,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "ProtocolSequence": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_7953_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_7954_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[63:4] == 0x0) || !(.data_global_0x1800d33f0_7992_64{UNINITIALIZED}[3:0] <= 8)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} == 0xffffffffff000000>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f8_7993_64{UNINITIALIZED} + 0x20 == 0xffffffffff000020>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800d33f0_7992_64{UNINITIALIZED} != 0x8>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442595838
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x1800235dc id=0x1800235ba[54] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442595768
+      },
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x1800235dc id=0x1800235ba[54] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442595770
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

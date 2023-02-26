@@ -1,12 +1,31 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "SstpSvc",
+    "filepath": "C:\\WINDOWS\\system32\\sstpsvc.dll",
+    "time": 1.236067533493042,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
-    "auth_registration": [],
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoA"
+        },
+        "callsite_address": 6442581076
+      }
+    ],
     "interface_registration": [
       {
         "arguments": {
@@ -24,48 +43,52 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            6442580896
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442582192,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442531344,
+                  "name": "SstpSvcSetConfig"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
+                  "address": 6442528960,
+                  "name": "SstpSvcGetConfig"
                 },
                 {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
+                  "address": 6442526864,
+                  "name": "SstpSvcCreateUpdateTenantGatewayMapping"
                 },
                 {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442530304,
+                  "name": "SstpSvcRemoveTenantGatewayMapping"
+                },
+                {
+                  "address": 6442529312,
+                  "name": "SstpSvcGetTenantGatewayMapping"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442583920,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 2028327714,
+                    "Data2": 22946,
+                    "Data3": 17188,
                     "Data4": [
-                      "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "ae",
+                      "3f",
+                      "8b",
+                      "c8",
+                      "de",
+                      "32",
+                      "bd",
+                      "fc"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +96,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442583232,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +123,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "78E5D322-59A2-4324-AE3F-8BC8DE32BDFC",
                 "version": "1.0"
               }
             }
@@ -108,102 +131,102 @@
           "MaxCalls": [
             1234
           ],
-          "MaxRpcSize": [
-            4294967295
-          ],
           "MgrEpv": [
             0
           ],
           "MgrTypeUuid": [
             0
           ],
-          "SecurityDescriptor": [
-            0
-          ],
-          "api_function": "RpcServerRegisterIf3",
+          "api_function": "RpcServerRegisterIfEx",
           "possible_clients": {
-            "6442492080": [
+            "6442580896": [
               {
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_1266_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_1265_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_1266_64 <= 0xc0000400>"
                   }
                 ]
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442581009
       }
     ],
     "protseq_usage": [
       {
         "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442638272,
+              "string": "SstpSvcRpc"
+            }
+          ],
           "MaxCalls": [
-            10
+            1
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442638288,
               "string": "ncalrpc"
             }
           ],
           "SecurityDescriptor": [
             0
           ],
-          "api_function": "RpcServerUseProtseqW"
+          "api_function": "RpcServerUseProtseqEpA"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442580952
       }
     ],
     "rpc_constraints": {}

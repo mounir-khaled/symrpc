@@ -1,0 +1,234 @@
+{
+  "analysis_metadata": {
+    "name": "SSDPSRV",
+    "filepath": "C:\\WINDOWS\\system32\\ssdpsrv.dll",
+    "time": 2.451479196548462,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoA"
+        },
+        "callsite_address": 6442560140
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442492496
+          ],
+          "IfSpec": [
+            {
+              "address": 6442683968,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442493936,
+                  "name": "_SSDPOpenRpc"
+                },
+                {
+                  "address": 6442493680,
+                  "name": "_SSDPCloseRpc"
+                },
+                {
+                  "address": 6442463088,
+                  "name": "RegisterServiceExRpc"
+                },
+                {
+                  "address": 6442462336,
+                  "name": "_DeregisterServiceRpc"
+                },
+                {
+                  "address": 6442558272,
+                  "name": "CleanupCacheRpc"
+                },
+                {
+                  "address": 6442459504,
+                  "name": "BeginSearchRpc"
+                },
+                {
+                  "address": 6442492992,
+                  "name": "GetSearchNotificationRpc"
+                },
+                {
+                  "address": 6442558240,
+                  "name": "CancelSearchRpc"
+                },
+                {
+                  "address": 6442494064,
+                  "name": "CloseSearchRpc"
+                },
+                {
+                  "address": 6442558496,
+                  "name": "EnableNotificationRpc"
+                },
+                {
+                  "address": 6442493424,
+                  "name": "_InitializeSyncHandle"
+                },
+                {
+                  "address": 6442493552,
+                  "name": "_RemoveSyncHandle"
+                },
+                {
+                  "address": 6442456272,
+                  "name": "RegisterNotificationRpc"
+                },
+                {
+                  "address": 6442558528,
+                  "name": "RegisterNotificationAsyncRpc"
+                },
+                {
+                  "address": 6442457200,
+                  "name": "_GetNotificationRpc"
+                },
+                {
+                  "address": 6442493824,
+                  "name": "_WakeupGetNotificationRpc"
+                },
+                {
+                  "address": 6442456640,
+                  "name": "DeregisterNotificationRpc"
+                },
+                {
+                  "address": 6442558640,
+                  "name": "SetICSInterfaces"
+                },
+                {
+                  "address": 6442558688,
+                  "name": "SetICSOff"
+                },
+                {
+                  "address": 6442558400,
+                  "name": "EnableFirewallRuleRpc"
+                },
+                {
+                  "address": 6442558304,
+                  "name": "DisableFirewallRuleRpc"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442684160,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1259414020,
+                    "Data2": 3609,
+                    "Data3": 4563,
+                    "Data4": [
+                      "b4",
+                      "2b",
+                      "00",
+                      "00",
+                      "f8",
+                      "1f",
+                      "eb",
+                      "9f"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442683168,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "4B112204-0E19-11D3-B42B-0000F81FEB9F",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442492496": []
+          }
+        },
+        "callsite_address": 6442560173
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442695776,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqA"
+        },
+        "callsite_address": 6442560092
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "WEPHOSTSVC",
+    "filepath": "C:\\WINDOWS\\system32\\wephostsvc.dll",
+    "time": 1.1806848049163818,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -24,48 +24,64 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            6442456624
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442472464,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442457872,
+                  "name": "s_QueryProtectionStatus"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
+                  "address": 6442458160,
+                  "name": "s_IsDeviceLockable"
                 },
                 {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
+                  "address": 6442458448,
+                  "name": "s_LockDevice"
                 },
                 {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442458768,
+                  "name": "s_GetDeviceLockoutData"
+                },
+                {
+                  "address": 6442459152,
+                  "name": "s_ValidateDeviceLockoutState"
+                },
+                {
+                  "address": 6442459472,
+                  "name": "s_UpdateDeviceLockoutState"
+                },
+                {
+                  "address": 6442459792,
+                  "name": "s_DisableDeviceLockoutState"
+                },
+                {
+                  "address": 6442460080,
+                  "name": "s_GetDeviceLockoutSize"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442472432,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 1445216835,
+                    "Data2": 16083,
+                    "Data3": 16403,
                     "Data4": [
-                      "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "b3",
+                      "e7",
+                      "0f",
+                      "c8",
+                      "09",
+                      "e3",
+                      "5f",
+                      "ba"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +89,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442472368,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +116,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "56244243-3ED3-4013-B3E7-0FC809E35FBA",
                 "version": "1.0"
               }
             }
@@ -109,7 +125,12 @@
             1234
           ],
           "MaxRpcSize": [
-            4294967295
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442457019}}>}, Atom:<Mem SP-0x30<4> (stack)>, Codeloc:<0x1800017bb id=0x180001794[40] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
           ],
           "MgrEpv": [
             0
@@ -118,92 +139,113 @@
             0
           ],
           "SecurityDescriptor": [
-            0
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442456991}}>}, Atom:<Mem SP-0x20<8> (stack)>, Codeloc:<0x18000179f id=0x180001794[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442492080": [
+            "6442456624": [
               {
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_4099_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_4100_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_4135_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_4148_64 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_4148_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Reverse(Pointer_4148_64) != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (0x0 .. 0xffffffff * (0x0 .. (if unconstrained_ret_CompareStringW_4149_32{UNINITIALIZED} == 0x2 then 0 else 1))[2:2] .. 0 .. (if unconstrained_ret_CompareStringW_4149_32{UNINITIALIZED} == 0x2 then 0 else 1)) == 0x0>"
                   }
                 ]
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442456980
       }
     ],
     "protseq_usage": [
       {
         "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442474240,
+              "string": "WEPHOST"
+            }
+          ],
           "MaxCalls": [
             10
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442474224,
               "string": "ncalrpc"
             }
           ],
           "SecurityDescriptor": [
-            0
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x18000175f id=0x18000175f[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
           ],
-          "api_function": "RpcServerUseProtseqW"
+          "api_function": "RpcServerUseProtseqEpW"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442456927
       }
     ],
     "rpc_constraints": {}

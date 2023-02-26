@@ -1,0 +1,247 @@
+{
+  "analysis_metadata": {
+    "name": "DusmSvc",
+    "filepath": "C:\\WINDOWS\\system32\\dusmsvc.dll",
+    "time": 2.6015422344207764,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442701696,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442477488,
+                  "name": "DusmRpcEnumConnectionList"
+                },
+                {
+                  "address": 6442477872,
+                  "name": "DusmRpcEnumProfileList"
+                },
+                {
+                  "address": 6442478544,
+                  "name": "DusmRpcQueryConnectionProperties"
+                },
+                {
+                  "address": 6442479456,
+                  "name": "DusmRpcQueryCost"
+                },
+                {
+                  "address": 6442480112,
+                  "name": "DusmRpcQueryUserCost"
+                },
+                {
+                  "address": 6442480768,
+                  "name": "DusmRpcQueryOperatorCost"
+                },
+                {
+                  "address": 6442481424,
+                  "name": "DusmRpcSetUserCost"
+                },
+                {
+                  "address": 6442482080,
+                  "name": "DusmRpcSetOperatorCost"
+                },
+                {
+                  "address": 6442482736,
+                  "name": "DusmRpcQueryDataPlan"
+                },
+                {
+                  "address": 6442483072,
+                  "name": "DusmRpcQueryUserDataPlan"
+                },
+                {
+                  "address": 6442483408,
+                  "name": "DusmRpcQueryOperatorDataPlan"
+                },
+                {
+                  "address": 6442483744,
+                  "name": "DusmRpcSetUserDataPlan"
+                },
+                {
+                  "address": 6442484016,
+                  "name": "DusmRpcSetOperatorDataPlan"
+                },
+                {
+                  "address": 6442484368,
+                  "name": "DusmRpcQuerySource"
+                },
+                {
+                  "address": 6442484560,
+                  "name": "DusmRpcSetSource"
+                },
+                {
+                  "address": 6442484784,
+                  "name": "DusmRpcQueryBackgroundRestriction"
+                },
+                {
+                  "address": 6442485008,
+                  "name": "DusmRpcSetBackgroundRestriction"
+                },
+                {
+                  "address": 6442485280,
+                  "name": "DusmRpcQueryGlobalDpuState"
+                },
+                {
+                  "address": 6442485392,
+                  "name": "DusmRpcGetAttributedNetworkUsage"
+                },
+                {
+                  "address": 6442486112,
+                  "name": "DusmRpcGetConnectionListNetworkUsage"
+                },
+                {
+                  "address": 6442487024,
+                  "name": "DusmRpcGetNetworkUsage"
+                },
+                {
+                  "address": 6442487776,
+                  "name": "DusmRpcGetProviderNetworkUsage"
+                },
+                {
+                  "address": 6442488464,
+                  "name": "DusmRpcSetAttributionMapping"
+                },
+                {
+                  "address": 6442488672,
+                  "name": "DusmRpcResetNetworkUsage"
+                },
+                {
+                  "address": 6442488896,
+                  "name": "DusmRpcFlushCostCache"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442701272,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3263118344,
+                    "Data2": 37562,
+                    "Data3": 18316,
+                    "Data4": [
+                      "b4",
+                      "46",
+                      "b4",
+                      "19",
+                      "c4",
+                      "ce",
+                      "f0",
+                      "e2"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442701632,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "C27F3C08-92BA-478C-B446-B419C4CEF0E2",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442500419
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442709608,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442500260
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

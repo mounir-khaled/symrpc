@@ -1,0 +1,213 @@
+{
+  "analysis_metadata": {
+    "name": "WebClient",
+    "filepath": "C:\\WINDOWS\\system32\\webclnt.dll",
+    "time": 5.848552465438843,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442612176
+          ],
+          "IfSpec": [
+            {
+              "address": 6442657456,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442459392,
+                  "name": "DavrCreateConnection"
+                },
+                {
+                  "address": 6442457920,
+                  "name": "DavrGetCookie"
+                },
+                {
+                  "address": 6442458592,
+                  "name": "DavrSetCookie"
+                },
+                {
+                  "address": 6442467360,
+                  "name": "DavrDoesServerDoDav"
+                },
+                {
+                  "address": 6442471184,
+                  "name": "DavrIsValidShare"
+                },
+                {
+                  "address": 6442475600,
+                  "name": "DavrEnumNetUses"
+                },
+                {
+                  "address": 6442474864,
+                  "name": "DavrEnumShares"
+                },
+                {
+                  "address": 6442474096,
+                  "name": "DavrEnumServers"
+                },
+                {
+                  "address": 6442473376,
+                  "name": "DavrGetConnection"
+                },
+                {
+                  "address": 6442463152,
+                  "name": "DavrDeleteConnection"
+                },
+                {
+                  "address": 6442463872,
+                  "name": "DavrCancelConnectionsToServer"
+                },
+                {
+                  "address": 6442465648,
+                  "name": "DavrGetUser"
+                },
+                {
+                  "address": 6442464960,
+                  "name": "DavrConnectionExist"
+                },
+                {
+                  "address": 6442498992,
+                  "name": "DavrGetDiskSpaceUsage"
+                },
+                {
+                  "address": 6442499008,
+                  "name": "DavrFreeUsedDiskSpace"
+                },
+                {
+                  "address": 6442490992,
+                  "name": "DavrGetTheLockOwnerOfTheFile"
+                },
+                {
+                  "address": 6442476384,
+                  "name": "DavrInvalidateCache"
+                },
+                {
+                  "address": 6442493200,
+                  "name": "DavrIsWebClientRunning"
+                },
+                {
+                  "address": 6442493216,
+                  "name": "DavrGetServerAuthType"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442657952,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3368777351,
+                    "Data2": 59091,
+                    "Data3": 4562,
+                    "Data4": [
+                      "a9",
+                      "58",
+                      "00",
+                      "c0",
+                      "4f",
+                      "68",
+                      "2e",
+                      "16"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442658656,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "C8CB7687-E6D3-11D2-A958-00C04F682E16",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442612176": []
+          }
+        },
+        "callsite_address": 6442614817
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442667816,
+              "string": "\\PIPE\\DAV RPC SERVICE"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442667360,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442614752
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

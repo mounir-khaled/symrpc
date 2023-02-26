@@ -1,0 +1,322 @@
+{
+  "analysis_metadata": {
+    "name": "wscsvc",
+    "filepath": "C:\\WINDOWS\\system32\\wscsvc.dll",
+    "time": 3.574683666229248,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442496549
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442696944,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442514928,
+                  "name": "CWmiEventSinkAvFw::SetStatus"
+                },
+                {
+                  "address": 6442509936,
+                  "name": "s_wscRegisterChangeNotification"
+                },
+                {
+                  "address": 6442643680,
+                  "name": "s_wscUnRegisterChangeNotification"
+                },
+                {
+                  "address": 6442500128,
+                  "name": "s_wscGetAlertStatus"
+                },
+                {
+                  "address": 6442514912,
+                  "name": "s_wscOverrideComponentStatus"
+                },
+                {
+                  "address": 6442514912,
+                  "name": "s_wscOverrideComponentStatus"
+                },
+                {
+                  "address": 6442514912,
+                  "name": "s_wscOverrideComponentStatus"
+                },
+                {
+                  "address": 6442505008,
+                  "name": "s_wscFirewallGetStatus"
+                },
+                {
+                  "address": 6442638960,
+                  "name": "s_wscIcfEnable"
+                },
+                {
+                  "address": 6442501328,
+                  "name": "s_wscAntiVirusGetStatus"
+                },
+                {
+                  "address": 6442637376,
+                  "name": "s_wscAntiSpywareGetStatus"
+                },
+                {
+                  "address": 6442465904,
+                  "name": "s_wscGeneralSecurityGetStatus"
+                },
+                {
+                  "address": 6442640112,
+                  "name": "s_wscLuaSettingsFix"
+                },
+                {
+                  "address": 6442641952,
+                  "name": "s_wscRegisterSecurityProduct"
+                },
+                {
+                  "address": 6442643824,
+                  "name": "s_wscUnregisterSecurityProduct"
+                },
+                {
+                  "address": 6442472064,
+                  "name": "s_wscUpdateProductStatus"
+                },
+                {
+                  "address": 6442514912,
+                  "name": "s_wscOverrideComponentStatus"
+                },
+                {
+                  "address": 6442640096,
+                  "name": "s_wscIsDefenderAntivirusSupported"
+                },
+                {
+                  "address": 6442645792,
+                  "name": "s_wscUserNotificationRequired"
+                },
+                {
+                  "address": 6442639104,
+                  "name": "s_wscInitiateOfflineCleaning"
+                },
+                {
+                  "address": 6442514880,
+                  "name": "s_wscAbortOfflineCleaning"
+                },
+                {
+                  "address": 6442640672,
+                  "name": "s_wscNotifyUserForNearExpiration"
+                },
+                {
+                  "address": 6442638416,
+                  "name": "s_wscAntiVirusGetUpgradableProducts"
+                },
+                {
+                  "address": 6442638432,
+                  "name": "s_wscAntiVirusRemoveUpgradableProduct"
+                },
+                {
+                  "address": 6442638400,
+                  "name": "s_wscAntiVirusGetRemovedButNotUpgradableProducts"
+                },
+                {
+                  "address": 6442640320,
+                  "name": "s_wscMakeDefaultProductRequest"
+                },
+                {
+                  "address": 6442643360,
+                  "name": "s_wscSetDefaultProduct"
+                },
+                {
+                  "address": 6442644896,
+                  "name": "s_wscUpdateProductSubStatus"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442700560,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 112960842,
+                    "Data2": 48645,
+                    "Data3": 18937,
+                    "Data4": [
+                      "b0",
+                      "a0",
+                      "30",
+                      "f7",
+                      "90",
+                      "26",
+                      "10",
+                      "23"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442700496,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "06BBA54A-BE05-49F9-B0A0-30F790261023",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442496467
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442708376,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442496396
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

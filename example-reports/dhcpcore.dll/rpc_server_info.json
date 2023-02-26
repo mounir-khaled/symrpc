@@ -1,0 +1,319 @@
+{
+  "analysis_metadata": {
+    "name": "Dhcp",
+    "filepath": "C:\\WINDOWS\\system32\\dhcpcore.dll",
+    "time": 2.8086254596710205,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442455056
+          ],
+          "IfSpec": [
+            {
+              "address": 6442737664,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442632672,
+                  "name": "RpcSrvEnableDhcp"
+                },
+                {
+                  "address": 6442632880,
+                  "name": "RpcSrvEnableDhcpAdvanced"
+                },
+                {
+                  "address": 6442642016,
+                  "name": "RpcSrvRenewLease"
+                },
+                {
+                  "address": 6442632464,
+                  "name": "RpcSrvDeleteStaticAddressAndDefaultGateways"
+                },
+                {
+                  "address": 6442631776,
+                  "name": "RpcSrvCheckServerAvailability"
+                },
+                {
+                  "address": 6442642192,
+                  "name": "RpcSrvRenewLeaseByBroadcast"
+                },
+                {
+                  "address": 6442641088,
+                  "name": "RpcSrvReleaseLease"
+                },
+                {
+                  "address": 6442644320,
+                  "name": "RpcSrvSetFallbackParams"
+                },
+                {
+                  "address": 6442635408,
+                  "name": "RpcSrvGetFallbackParams"
+                },
+                {
+                  "address": 6442634272,
+                  "name": "RpcSrvFallbackRefreshParams"
+                },
+                {
+                  "address": 6442645664,
+                  "name": "RpcSrvStaticRefreshParams"
+                },
+                {
+                  "address": 6442641280,
+                  "name": "RpcSrvRemoveDnsRegistrations"
+                },
+                {
+                  "address": 6442456192,
+                  "name": "RpcSrvRequestParams"
+                },
+                {
+                  "address": 6442639344,
+                  "name": "RpcSrvPersistentRequestParams"
+                },
+                {
+                  "address": 6442640336,
+                  "name": "RpcSrvRegisterParams"
+                },
+                {
+                  "address": 6442632240,
+                  "name": "RpcSrvDeRegisterParams"
+                },
+                {
+                  "address": 6442457328,
+                  "name": "RpcSrvEnumInterfaces"
+                },
+                {
+                  "address": 6442455264,
+                  "name": "RpcSrvQueryLeaseInfo"
+                },
+                {
+                  "address": 6442457840,
+                  "name": "RpcSrvQueryLeaseInfoArray"
+                },
+                {
+                  "address": 6442642816,
+                  "name": "RpcSrvSetClassId"
+                },
+                {
+                  "address": 6442634464,
+                  "name": "RpcSrvGetClassId"
+                },
+                {
+                  "address": 6442643472,
+                  "name": "RpcSrvSetClientId"
+                },
+                {
+                  "address": 6442634848,
+                  "name": "RpcSrvGetClientId"
+                },
+                {
+                  "address": 6442639152,
+                  "name": "RpcSrvNotifyMediaReconnected"
+                },
+                {
+                  "address": 6442636032,
+                  "name": "RpcSrvGetOriginalSubnetMask"
+                },
+                {
+                  "address": 6442645120,
+                  "name": "RpcSrvSetMSFTVendorSpecificOptions"
+                },
+                {
+                  "address": 6442642368,
+                  "name": "RpcSrvRequestCachedParams"
+                },
+                {
+                  "address": 6442639696,
+                  "name": "RpcSrvRegisterConnectionStateNotification"
+                },
+                {
+                  "address": 6442632048,
+                  "name": "RpcSrvDeRegisterConnectionStateNotification"
+                },
+                {
+                  "address": 6442635840,
+                  "name": "RpcSrvGetNotificationStatus"
+                },
+                {
+                  "address": 6442635280,
+                  "name": "RpcSrvGetDhcpServicedConnections"
+                },
+                {
+                  "address": 6442636304,
+                  "name": "RpcSrvGetTraceArray"
+                },
+                {
+                  "address": 6442633712,
+                  "name": "RpcSrvEnableTracing"
+                },
+                {
+                  "address": 6442636800,
+                  "name": "RpcSrvLeaseIpAddressEx"
+                },
+                {
+                  "address": 6442641504,
+                  "name": "RpcSrvRenewIpAddressLeaseEx"
+                },
+                {
+                  "address": 6442640592,
+                  "name": "RpcSrvReleaseIpAddressLeaseEx"
+                },
+                {
+                  "address": 6442463232,
+                  "name": "RpcSrvIsMeteredDetected"
+                },
+                {
+                  "address": 6442637536,
+                  "name": "RpcSrvMadcapApiStartup"
+                },
+                {
+                  "address": 6442637328,
+                  "name": "RpcSrvMadcapApiCleanup"
+                },
+                {
+                  "address": 6442637776,
+                  "name": "RpcSrvMadcapEnumerateScopes"
+                },
+                {
+                  "address": 6442638128,
+                  "name": "RpcSrvMadcapGenUID"
+                },
+                {
+                  "address": 6442638880,
+                  "name": "RpcSrvMadcapRequestAddress"
+                },
+                {
+                  "address": 6442638624,
+                  "name": "RpcSrvMadcapRenewAddress"
+                },
+                {
+                  "address": 6442638368,
+                  "name": "RpcSrvMadcapReleaseAddress"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442738176,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1011296453,
+                    "Data2": 61611,
+                    "Data3": 17547,
+                    "Data4": [
+                      "bd",
+                      "a1",
+                      "6c",
+                      "e0",
+                      "1e",
+                      "b0",
+                      "a6",
+                      "d5"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442738112,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "3C4728C5-F0AB-448B-BDA1-6CE01EB0A6D5",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442455056": []
+          }
+        },
+        "callsite_address": 6442533548
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442751144,
+              "string": "dhcpcsvc"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442751128,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442533504
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "analysis_metadata": {
+    "name": "WavesSysSvc",
+    "filepath": "c:\\program files\\waves\\maxxaudio\\wavessyssvc64.exe",
+    "time": 4.25937032699585,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 5369237504,
+              "flags": 67108864,
+              "procedure_addresses": [
+                {
+                  "address": 5368858224,
+                  "name": "sub_140024670"
+                },
+                {
+                  "address": 5368858640,
+                  "name": "sub_140024810"
+                },
+                {
+                  "address": 5368859104,
+                  "name": "sub_1400249e0"
+                },
+                {
+                  "address": 5368859152,
+                  "name": "sub_140024a10"
+                },
+                {
+                  "address": 5368859280,
+                  "name": "sub_140024a90"
+                },
+                {
+                  "address": 5368859360,
+                  "name": "sub_140024ae0"
+                },
+                {
+                  "address": 5368859392,
+                  "name": "sub_140024b00"
+                },
+                {
+                  "address": 5368859424,
+                  "name": "sub_140024b20"
+                },
+                {
+                  "address": 5368859776,
+                  "name": "sub_140024c80"
+                },
+                {
+                  "address": 5368859808,
+                  "name": "sub_140024ca0"
+                },
+                {
+                  "address": 5368860272,
+                  "name": "sub_140024e70"
+                },
+                {
+                  "address": 5368860304,
+                  "name": "sub_140024e90"
+                },
+                {
+                  "address": 5368860272,
+                  "name": "sub_140024e70"
+                },
+                {
+                  "address": 5368860304,
+                  "name": "sub_140024e90"
+                },
+                {
+                  "address": 5368860336,
+                  "name": "sub_140024eb0"
+                },
+                {
+                  "address": 5368860512,
+                  "name": "sub_140024f60"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 5369235912,
+                "Flags": 67108864,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1248277994,
+                    "Data2": 23179,
+                    "Data3": 18551,
+                    "Data4": [
+                      "b6",
+                      "65",
+                      "df",
+                      "95",
+                      "c2",
+                      "2d",
+                      "bd",
+                      "21"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 5369236128,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "4A6735EA-5A8B-4877-B665-DF95C22DBD21",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 5368856999}}>}, Atom:<Mem SP-0x250<8> (stack)>, Codeloc:<0x1400241a7 id=0x1400241a7[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 5368856999
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 5369275152,
+              "string": "MaxxAudioPro"
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "Protseq": [
+            {
+              "address": 5369275360,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x14002414e id=0x14002414e[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 5368856910
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "analysis_metadata": {
+    "name": "NlaSvc",
+    "filepath": "C:\\WINDOWS\\system32\\nlasvc.dll",
+    "time": 24.513758420944214,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442559372
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442562931
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442566560
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18001c095 id=0x18001c08a[11] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442566560": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_8407_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_8408_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0xd000000000000000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff70_8450_64{UNINITIALIZED} == 0xd000000000001000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0xd000000000002000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_8446_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_8446_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_8446_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8475_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8475_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_8450_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_8478_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_8478_32[7:0] <= 128 then (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8475_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8475_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442566004
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442744064
+          ],
+          "IfSpec": [
+            {
+              "address": 6442754160,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442734480,
+                  "name": "RPCQueryLANIds"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442754928,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1284312047,
+                    "Data2": 55281,
+                    "Data3": 18928,
+                    "Data4": [
+                      "91",
+                      "02",
+                      "ca",
+                      "a0",
+                      "5f",
+                      "58",
+                      "d1",
+                      "14"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442754864,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "4C8D0BEF-D7F1-49F0-9102-CAA05F58D114",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4294967295
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442744064": []
+          }
+        },
+        "callsite_address": 6442562964
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442566560
+          ],
+          "IfSpec": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18001c095 id=0x18001c08a[11] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "flags": null,
+              "procedure_addresses": null,
+              "struct_values": null,
+              "uuid": null
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442565816}}>}, Atom:<Mem SP-0x30<4> (stack)>, Codeloc:<0x18001c0b8 id=0x18001c0a2[28] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442566560": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_8524_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_8523_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0xd000000000000000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeff70_8566_64{UNINITIALIZED} == 0xd000000000001000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0xd000000000002000>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_8562_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_8562_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_8562_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8591_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8591_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_8566_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_8594_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_8594_32[7:0] <= 128 then (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8591_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8591_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442565794
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442767360,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442562895
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x18001c065 id=0x18001c060[8] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442767360,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442565733
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x18001c065 id=0x18001c060[8] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442767360,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442565728
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

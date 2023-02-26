@@ -1,0 +1,176 @@
+{
+  "analysis_metadata": {
+    "name": "pla",
+    "filepath": "C:\\WINDOWS\\system32\\pla.dll",
+    "time": 123.38551831245422,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6443272688
+          ],
+          "IfSpec": [
+            {
+              "address": 6443733328,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443276464,
+                  "name": "PlaiSrvControl"
+                },
+                {
+                  "address": 6443278368,
+                  "name": "PlaiSrvQuerySession"
+                },
+                {
+                  "address": 6443277568,
+                  "name": "PlaiSrvGetStatus"
+                },
+                {
+                  "address": 6443278512,
+                  "name": "PlaiSrvRegisterCollectorSet"
+                },
+                {
+                  "address": 6443280400,
+                  "name": "PlaiSrvUpdateMetadata"
+                },
+                {
+                  "address": 6443279952,
+                  "name": "PlaiSrvSwitchToCompiling"
+                },
+                {
+                  "address": 6443275920,
+                  "name": "PlaiSrvCloseCollectorSet"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443737248,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1685931090,
+                    "Data2": 40755,
+                    "Data3": 18968,
+                    "Data4": [
+                      "b2",
+                      "be",
+                      "c5",
+                      "c0",
+                      "e9",
+                      "20",
+                      "e9",
+                      "4e"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443734016,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "647D4452-9F33-4A18-B2BE-C5C0E920E94E",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            20
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6443272688": []
+          }
+        },
+        "callsite_address": 6443269948
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x1800c7e91 id=0x1800c7e8d[9] contextless>}>)"
+                ],
+                "bitvector": "<BV64 stack_base + 0xfffffffffffffb08>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            20
+          ],
+          "Protseq": [
+            {
+              "address": 6443810464,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6443269773
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "analysis_metadata": {
+    "name": "StorSvc",
+    "filepath": "C:\\WINDOWS\\system32\\storsvc.dll",
+    "time": 13.858879804611206,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673666}}>}, Atom:<Mem SP-0x18<8> (stack)>, Codeloc:<0x180036602 id=0x1800365f9[21] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6443155168,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442671456,
+                  "name": "SvcMountVolume"
+                },
+                {
+                  "address": 6442671488,
+                  "name": "SvcDismountVolume"
+                },
+                {
+                  "address": 6442671520,
+                  "name": "SvcFormatVolume"
+                },
+                {
+                  "address": 6442671552,
+                  "name": "SvcGetStorageInstanceCount"
+                },
+                {
+                  "address": 6442671824,
+                  "name": "SvcGetStorageDeviceInfo"
+                },
+                {
+                  "address": 6442631008,
+                  "name": "SvcGetStorageStateName"
+                },
+                {
+                  "address": 6442685248,
+                  "name": "SvcRebootToFlashingMode"
+                },
+                {
+                  "address": 6442685504,
+                  "name": "SvcRebootToUosFlashing"
+                },
+                {
+                  "address": 6442671872,
+                  "name": "SvcFinalizeVolume"
+                },
+                {
+                  "address": 6442671920,
+                  "name": "SvcGetStorageSettings"
+                },
+                {
+                  "address": 6442672048,
+                  "name": "SvcResetStoragePolicySettings"
+                },
+                {
+                  "address": 6442671936,
+                  "name": "SvcSetStorageSettings"
+                },
+                {
+                  "address": 6442671968,
+                  "name": "SvcTriggerStorageCleanup"
+                },
+                {
+                  "address": 6442672016,
+                  "name": "SvcTriggerLowStorageNotification"
+                },
+                {
+                  "address": 6442685856,
+                  "name": "SvcMoveFileInheritSecurity"
+                },
+                {
+                  "address": 6442671536,
+                  "name": "SvcScanVolume"
+                },
+                {
+                  "address": 6442671888,
+                  "name": "SvcProcessStorageCardChange"
+                },
+                {
+                  "address": 6442671808,
+                  "name": "SvcProvisionForAppInstall"
+                },
+                {
+                  "address": 6442671664,
+                  "name": "SvcGetStorageInstanceCountForMaps"
+                },
+                {
+                  "address": 6442672032,
+                  "name": "SvcGetStoragePolicySettings"
+                },
+                {
+                  "address": 6442672064,
+                  "name": "SvcSetStoragePolicySettings"
+                },
+                {
+                  "address": 6442672080,
+                  "name": "SvcTriggerStoragePolicies"
+                },
+                {
+                  "address": 6442672112,
+                  "name": "SvcPredictStorageHealth"
+                },
+                {
+                  "address": 6442672128,
+                  "name": "SvcGetLastFailedSaveLocationPath"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443156304,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3194131411,
+                    "Data2": 10279,
+                    "Data3": 19930,
+                    "Data4": [
+                      "80",
+                      "57",
+                      "85",
+                      "88",
+                      "24",
+                      "01",
+                      "24",
+                      "c9"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 0,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443156352,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "BE6293D3-2827-4DDA-8057-8588240124C9",
+                "version": "0.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673678}}>}, Atom:<Mem SP-0x20<4> (stack)>, Codeloc:<0x18003660e id=0x1800365f9[33] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673657}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x1800365f9 id=0x1800365f9[6] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442673657
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673724}}>}, Atom:<Mem SP-0x18<8> (stack)>, Codeloc:<0x18003663c id=0x180036633[21] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "IfSpec": [
+            {
+              "address": 6443158000,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442672368,
+                  "name": "SvcOpenStorageType"
+                },
+                {
+                  "address": 6442672560,
+                  "name": "SvcSelectStorageVolumeEx"
+                },
+                {
+                  "address": 6442672576,
+                  "name": "SvcSelectStorageVolume"
+                },
+                {
+                  "address": 6442672640,
+                  "name": "SvcFindNextStorageType"
+                },
+                {
+                  "address": 6442672768,
+                  "name": "SvcFindNextStorageTypeEx"
+                },
+                {
+                  "address": 6442672816,
+                  "name": "SvcCloseFindStorage"
+                },
+                {
+                  "address": 6442673056,
+                  "name": "SvcGetStorageDebugInfo"
+                },
+                {
+                  "address": 6442673248,
+                  "name": "SvcGetStorageExecutionInfo"
+                },
+                {
+                  "address": 6442673312,
+                  "name": "SvcGetTopFolders"
+                },
+                {
+                  "address": 6442673424,
+                  "name": "SvcFindNextStorageTypeExAsync"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443156992,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1421133449,
+                    "Data2": 38554,
+                    "Data3": 18287,
+                    "Data4": [
+                      "8d",
+                      "c2",
+                      "99",
+                      "08",
+                      "85",
+                      "e9",
+                      "f5",
+                      "62"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 0,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443158288,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "54B4C689-969A-476F-8DC2-990885E9F562",
+                "version": "0.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673736}}>}, Atom:<Mem SP-0x20<4> (stack)>, Codeloc:<0x180036648 id=0x180036633[33] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442673715}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x180036633 id=0x180036633[6] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442673715
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6443186696,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442673564
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

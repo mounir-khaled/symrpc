@@ -1,8 +1,8 @@
 {
   "analysis_metadata": {
-    "name": "AppIDSvc",
-    "filepath": "C:\\WINDOWS\\system32\\appidsvc.dll",
-    "time": 2.341447591781616,
+    "name": "IpxlatCfgSvc",
+    "filepath": "C:\\WINDOWS\\system32\\ipxlatcfg.dll",
+    "time": 0.9454202651977539,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -24,48 +24,40 @@
             }
           ],
           "IfCallback": [
-            6442492080
+            0
           ],
           "IfSpec": [
             {
-              "address": 6442508944,
+              "address": 6442492400,
               "flags": 100663296,
               "procedure_addresses": [
                 {
-                  "address": 6442492224,
-                  "name": "AppIDRpcVerifyFile"
+                  "address": 6442481936,
+                  "name": "Enable464xlat"
                 },
                 {
-                  "address": 6442492416,
-                  "name": "AppIDRpcVerifyPackageMoniker"
-                },
-                {
-                  "address": 6442492640,
-                  "name": "AppIDRpcOnCreateProcess"
-                },
-                {
-                  "address": 6442492992,
-                  "name": "AppIDRpcOnCreateFile"
+                  "address": 6442482496,
+                  "name": "Disable464xlat"
                 }
               ],
               "struct_values": {
                 "DefaultManagerEpv": 0,
-                "DispatchTable": 6442509440,
+                "DispatchTable": 6442492496,
                 "Flags": 100663296,
                 "InterfaceId": {
                   "SyntaxGUID": {
-                    "Data1": 2323337222,
-                    "Data2": 52243,
-                    "Data3": 4571,
+                    "Data1": 4278215999,
+                    "Data2": 1610,
+                    "Data3": 18890,
                     "Data4": [
                       "97",
-                      "05",
-                      "00",
-                      "50",
-                      "56",
-                      "c0",
-                      "00",
-                      "08"
+                      "83",
+                      "0e",
+                      "33",
+                      "73",
+                      "0d",
+                      "7d",
+                      "71"
                     ]
                   },
                   "SyntaxVersion": {
@@ -73,7 +65,7 @@
                     "MinorVersion": 0
                   }
                 },
-                "InterpreterInfo": 6442509680,
+                "InterpreterInfo": 6442492544,
                 "Length": 96,
                 "RpcProtseqEndpoint": 0,
                 "RpcProtseqEndpointCount": 0,
@@ -100,7 +92,7 @@
                 }
               },
               "uuid": {
-                "uuid": "8A7B5006-CC13-11DB-9705-005056C00008",
+                "uuid": "FF00653F-064A-49CA-9783-0E33730D7D71",
                 "version": "1.0"
               }
             }
@@ -108,102 +100,109 @@
           "MaxCalls": [
             1234
           ],
-          "MaxRpcSize": [
-            4294967295
-          ],
           "MgrEpv": [
             0
           ],
           "MgrTypeUuid": [
             0
           ],
-          "SecurityDescriptor": [
-            0
-          ],
-          "api_function": "RpcServerRegisterIf3",
+          "api_function": "RpcServerRegisterIfEx",
           "possible_clients": {
-            "6442492080": [
+            "0": [
               {
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
-                    "KernelModeCaller": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool Context_8852_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool InterfaceUuid_8851_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_8852_64 <= 0xc0000400>"
-                  }
-                ]
+                "extra_constraints": []
               }
             ]
           }
         },
-        "callsite_address": 6442491854
+        "callsite_address": 6442481692
       }
     ],
     "protseq_usage": [
       {
         "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442500576,
+              "string": "IPxlatRpc"
+            }
+          ],
           "MaxCalls": [
             10
           ],
           "Protseq": [
             {
-              "address": 6442519376,
+              "address": 6442500600,
               "string": "ncalrpc"
             }
           ],
           "SecurityDescriptor": [
             0
           ],
-          "api_function": "RpcServerUseProtseqW"
+          "api_function": "RpcServerUseProtseqEpW"
         },
-        "callsite_address": 6442491789
+        "callsite_address": 6442481484
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442500576,
+              "string": "IPxlatRpc"
+            }
+          ],
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442500600,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442481535
       }
     ],
     "rpc_constraints": {}

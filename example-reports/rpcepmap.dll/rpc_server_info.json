@@ -1,0 +1,1444 @@
+{
+  "analysis_metadata": {
+    "name": "RpcEptMapper",
+    "filepath": "C:\\WINDOWS\\system32\\rpcepmap.dll",
+    "time": 4.197388410568237,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442472790
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            16
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442472809
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallbackFn": [
+            6442488816
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500096,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442489360,
+                  "name": "RemoteGetCellByDebugCellID"
+                },
+                {
+                  "address": 6442490560,
+                  "name": "RemoteOpenRPCDebugCallInfoEnumeration"
+                },
+                {
+                  "address": 6442489792,
+                  "name": "RemoteGetNextRPCDebugCallInfo"
+                },
+                {
+                  "address": 6442488976,
+                  "name": "RemoteFinishRPCDebugCallInfoEnumeration"
+                },
+                {
+                  "address": 6442490896,
+                  "name": "RemoteOpenRPCDebugEndpointInfoEnumeration"
+                },
+                {
+                  "address": 6442490208,
+                  "name": "RemoteGetNextRPCDebugEndpointInfo"
+                },
+                {
+                  "address": 6442489200,
+                  "name": "RemoteFinishRPCDebugEndpointInfoEnumeration"
+                },
+                {
+                  "address": 6442491104,
+                  "name": "RemoteOpenRPCDebugThreadInfoEnumeration"
+                },
+                {
+                  "address": 6442490368,
+                  "name": "RemoteGetNextRPCDebugThreadInfo"
+                },
+                {
+                  "address": 6442489280,
+                  "name": "RemoteFinishRPCDebugThreadInfoEnumeration"
+                },
+                {
+                  "address": 6442490720,
+                  "name": "RemoteOpenRPCDebugClientCallInfoEnumeration"
+                },
+                {
+                  "address": 6442489952,
+                  "name": "RemoteGetNextRPCDebugClientCallInfo"
+                },
+                {
+                  "address": 6442489088,
+                  "name": "RemoteFinishRPCDebugClientCallInfoEnumeration"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500976,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 492156198,
+                    "Data2": 49463,
+                    "Data3": 18117,
+                    "Data4": [
+                      "ab",
+                      "79",
+                      "63",
+                      "8f",
+                      "2a",
+                      "68",
+                      "e8",
+                      "69"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442500912,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "1D55B526-C137-46C5-AB79-638F2A68E869",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4096
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "6442488816": []
+          }
+        },
+        "callsite_address": 6442473022
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallbackFn": [
+            6442470016
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500288,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488128,
+                  "name": "ept_lookup"
+                },
+                {
+                  "address": 6442459440,
+                  "name": "ept_map"
+                },
+                {
+                  "address": 6442488416,
+                  "name": "ept_lookup_handle_free"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442459536,
+                  "name": "ept_map_auth"
+                },
+                {
+                  "address": 6442457584,
+                  "name": "ept_map_auth_async"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500784,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3786375944,
+                    "Data2": 23839,
+                    "Data3": 4553,
+                    "Data4": [
+                      "91",
+                      "a4",
+                      "08",
+                      "00",
+                      "2b",
+                      "14",
+                      "a0",
+                      "fa"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 3,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442500720,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E1AF8308-5D1F-11C9-91A4-08002B14A0FA",
+                "version": "3.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4096
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "6442470016": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_3865_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_3864_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_3865_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180013d10_3899_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_3865_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_3864_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_3865_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180013d10_3899_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_3900_32{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442488004
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallbackFn": [
+            6442470016
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500288,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488128,
+                  "name": "ept_lookup"
+                },
+                {
+                  "address": 6442459440,
+                  "name": "ept_map"
+                },
+                {
+                  "address": 6442488416,
+                  "name": "ept_lookup_handle_free"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442459536,
+                  "name": "ept_map_auth"
+                },
+                {
+                  "address": 6442457584,
+                  "name": "ept_map_auth_async"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500784,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3786375944,
+                    "Data2": 23839,
+                    "Data3": 4553,
+                    "Data4": [
+                      "91",
+                      "a4",
+                      "08",
+                      "00",
+                      "2b",
+                      "14",
+                      "a0",
+                      "fa"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 3,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442500720,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E1AF8308-5D1F-11C9-91A4-08002B14A0FA",
+                "version": "3.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4096
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf2",
+          "possible_clients": {
+            "6442470016": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_3907_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_3906_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_3907_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180013d10_3941_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_3907_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_3906_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_3907_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x180013d10_3941_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_3942_32{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442488013
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500288,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488128,
+                  "name": "ept_lookup"
+                },
+                {
+                  "address": 6442459440,
+                  "name": "ept_map"
+                },
+                {
+                  "address": 6442488416,
+                  "name": "ept_lookup_handle_free"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442459536,
+                  "name": "ept_map_auth"
+                },
+                {
+                  "address": 6442457584,
+                  "name": "ept_map_auth_async"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500784,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3786375944,
+                    "Data2": 23839,
+                    "Data3": 4553,
+                    "Data4": [
+                      "91",
+                      "a4",
+                      "08",
+                      "00",
+                      "2b",
+                      "14",
+                      "a0",
+                      "fa"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 3,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442500720,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E1AF8308-5D1F-11C9-91A4-08002B14A0FA",
+                "version": "3.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4096
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442472877}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x1800055ad id=0x1800055a5[9] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442472906
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500288,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488128,
+                  "name": "ept_lookup"
+                },
+                {
+                  "address": 6442459440,
+                  "name": "ept_map"
+                },
+                {
+                  "address": 6442488416,
+                  "name": "ept_lookup_handle_free"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442488096,
+                  "name": "ept_mgmt_delete"
+                },
+                {
+                  "address": 6442459536,
+                  "name": "ept_map_auth"
+                },
+                {
+                  "address": 6442457584,
+                  "name": "ept_map_auth_async"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500784,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 3786375944,
+                    "Data2": 23839,
+                    "Data3": 4553,
+                    "Data4": [
+                      "91",
+                      "a4",
+                      "08",
+                      "00",
+                      "2b",
+                      "14",
+                      "a0",
+                      "fa"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 3,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442500720,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "E1AF8308-5D1F-11C9-91A4-08002B14A0FA",
+                "version": "3.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            4096
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442472877}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x1800055ad id=0x1800055a5[9] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442472922
+      },
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442469952
+          ],
+          "IfSpec": [
+            {
+              "address": 6442500192,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442477056,
+                  "name": "OpenEndpointMapper"
+                },
+                {
+                  "address": 6442476768,
+                  "name": "AllocateReservedIPPort"
+                },
+                {
+                  "address": 6442457680,
+                  "name": "ept_insert_ex"
+                },
+                {
+                  "address": 6442456160,
+                  "name": "ept_delete_ex"
+                },
+                {
+                  "address": 6442487872,
+                  "name": "SetRestrictRemoteClients"
+                },
+                {
+                  "address": 6442470144,
+                  "name": "ResetWithNoAuthException"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442500880,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 185230724,
+                    "Data2": 40463,
+                    "Data3": 4559,
+                    "Data4": [
+                      "a3",
+                      "cf",
+                      "00",
+                      "80",
+                      "5f",
+                      "68",
+                      "cb",
+                      "1b"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 1
+                  }
+                },
+                "InterpreterInfo": 6442500816,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "0B0A6584-9E0F-11CF-A3CF-00805F68CB1B",
+                "version": "1.1"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MaxRpcSize": [
+            204800
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442472954}}>}, Atom:<Mem SP-0x10<8> (stack)>, Codeloc:<0x1800055fa id=0x1800055fa[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "6442469952": []
+          }
+        },
+        "callsite_address": 6442472954
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 80<8>>, Codeloc:<0x1800057c4 id=0x1800057b7[17] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "MaxCalls": [
+            50
+          ],
+          "Policy": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442473407}}>}, Atom:<Mem SP-0x48<8> (stack)>, Codeloc:<0x1800057bf id=0x1800057b7[13] contextless>}>)"
+              ],
+              "bitvector": "<BV64 stack_base - 0x38>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": {
+                "annotations": [
+                  "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x1800057c7 id=0x1800057b7[26] contextless>}>)"
+                ],
+                "bitvector": "<BV64 TOP>"
+              },
+              "string": null
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x1800057bc id=0x1800057b7[7] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpExW"
+        },
+        "callsite_address": 6442473399
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

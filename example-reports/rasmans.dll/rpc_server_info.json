@@ -1,0 +1,820 @@
+{
+  "analysis_metadata": {
+    "name": "RasMan",
+    "filepath": "C:\\WINDOWS\\system32\\rasmans.dll",
+    "time": 16.841965436935425,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442512910
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            16
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18000f2ca id=0x18000f2ca[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442513098
+      },
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 24<8>>, Codeloc:<0x18000f310 id=0x18000f310[4] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442513168
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            6442512048
+          ],
+          "IfSpec": [
+            {
+              "address": 6443332320,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442514400,
+                  "name": "RasRpcPortEnum"
+                },
+                {
+                  "address": 6442514544,
+                  "name": "RasRpcDeviceEnum"
+                },
+                {
+                  "address": 6442514688,
+                  "name": "RasRpcGetDevConfig"
+                },
+                {
+                  "address": 6442514832,
+                  "name": "RasRpcPortGetInfo"
+                },
+                {
+                  "address": 6442514976,
+                  "name": "RasRpcEnumConnections"
+                },
+                {
+                  "address": 6442515408,
+                  "name": "RasRpcDeleteEntry"
+                },
+                {
+                  "address": 6442515904,
+                  "name": "RasRpcGetErrorString"
+                },
+                {
+                  "address": 6442516448,
+                  "name": "RasRpcGetCountryInfo"
+                },
+                {
+                  "address": 6442516880,
+                  "name": "RasRpcGetInstalledProtocols"
+                },
+                {
+                  "address": 6442517472,
+                  "name": "RasRpcGetUserPreferences"
+                },
+                {
+                  "address": 6442517920,
+                  "name": "RasRpcSetUserPreferences"
+                },
+                {
+                  "address": 6442518368,
+                  "name": "RasRpcGetSystemDirectory"
+                },
+                {
+                  "address": 6442513520,
+                  "name": "RasRpcSubmitRequest"
+                },
+                {
+                  "address": 6442514080,
+                  "name": "RasRpcSubmitRequestLocal"
+                },
+                {
+                  "address": 6442517136,
+                  "name": "RasRpcGetInstalledProtocolsEx"
+                },
+                {
+                  "address": 6442518816,
+                  "name": "RasRpcGetVersion"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443330352,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 543227958,
+                    "Data2": 64034,
+                    "Data3": 4559,
+                    "Data4": [
+                      "98",
+                      "23",
+                      "00",
+                      "a0",
+                      "c9",
+                      "11",
+                      "e5",
+                      "df"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443331312,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "20610036-FA22-11CF-9823-00A0C911E5DF",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "6442512048": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 16,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_8658_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_8657_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_8658_64 <= 0xc0000400>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442512704
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443346096,
+              "string": "\\PIPE\\ROUTER"
+            }
+          ],
+          "MaxCalls": [
+            1
+          ],
+          "Protseq": [
+            {
+              "address": 6443346128,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x18000f0f2 id=0x18000f0da[28] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442512602
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6443346072,
+              "string": "RasmanLrpc"
+            }
+          ],
+          "MaxCalls": [
+            1
+          ],
+          "Protseq": [
+            {
+              "address": 6443386888,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 88<8>>, Codeloc:<0x18000f111 id=0x18000f111[2] contextless>}>)"
+              ],
+              "bitvector": "<BV64 TOP>"
+            }
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442512657
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

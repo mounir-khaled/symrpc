@@ -1,0 +1,232 @@
+{
+  "analysis_metadata": {
+    "name": "TrkWks",
+    "filepath": "C:\\WINDOWS\\system32\\trkwks.dll",
+    "time": 1.5901429653167725,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            null
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442535728,
+              "flags": 100663297,
+              "procedure_addresses": [
+                {
+                  "address": 6442456000,
+                  "name": "Stubold_LnkMendLink"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442495376,
+                  "name": "StubLnkSetVolumeId"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442494976,
+                  "name": "StubLnkOnRestore"
+                },
+                {
+                  "address": 6442494432,
+                  "name": "StubLnkMendLink"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442455984,
+                  "name": "StubGetFileTrackingInformation"
+                },
+                {
+                  "address": 6442495120,
+                  "name": "StubLnkSearchMachine"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442535608,
+                "Flags": 100663297,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 806303026,
+                    "Data2": 14540,
+                    "Data3": 4560,
+                    "Data4": [
+                      "a3",
+                      "f0",
+                      "00",
+                      "20",
+                      "af",
+                      "6b",
+                      "0a",
+                      "dd"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 2
+                  }
+                },
+                "InterpreterInfo": 6442536032,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "300F3532-38CC-11D0-A3F0-0020AF6B0ADD",
+                "version": "1.2"
+              }
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Tags:{<LocalVariableTag {Metadata: {'tagged_by': 'SimEngineRDVEX._store_core', 'ins_addr': 6442519307}}>}, Atom:<Mem SP-0x78<4> (stack)>, Codeloc:<0x180010b0b id=0x180010b06[11] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP[31:0]>"
+            }
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442519302
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442544320,
+              "string": "\\pipe\\trkwks"
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Mem 0x18001b324<4>>, Codeloc:[External ['0x18000e0ac']]}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x18000e0e9 id=0x18000e0ac[79] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 6442544352,
+              "string": "ncacn_np"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442508460
+      },
+      {
+        "arguments": {
+          "Endpoint": [
+            {
+              "address": 6442544376,
+              "string": "trkwks"
+            }
+          ],
+          "MaxCalls": [
+            {
+              "annotations": [
+                "<DefinitionAnnotation(<Definition {Atom:<Mem 0x18001b324<4>>, Codeloc:[External ['0x18000e0ac']]}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x18000e1cd id=0x18000e1cd[3] contextless>}>)"
+              ],
+              "bitvector": "<BV32 TOP>"
+            }
+          ],
+          "Protseq": [
+            {
+              "address": 6442544392,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqEpW"
+        },
+        "callsite_address": 6442508749
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

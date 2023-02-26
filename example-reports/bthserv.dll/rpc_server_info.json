@@ -1,0 +1,285 @@
+{
+  "analysis_metadata": {
+    "name": "bthserv",
+    "filepath": "C:\\WINDOWS\\system32\\bthserv.dll",
+    "time": 6.14656662940979,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            10
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6442473706
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_SECURE_ONLY": false,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": true,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6442621616,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6442488320,
+                  "name": "BthServOpen"
+                },
+                {
+                  "address": 6442488784,
+                  "name": "BthServClose"
+                },
+                {
+                  "address": 6442490992,
+                  "name": "BthServRegisterAuthenticationEvent"
+                },
+                {
+                  "address": 6442491104,
+                  "name": "BthServDeregisterAuthenticationEvent"
+                },
+                {
+                  "address": 6442491392,
+                  "name": "BthServGetAuthRequest"
+                },
+                {
+                  "address": 6442489200,
+                  "name": "BthServGetDeviceInfo"
+                },
+                {
+                  "address": 6442489408,
+                  "name": "BthServSetDeviceName"
+                },
+                {
+                  "address": 6442488976,
+                  "name": "BthServGetDeviceList"
+                },
+                {
+                  "address": 6442489520,
+                  "name": "BthServActivateService"
+                },
+                {
+                  "address": 6442489616,
+                  "name": "BthServUpdateService"
+                },
+                {
+                  "address": 6442490368,
+                  "name": "BthServGetSdpRecord"
+                },
+                {
+                  "address": 6442490512,
+                  "name": "BthServSetSdpRecord"
+                },
+                {
+                  "address": 6442490640,
+                  "name": "BthServSetSdpRecordWithInfo"
+                },
+                {
+                  "address": 6442490896,
+                  "name": "BthServRemoveSdpRecord"
+                },
+                {
+                  "address": 6442491200,
+                  "name": "BthServEnableDiscovery"
+                },
+                {
+                  "address": 6442491296,
+                  "name": "BthServEnableIncomingConnections"
+                },
+                {
+                  "address": 6442491488,
+                  "name": "BthServUninstallDevice"
+                },
+                {
+                  "address": 6442489728,
+                  "name": "BthServEirGetRecords"
+                },
+                {
+                  "address": 6442489888,
+                  "name": "BthServEirSetRecord"
+                },
+                {
+                  "address": 6442490048,
+                  "name": "BthServEirUpdateRecord"
+                },
+                {
+                  "address": 6442490208,
+                  "name": "BthServEirRemoveRecord"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6442623904,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 717987176,
+                    "Data2": 46132,
+                    "Data3": 19262,
+                    "Data4": [
+                      "b9",
+                      "66",
+                      "e0",
+                      "6b",
+                      "4b",
+                      "3a",
+                      "84",
+                      "cb"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6442622368,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "2ACB9D68-B434-4B3E-B966-E06B4B3A84CB",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            1234
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIfEx",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 0,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 0,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6442473327
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            10
+          ],
+          "Protseq": [
+            {
+              "address": 6442632048,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6442473449
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}

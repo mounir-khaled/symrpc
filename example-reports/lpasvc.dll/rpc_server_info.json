@@ -1,0 +1,296 @@
+{
+  "analysis_metadata": {
+    "name": "wlpasvc",
+    "filepath": "C:\\WINDOWS\\system32\\lpasvc.dll",
+    "time": 8.0238676071167,
+    "termination_reason": "SUCCESS"
+  },
+  "analysis_result": {
+    "auth_registration": [
+      {
+        "arguments": {
+          "Arg": [
+            0
+          ],
+          "AuthnSvc": [
+            9
+          ],
+          "GetKeyFn": [
+            0
+          ],
+          "ServerPrincName": [
+            0
+          ],
+          "api_function": "RpcServerRegisterAuthInfoW"
+        },
+        "callsite_address": 6443318660
+      }
+    ],
+    "interface_registration": [
+      {
+        "arguments": {
+          "Flags": [
+            {
+              "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_SECURE_ONLY": true,
+              "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
+              "RPC_IF_ASYNC_CALLBACK": false,
+              "RPC_IF_AUTOLISTEN": false,
+              "RPC_IF_OLE": false,
+              "RPC_IF_SEC_CACHE_PER_PROC": false,
+              "RPC_IF_SEC_NO_CACHE": false
+            }
+          ],
+          "IfCallback": [
+            0
+          ],
+          "IfSpec": [
+            {
+              "address": 6443414880,
+              "flags": 100663296,
+              "procedure_addresses": [
+                {
+                  "address": 6443322736,
+                  "name": "LuiApiOpenHandle"
+                },
+                {
+                  "address": 6443323936,
+                  "name": "LuiApiCloseHandle"
+                },
+                {
+                  "address": 6443325808,
+                  "name": "LuiApiRegisterForAllEnterpriseProfileNotifications"
+                },
+                {
+                  "address": 6443324912,
+                  "name": "LuiApiRegisterForAllProfileNotifications"
+                },
+                {
+                  "address": 6443325360,
+                  "name": "LuiApiRegisterForEnterpriseEsimNotifications"
+                },
+                {
+                  "address": 6443324464,
+                  "name": "LuiApiRegisterForEsimNotifications"
+                },
+                {
+                  "address": 6443324192,
+                  "name": "LuiApiRegisterForLpaNotifications"
+                },
+                {
+                  "address": 6443326256,
+                  "name": "LuiApiAddProfile"
+                },
+                {
+                  "address": 6443326944,
+                  "name": "LuiApiCancelOperation"
+                },
+                {
+                  "address": 6443327504,
+                  "name": "LuiApiDeleteProfile"
+                },
+                {
+                  "address": 6443328048,
+                  "name": "LuiApiDisableProfile"
+                },
+                {
+                  "address": 6443328592,
+                  "name": "LuiApiDiscoverProfiles"
+                },
+                {
+                  "address": 6443329296,
+                  "name": "LuiApiEnableProfile"
+                },
+                {
+                  "address": 6443329840,
+                  "name": "LuiApiInstallProfile"
+                },
+                {
+                  "address": 6443330592,
+                  "name": "LuiApiProcessActivationCode"
+                },
+                {
+                  "address": 6443331104,
+                  "name": "LuiApiReleaseProvisioningProfile"
+                },
+                {
+                  "address": 6443331552,
+                  "name": "LuiApiRequestProvisioningProfile"
+                },
+                {
+                  "address": 6443332016,
+                  "name": "LuiApiSetDefaultSmdpAddress"
+                },
+                {
+                  "address": 6443332512,
+                  "name": "LuiApiSetEsimPolicy"
+                },
+                {
+                  "address": 6443333104,
+                  "name": "LuiApiSetProfileNickname"
+                },
+                {
+                  "address": 6443333872,
+                  "name": "LuiApiSetUserAuthenticationMode"
+                },
+                {
+                  "address": 6443334336,
+                  "name": "LuiApiVerifyClientToken"
+                },
+                {
+                  "address": 6443334672,
+                  "name": "LuiApiWipeEsim"
+                }
+              ],
+              "struct_values": {
+                "DefaultManagerEpv": 0,
+                "DispatchTable": 6443415040,
+                "Flags": 100663296,
+                "InterfaceId": {
+                  "SyntaxGUID": {
+                    "Data1": 1330620294,
+                    "Data2": 12175,
+                    "Data3": 18920,
+                    "Data4": [
+                      "8a",
+                      "ae",
+                      "66",
+                      "69",
+                      "fe",
+                      "bd",
+                      "5d",
+                      "1d"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 1,
+                    "MinorVersion": 0
+                  }
+                },
+                "InterpreterInfo": 6443414976,
+                "Length": 96,
+                "RpcProtseqEndpoint": 0,
+                "RpcProtseqEndpointCount": 0,
+                "TransferSyntax": {
+                  "SyntaxGUID": {
+                    "Data1": 2324192516,
+                    "Data2": 7403,
+                    "Data3": 4553,
+                    "Data4": [
+                      "9f",
+                      "e8",
+                      "08",
+                      "00",
+                      "2b",
+                      "10",
+                      "48",
+                      "60"
+                    ]
+                  },
+                  "SyntaxVersion": {
+                    "MajorVersion": 2,
+                    "MinorVersion": 0
+                  }
+                }
+              },
+              "uuid": {
+                "uuid": "4F4FA786-2F8F-49E8-8AAE-6669FEBD5D1D",
+                "version": "1.0"
+              }
+            }
+          ],
+          "MaxCalls": [
+            0
+          ],
+          "MaxRpcSize": [
+            0
+          ],
+          "MgrEpv": [
+            0
+          ],
+          "MgrTypeUuid": [
+            0
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerRegisterIf3",
+          "possible_clients": {
+            "0": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": []
+              }
+            ]
+          }
+        },
+        "callsite_address": 6443318591
+      }
+    ],
+    "protseq_usage": [
+      {
+        "arguments": {
+          "MaxCalls": [
+            0
+          ],
+          "Protseq": [
+            {
+              "address": 6443477248,
+              "string": "ncalrpc"
+            }
+          ],
+          "SecurityDescriptor": [
+            0
+          ],
+          "api_function": "RpcServerUseProtseqW"
+        },
+        "callsite_address": 6443318463
+      }
+    ],
+    "rpc_constraints": {}
+  }
+}
