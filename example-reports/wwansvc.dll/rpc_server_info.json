@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "WwanSvc",
     "filepath": "C:\\WINDOWS\\system32\\wwansvc.dll",
-    "time": 21.926888704299927,
+    "time": 9.467237949371338,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -314,43 +314,71 @@
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
@@ -521,45 +549,73 @@
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

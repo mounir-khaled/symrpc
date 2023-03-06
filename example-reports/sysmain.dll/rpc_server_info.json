@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "SysMain",
     "filepath": "C:\\WINDOWS\\system32\\sysmain.dll",
-    "time": 6.671564102172852,
+    "time": 6.572714328765869,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -129,7 +129,60 @@
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442764896": []
+            "6442764896": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_4158_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_4157_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_4206_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_4193_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Reverse(Pointer_4206_64) != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (0x0 .. 0xffffffff * (0x0 .. (if strncmp_ret_4209_32{UNINITIALIZED} == 0x0 then 0 else 1))[2:2] .. 0 .. (if strncmp_ret_4209_32{UNINITIALIZED} == 0x0 then 0 else 1)) == 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 6443161259

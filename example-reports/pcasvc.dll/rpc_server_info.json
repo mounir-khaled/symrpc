@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "PcaSvc",
     "filepath": "C:\\WINDOWS\\system32\\pcasvc.dll",
-    "time": 5.393733263015747,
+    "time": 6.108444690704346,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -131,20 +131,35 @@
                   {
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 4,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -154,9 +169,29 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

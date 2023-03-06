@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "WEPHOSTSVC",
     "filepath": "C:\\WINDOWS\\system32\\wephostsvc.dll",
-    "time": 1.1806848049163818,
+    "time": 1.0660901069641113,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -159,10 +159,45 @@
                   {
                     "AuthenticationLevel": 1,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -177,37 +212,37 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 2,
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_4099_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_3878_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_4100_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_3879_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_4135_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_3914_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_4148_64 <= 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_3927_64 <= 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_4148_64 == 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_3927_64 == 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool Reverse(Pointer_4148_64) != 0x0>"
+                    "bitvector": "<Bool Reverse(Pointer_3927_64) != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (0x0 .. 0xffffffff * (0x0 .. (if unconstrained_ret_CompareStringW_4149_32{UNINITIALIZED} == 0x2 then 0 else 1))[2:2] .. 0 .. (if unconstrained_ret_CompareStringW_4149_32{UNINITIALIZED} == 0x2 then 0 else 1)) == 0x0>"
+                    "bitvector": "<Bool (0x0 .. 0xffffffff * (0x0 .. (if unconstrained_ret_CompareStringW_3928_32{UNINITIALIZED} == 0x2 then 0 else 1))[2:2] .. 0 .. (if unconstrained_ret_CompareStringW_3928_32{UNINITIALIZED} == 0x2 then 0 else 1)) == 0x0>"
                   }
                 ]
               }

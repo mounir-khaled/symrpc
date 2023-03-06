@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "CryptSvc",
     "filepath": "C:\\WINDOWS\\system32\\cryptsvc.dll",
-    "time": 2.9840221405029297,
+    "time": 2.0880486965179443,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -115,18 +115,22 @@
                 "call_attributes": [
                   {
                     "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_8759_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_10124_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_8760_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_10123_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_8760_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_10124_64 <= 0xc0000400>"
                   }
                 ]
               }

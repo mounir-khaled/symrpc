@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "nsi",
     "filepath": "C:\\WINDOWS\\system32\\nsisvc.dll",
-    "time": 1.2948834896087646,
+    "time": 1.157608985900879,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -146,23 +146,21 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 6,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 7
                   },
                   {
-                    "AuthenticationLevel": 7,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 6
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_6216_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_1959_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_6217_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_1958_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_6217_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_1959_64 <= 0xc0000400>"
                   }
                 ]
               }

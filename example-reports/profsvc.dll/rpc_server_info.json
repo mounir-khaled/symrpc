@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "ProfSvc",
     "filepath": "C:\\WINDOWS\\system32\\profsvc.dll",
-    "time": 10.8252272605896,
+    "time": 6.303739070892334,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -138,35 +138,39 @@
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_1474_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_8658_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_1473_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_8657_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_1511_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_8695_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_1524_64 == 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_8708_64 == 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CompareStringW_1525_64{UNINITIALIZED}[31:0] == 0x2>"
+                    "bitvector": "<Bool unconstrained_ret_CompareStringW_8709_64{UNINITIALIZED}[31:0] == 0x2>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_1529_64 == 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_8713_64 == 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_1531_64 <= 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_8715_64 <= 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_1531_64 == 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_8715_64 == 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool Reverse(Pointer_1531_64[63:32]) >= 0x4>"
+                    "bitvector": "<Bool Reverse(Pointer_8715_64[63:32]) >= 0x4>"
                   }
                 ]
               }

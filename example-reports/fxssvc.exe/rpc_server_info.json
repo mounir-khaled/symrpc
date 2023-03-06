@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Fax",
     "filepath": "c:\\windows\\system32\\fxssvc.exe",
-    "time": 41.8215012550354,
+    "time": 21.108870267868042,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -52,423 +52,423 @@
               "procedure_addresses": [
                 {
                   "address": 5368772384,
-                  "name": "sub_14000f720"
+                  "name": "FAX_GetServicePrinters"
                 },
                 {
                   "address": 5368771248,
-                  "name": "sub_14000f2b0"
+                  "name": "FAX_ConnectionRefCount"
                 },
                 {
                   "address": 5368771808,
-                  "name": "sub_14000f4e0"
+                  "name": "FAX_OpenPort"
                 },
                 {
                   "address": 5368773328,
-                  "name": "sub_14000fad0"
+                  "name": "FAX_ClosePort"
                 },
                 {
                   "address": 5368773680,
-                  "name": "sub_14000fc30"
+                  "name": "FAX_EnumJobs"
                 },
                 {
                   "address": 5368779904,
-                  "name": "sub_140011480"
+                  "name": "FAX_GetJob"
                 },
                 {
                   "address": 5368780720,
-                  "name": "sub_1400117b0"
+                  "name": "FAX_SetJob"
                 },
                 {
                   "address": 5368781376,
-                  "name": "sub_140011a40"
+                  "name": "FAX_GetPageData"
                 },
                 {
                   "address": 5368782272,
-                  "name": "sub_140011dc0"
+                  "name": "FAX_GetDeviceStatus"
                 },
                 {
                   "address": 5368783840,
-                  "name": "sub_1400123e0"
+                  "name": "FAX_Abort"
                 },
                 {
                   "address": 5368787616,
-                  "name": "sub_1400132a0"
+                  "name": "FAX_EnumPorts"
                 },
                 {
                   "address": 5368788320,
-                  "name": "sub_140013560"
+                  "name": "FAX_GetPort"
                 },
                 {
                   "address": 5368789584,
-                  "name": "sub_140013a50"
+                  "name": "FAX_SetPort"
                 },
                 {
                   "address": 5368792000,
-                  "name": "sub_1400143c0"
+                  "name": "FAX_EnumRoutingMethods"
                 },
                 {
                   "address": 5368792688,
-                  "name": "sub_140014670"
+                  "name": "FAX_EnableRoutingMethod"
                 },
                 {
                   "address": 5368794864,
-                  "name": "sub_140014ef0"
+                  "name": "FAX_GetRoutingInfo"
                 },
                 {
                   "address": 5368795712,
-                  "name": "sub_140015240"
+                  "name": "FAX_SetRoutingInfo"
                 },
                 {
                   "address": 5368793920,
-                  "name": "sub_140014b40"
+                  "name": "FAX_EnumGlobalRoutingInfo"
                 },
                 {
                   "address": 5368794496,
-                  "name": "sub_140014d80"
+                  "name": "FAX_SetGlobalRoutingInfo"
                 },
                 {
                   "address": 5368785664,
-                  "name": "sub_140012b00"
+                  "name": "FAX_GetConfiguration"
                 },
                 {
                   "address": 5368786272,
-                  "name": "sub_140012d60"
+                  "name": "FAX_SetConfiguration"
                 },
                 {
                   "address": 5368797232,
-                  "name": "sub_140015830"
+                  "name": "FAX_GetLoggingCategories"
                 },
                 {
                   "address": 5368797712,
-                  "name": "sub_140015a10"
+                  "name": "FAX_SetLoggingCategories"
                 },
                 {
                   "address": 5369001280,
-                  "name": "sub_140047540"
+                  "name": "FAX_GetSecurity"
                 },
                 {
                   "address": 5368999984,
-                  "name": "sub_140047030"
+                  "name": "FAX_SetSecurity"
                 },
                 {
                   "address": 5369002192,
-                  "name": "sub_1400478d0"
+                  "name": "FAX_AccessCheck"
                 },
                 {
                   "address": 5368806224,
-                  "name": "sub_140017b50"
+                  "name": "FAX_CheckServerProtSeq"
                 },
                 {
                   "address": 5368800080,
-                  "name": "sub_140016350"
+                  "name": "FAX_SendDocumentEx"
                 },
                 {
                   "address": 5368820624,
-                  "name": "sub_14001b390"
+                  "name": "FAX_EnumJobsEx"
                 },
                 {
                   "address": 5368820240,
-                  "name": "sub_14001b210"
+                  "name": "FAX_GetJobEx"
                 },
                 {
                   "address": 5368796208,
-                  "name": "sub_140015430"
+                  "name": "FAX_GetCountryList"
                 },
                 {
                   "address": 5368804704,
-                  "name": "sub_140017560"
+                  "name": "FAX_GetPersonalProfileInfo"
                 },
                 {
                   "address": 5368806464,
-                  "name": "sub_140017c40"
+                  "name": "FAX_GetQueueStates"
                 },
                 {
                   "address": 5368806704,
-                  "name": "sub_140017d30"
+                  "name": "FAX_SetQueue"
                 },
                 {
                   "address": 5368807184,
-                  "name": "sub_140017f10"
+                  "name": "FAX_GetReceiptsConfiguration"
                 },
                 {
                   "address": 5368807904,
-                  "name": "sub_1400181e0"
+                  "name": "FAX_SetReceiptsConfiguration"
                 },
                 {
                   "address": 5368809216,
-                  "name": "sub_140018700"
+                  "name": "FAX_GetReceiptsOptions"
                 },
                 {
                   "address": 5368809472,
-                  "name": "sub_140018800"
+                  "name": "FAX_GetVersion"
                 },
                 {
                   "address": 5368809984,
-                  "name": "sub_140018a00"
+                  "name": "FAX_GetOutboxConfiguration"
                 },
                 {
                   "address": 5368810432,
-                  "name": "sub_140018bc0"
+                  "name": "FAX_SetOutboxConfiguration"
                 },
                 {
                   "address": 5368810928,
-                  "name": "sub_140018db0"
+                  "name": "FAX_GetPersonalCoverPagesOption"
                 },
                 {
                   "address": 5368811104,
-                  "name": "sub_140018e60"
+                  "name": "FAX_GetArchiveConfiguration"
                 },
                 {
                   "address": 5368811184,
-                  "name": "sub_140018eb0"
+                  "name": "FAX_SetArchiveConfiguration"
                 },
                 {
                   "address": 5368811264,
-                  "name": "sub_140018f00"
+                  "name": "FAX_GetActivityLoggingConfiguration"
                 },
                 {
                   "address": 5368811808,
-                  "name": "sub_140019120"
+                  "name": "FAX_SetActivityLoggingConfiguration"
                 },
                 {
                   "address": 5368814304,
-                  "name": "sub_140019ae0"
+                  "name": "FAX_EnumerateProviders"
                 },
                 {
                   "address": 5368816560,
-                  "name": "sub_14001a3b0"
+                  "name": "FAX_GetPortEx"
                 },
                 {
                   "address": 5368817072,
-                  "name": "sub_14001a5b0"
+                  "name": "FAX_SetPortEx"
                 },
                 {
                   "address": 5368815920,
-                  "name": "sub_14001a130"
+                  "name": "FAX_EnumPortsEx"
                 },
                 {
                   "address": 5369082544,
-                  "name": "sub_14005b2b0"
+                  "name": "FAX_GetExtensionData"
                 },
                 {
                   "address": 5369082832,
-                  "name": "sub_14005b3d0"
+                  "name": "FAX_SetExtensionData"
                 },
                 {
                   "address": 5369096704,
-                  "name": "sub_14005ea00"
+                  "name": "FAX_AddOutboundGroup"
                 },
                 {
                   "address": 5369097472,
-                  "name": "sub_14005ed00"
+                  "name": "FAX_SetOutboundGroup"
                 },
                 {
                   "address": 5369098688,
-                  "name": "sub_14005f1c0"
+                  "name": "FAX_RemoveOutboundGroup"
                 },
                 {
                   "address": 5369099584,
-                  "name": "sub_14005f540"
+                  "name": "FAX_EnumOutboundGroups"
                 },
                 {
                   "address": 5369100128,
-                  "name": "sub_14005f760"
+                  "name": "FAX_SetDeviceOrderInGroup"
                 },
                 {
                   "address": 5369111632,
-                  "name": "sub_140062450"
+                  "name": "FAX_AddOutboundRule"
                 },
                 {
                   "address": 5369113632,
-                  "name": "sub_140062c20"
+                  "name": "FAX_RemoveOutboundRule"
                 },
                 {
                   "address": 5369114464,
-                  "name": "sub_140062f60"
+                  "name": "FAX_SetOutboundRule"
                 },
                 {
                   "address": 5369116704,
-                  "name": "sub_140063820"
+                  "name": "FAX_EnumOutboundRules"
                 },
                 {
                   "address": 5368823088,
-                  "name": "sub_14001bd30"
+                  "name": "FAX_RegisterServiceProviderEx"
                 },
                 {
                   "address": 5368824304,
-                  "name": "sub_14001c1f0"
+                  "name": "FAX_UnregisterServiceProviderEx"
                 },
                 {
                   "address": 5368824560,
-                  "name": "sub_14001c2f0"
+                  "name": "FAX_UnregisterRoutingExtension"
                 },
                 {
                   "address": 5368826704,
-                  "name": "sub_14001cb50"
+                  "name": "FAX_StartMessagesEnum"
                 },
                 {
                   "address": 5368826832,
-                  "name": "sub_14001cbd0"
+                  "name": "FAX_EndMessagesEnum"
                 },
                 {
                   "address": 5368831040,
-                  "name": "sub_14001dc40"
+                  "name": "FAX_EnumMessages"
                 },
                 {
                   "address": 5368833568,
-                  "name": "sub_14001e620"
+                  "name": "FAX_GetMessage"
                 },
                 {
                   "address": 5368834976,
-                  "name": "sub_14001eba0"
+                  "name": "FAX_RemoveMessage"
                 },
                 {
                   "address": 5368836000,
-                  "name": "sub_14001efa0"
+                  "name": "FAX_StartCopyToServer"
                 },
                 {
                   "address": 5368837792,
-                  "name": "sub_14001f6a0"
+                  "name": "FAX_StartCopyMessageFromServer"
                 },
                 {
                   "address": 5368839264,
-                  "name": "sub_14001fc60"
+                  "name": "FAX_WriteFile"
                 },
                 {
                   "address": 5368839760,
-                  "name": "sub_14001fe50"
+                  "name": "FAX_ReadFile"
                 },
                 {
                   "address": 5368840224,
-                  "name": "sub_140020020"
+                  "name": "FAX_EndCopy"
                 },
                 {
                   "address": 5368840560,
-                  "name": "sub_140020170"
+                  "name": "FAX_StartServerNotification"
                 },
                 {
                   "address": 5368840816,
-                  "name": "sub_140020270"
+                  "name": "FAX_StartServerNotificationEx"
                 },
                 {
                   "address": 5368843728,
-                  "name": "sub_140020dd0"
+                  "name": "FAX_EndServerNotification"
                 },
                 {
                   "address": 5368844064,
-                  "name": "sub_140020f20"
+                  "name": "FAX_GetServerActivity"
                 },
                 {
                   "address": 5368844448,
-                  "name": "sub_1400210a0"
+                  "name": "FAX_SetConfigWizardUsed"
                 },
                 {
                   "address": 5368844928,
-                  "name": "sub_140021280"
+                  "name": "FAX_EnumRoutingExtensions"
                 },
                 {
                   "address": 5368845760,
-                  "name": "sub_1400215c0"
+                  "name": "FAX_AnswerCall"
                 },
                 {
                   "address": 5368770640,
-                  "name": "sub_14000f050"
+                  "name": "FAX_ConnectFaxServer"
                 },
                 {
                   "address": 5369001360,
-                  "name": "sub_140047590"
+                  "name": "FAX_GetSecurityEx"
                 },
                 {
                   "address": 5368846512,
-                  "name": "sub_1400218b0"
+                  "name": "FAX_RefreshArchive"
                 },
                 {
                   "address": 5368846880,
-                  "name": "sub_140021a20"
+                  "name": "FAX_SetRecipientsLimit"
                 },
                 {
                   "address": 5368846896,
-                  "name": "sub_140021a30"
+                  "name": "FAX_GetRecipientsLimit"
                 },
                 {
                   "address": 5368847104,
-                  "name": "sub_140021b00"
+                  "name": "FAX_GetServerSKU"
                 },
                 {
                   "address": 5368847360,
-                  "name": "sub_140021c00"
+                  "name": "FAX_CheckValidFaxFolder"
                 },
                 {
                   "address": 5368820400,
-                  "name": "sub_14001b2b0"
+                  "name": "FAX_GetJobEx2"
                 },
                 {
                   "address": 5368820800,
-                  "name": "sub_14001b440"
+                  "name": "FAX_EnumJobsEx2"
                 },
                 {
                   "address": 5368833728,
-                  "name": "sub_14001e6c0"
+                  "name": "FAX_GetMessageEx"
                 },
                 {
                   "address": 5368831200,
-                  "name": "sub_14001dce0"
+                  "name": "FAX_StartMessagesEnumEx"
                 },
                 {
                   "address": 5368831424,
-                  "name": "sub_14001ddc0"
+                  "name": "FAX_EnumMessagesEx"
                 },
                 {
                   "address": 5368843216,
-                  "name": "sub_140020bd0"
+                  "name": "FAX_StartServerNotificationEx2"
                 },
                 {
                   "address": 5368759568,
-                  "name": "sub_14000c510"
+                  "name": "FAX_CreateAccount"
                 },
                 {
                   "address": 5368760592,
-                  "name": "sub_14000c910"
+                  "name": "FAX_DeleteAccount"
                 },
                 {
                   "address": 5368762064,
-                  "name": "sub_14000ced0"
+                  "name": "FAX_EnumAccounts"
                 },
                 {
                   "address": 5368761024,
-                  "name": "sub_14000cac0"
+                  "name": "FAX_GetAccountInfo"
                 },
                 {
                   "address": 5369053696,
-                  "name": "sub_140054200"
+                  "name": "FAX_GetGeneralConfiguration"
                 },
                 {
                   "address": 5369054224,
-                  "name": "sub_140054410"
+                  "name": "FAX_SetGeneralConfiguration"
                 },
                 {
                   "address": 5369001440,
-                  "name": "sub_1400475e0"
+                  "name": "FAX_GetSecurityEx2"
                 },
                 {
                   "address": 5369000064,
-                  "name": "sub_140047080"
+                  "name": "FAX_SetSecurityEx2"
                 },
                 {
                   "address": 5369002608,
-                  "name": "sub_140047a70"
+                  "name": "FAX_AccessCheckEx2"
                 },
                 {
                   "address": 5368765344,
-                  "name": "sub_14000dba0"
+                  "name": "FAX_ReAssignMessage"
                 },
                 {
                   "address": 5368834944,
-                  "name": "sub_14001eb80"
+                  "name": "FAX_SetMessage"
                 },
                 {
                   "address": 5369053360,
-                  "name": "sub_1400540b0"
+                  "name": "FAX_GetConfigOption"
                 }
               ],
               "struct_values": {
@@ -539,7 +539,540 @@
           ],
           "api_function": "RpcServerRegisterIfEx",
           "possible_clients": {
-            "5368859456": []
+            "5368859456": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2164_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2165_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2206_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2207_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2222_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2223_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x14009f518_2224_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2227_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2228_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2230_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2232_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2234_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2234_64{UNINITIALIZED} + 0x68 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f470_2235_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2164_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2165_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2206_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2207_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2222_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2223_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2224_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2238_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2239_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2241_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2243_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 == 0xffffffffffffe068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffffe068_2246_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2248_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2164_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2165_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2206_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2207_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2222_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2223_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2224_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2238_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2239_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2241_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2243_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 == 0xffffffffffffe068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffffe068_2246_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2248_64{UNINITIALIZED}[31:0] != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2164_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2165_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2206_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2207_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2222_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2223_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2224_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2238_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2239_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2241_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2243_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2245_64{UNINITIALIZED} + 0x68 == 0xffffffffffffe068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffffe068_2246_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 5368860488
@@ -569,423 +1102,423 @@
               "procedure_addresses": [
                 {
                   "address": 5368772384,
-                  "name": "sub_14000f720"
+                  "name": "FAX_GetServicePrinters"
                 },
                 {
                   "address": 5368771248,
-                  "name": "sub_14000f2b0"
+                  "name": "FAX_ConnectionRefCount"
                 },
                 {
                   "address": 5368771808,
-                  "name": "sub_14000f4e0"
+                  "name": "FAX_OpenPort"
                 },
                 {
                   "address": 5368773328,
-                  "name": "sub_14000fad0"
+                  "name": "FAX_ClosePort"
                 },
                 {
                   "address": 5368773680,
-                  "name": "sub_14000fc30"
+                  "name": "FAX_EnumJobs"
                 },
                 {
                   "address": 5368779904,
-                  "name": "sub_140011480"
+                  "name": "FAX_GetJob"
                 },
                 {
                   "address": 5368780720,
-                  "name": "sub_1400117b0"
+                  "name": "FAX_SetJob"
                 },
                 {
                   "address": 5368781376,
-                  "name": "sub_140011a40"
+                  "name": "FAX_GetPageData"
                 },
                 {
                   "address": 5368782272,
-                  "name": "sub_140011dc0"
+                  "name": "FAX_GetDeviceStatus"
                 },
                 {
                   "address": 5368783840,
-                  "name": "sub_1400123e0"
+                  "name": "FAX_Abort"
                 },
                 {
                   "address": 5368787616,
-                  "name": "sub_1400132a0"
+                  "name": "FAX_EnumPorts"
                 },
                 {
                   "address": 5368788320,
-                  "name": "sub_140013560"
+                  "name": "FAX_GetPort"
                 },
                 {
                   "address": 5368789584,
-                  "name": "sub_140013a50"
+                  "name": "FAX_SetPort"
                 },
                 {
                   "address": 5368792000,
-                  "name": "sub_1400143c0"
+                  "name": "FAX_EnumRoutingMethods"
                 },
                 {
                   "address": 5368792688,
-                  "name": "sub_140014670"
+                  "name": "FAX_EnableRoutingMethod"
                 },
                 {
                   "address": 5368794864,
-                  "name": "sub_140014ef0"
+                  "name": "FAX_GetRoutingInfo"
                 },
                 {
                   "address": 5368795712,
-                  "name": "sub_140015240"
+                  "name": "FAX_SetRoutingInfo"
                 },
                 {
                   "address": 5368793920,
-                  "name": "sub_140014b40"
+                  "name": "FAX_EnumGlobalRoutingInfo"
                 },
                 {
                   "address": 5368794496,
-                  "name": "sub_140014d80"
+                  "name": "FAX_SetGlobalRoutingInfo"
                 },
                 {
                   "address": 5368785664,
-                  "name": "sub_140012b00"
+                  "name": "FAX_GetConfiguration"
                 },
                 {
                   "address": 5368786272,
-                  "name": "sub_140012d60"
+                  "name": "FAX_SetConfiguration"
                 },
                 {
                   "address": 5368797232,
-                  "name": "sub_140015830"
+                  "name": "FAX_GetLoggingCategories"
                 },
                 {
                   "address": 5368797712,
-                  "name": "sub_140015a10"
+                  "name": "FAX_SetLoggingCategories"
                 },
                 {
                   "address": 5369001280,
-                  "name": "sub_140047540"
+                  "name": "FAX_GetSecurity"
                 },
                 {
                   "address": 5368999984,
-                  "name": "sub_140047030"
+                  "name": "FAX_SetSecurity"
                 },
                 {
                   "address": 5369002192,
-                  "name": "sub_1400478d0"
+                  "name": "FAX_AccessCheck"
                 },
                 {
                   "address": 5368806224,
-                  "name": "sub_140017b50"
+                  "name": "FAX_CheckServerProtSeq"
                 },
                 {
                   "address": 5368800080,
-                  "name": "sub_140016350"
+                  "name": "FAX_SendDocumentEx"
                 },
                 {
                   "address": 5368820624,
-                  "name": "sub_14001b390"
+                  "name": "FAX_EnumJobsEx"
                 },
                 {
                   "address": 5368820240,
-                  "name": "sub_14001b210"
+                  "name": "FAX_GetJobEx"
                 },
                 {
                   "address": 5368796208,
-                  "name": "sub_140015430"
+                  "name": "FAX_GetCountryList"
                 },
                 {
                   "address": 5368804704,
-                  "name": "sub_140017560"
+                  "name": "FAX_GetPersonalProfileInfo"
                 },
                 {
                   "address": 5368806464,
-                  "name": "sub_140017c40"
+                  "name": "FAX_GetQueueStates"
                 },
                 {
                   "address": 5368806704,
-                  "name": "sub_140017d30"
+                  "name": "FAX_SetQueue"
                 },
                 {
                   "address": 5368807184,
-                  "name": "sub_140017f10"
+                  "name": "FAX_GetReceiptsConfiguration"
                 },
                 {
                   "address": 5368807904,
-                  "name": "sub_1400181e0"
+                  "name": "FAX_SetReceiptsConfiguration"
                 },
                 {
                   "address": 5368809216,
-                  "name": "sub_140018700"
+                  "name": "FAX_GetReceiptsOptions"
                 },
                 {
                   "address": 5368809472,
-                  "name": "sub_140018800"
+                  "name": "FAX_GetVersion"
                 },
                 {
                   "address": 5368809984,
-                  "name": "sub_140018a00"
+                  "name": "FAX_GetOutboxConfiguration"
                 },
                 {
                   "address": 5368810432,
-                  "name": "sub_140018bc0"
+                  "name": "FAX_SetOutboxConfiguration"
                 },
                 {
                   "address": 5368810928,
-                  "name": "sub_140018db0"
+                  "name": "FAX_GetPersonalCoverPagesOption"
                 },
                 {
                   "address": 5368811104,
-                  "name": "sub_140018e60"
+                  "name": "FAX_GetArchiveConfiguration"
                 },
                 {
                   "address": 5368811184,
-                  "name": "sub_140018eb0"
+                  "name": "FAX_SetArchiveConfiguration"
                 },
                 {
                   "address": 5368811264,
-                  "name": "sub_140018f00"
+                  "name": "FAX_GetActivityLoggingConfiguration"
                 },
                 {
                   "address": 5368811808,
-                  "name": "sub_140019120"
+                  "name": "FAX_SetActivityLoggingConfiguration"
                 },
                 {
                   "address": 5368814304,
-                  "name": "sub_140019ae0"
+                  "name": "FAX_EnumerateProviders"
                 },
                 {
                   "address": 5368816560,
-                  "name": "sub_14001a3b0"
+                  "name": "FAX_GetPortEx"
                 },
                 {
                   "address": 5368817072,
-                  "name": "sub_14001a5b0"
+                  "name": "FAX_SetPortEx"
                 },
                 {
                   "address": 5368815920,
-                  "name": "sub_14001a130"
+                  "name": "FAX_EnumPortsEx"
                 },
                 {
                   "address": 5369082544,
-                  "name": "sub_14005b2b0"
+                  "name": "FAX_GetExtensionData"
                 },
                 {
                   "address": 5369082832,
-                  "name": "sub_14005b3d0"
+                  "name": "FAX_SetExtensionData"
                 },
                 {
                   "address": 5369096704,
-                  "name": "sub_14005ea00"
+                  "name": "FAX_AddOutboundGroup"
                 },
                 {
                   "address": 5369097472,
-                  "name": "sub_14005ed00"
+                  "name": "FAX_SetOutboundGroup"
                 },
                 {
                   "address": 5369098688,
-                  "name": "sub_14005f1c0"
+                  "name": "FAX_RemoveOutboundGroup"
                 },
                 {
                   "address": 5369099584,
-                  "name": "sub_14005f540"
+                  "name": "FAX_EnumOutboundGroups"
                 },
                 {
                   "address": 5369100128,
-                  "name": "sub_14005f760"
+                  "name": "FAX_SetDeviceOrderInGroup"
                 },
                 {
                   "address": 5369111632,
-                  "name": "sub_140062450"
+                  "name": "FAX_AddOutboundRule"
                 },
                 {
                   "address": 5369113632,
-                  "name": "sub_140062c20"
+                  "name": "FAX_RemoveOutboundRule"
                 },
                 {
                   "address": 5369114464,
-                  "name": "sub_140062f60"
+                  "name": "FAX_SetOutboundRule"
                 },
                 {
                   "address": 5369116704,
-                  "name": "sub_140063820"
+                  "name": "FAX_EnumOutboundRules"
                 },
                 {
                   "address": 5368823088,
-                  "name": "sub_14001bd30"
+                  "name": "FAX_RegisterServiceProviderEx"
                 },
                 {
                   "address": 5368824304,
-                  "name": "sub_14001c1f0"
+                  "name": "FAX_UnregisterServiceProviderEx"
                 },
                 {
                   "address": 5368824560,
-                  "name": "sub_14001c2f0"
+                  "name": "FAX_UnregisterRoutingExtension"
                 },
                 {
                   "address": 5368826704,
-                  "name": "sub_14001cb50"
+                  "name": "FAX_StartMessagesEnum"
                 },
                 {
                   "address": 5368826832,
-                  "name": "sub_14001cbd0"
+                  "name": "FAX_EndMessagesEnum"
                 },
                 {
                   "address": 5368831040,
-                  "name": "sub_14001dc40"
+                  "name": "FAX_EnumMessages"
                 },
                 {
                   "address": 5368833568,
-                  "name": "sub_14001e620"
+                  "name": "FAX_GetMessage"
                 },
                 {
                   "address": 5368834976,
-                  "name": "sub_14001eba0"
+                  "name": "FAX_RemoveMessage"
                 },
                 {
                   "address": 5368836000,
-                  "name": "sub_14001efa0"
+                  "name": "FAX_StartCopyToServer"
                 },
                 {
                   "address": 5368837792,
-                  "name": "sub_14001f6a0"
+                  "name": "FAX_StartCopyMessageFromServer"
                 },
                 {
                   "address": 5368839264,
-                  "name": "sub_14001fc60"
+                  "name": "FAX_WriteFile"
                 },
                 {
                   "address": 5368839760,
-                  "name": "sub_14001fe50"
+                  "name": "FAX_ReadFile"
                 },
                 {
                   "address": 5368840224,
-                  "name": "sub_140020020"
+                  "name": "FAX_EndCopy"
                 },
                 {
                   "address": 5368840560,
-                  "name": "sub_140020170"
+                  "name": "FAX_StartServerNotification"
                 },
                 {
                   "address": 5368840816,
-                  "name": "sub_140020270"
+                  "name": "FAX_StartServerNotificationEx"
                 },
                 {
                   "address": 5368843728,
-                  "name": "sub_140020dd0"
+                  "name": "FAX_EndServerNotification"
                 },
                 {
                   "address": 5368844064,
-                  "name": "sub_140020f20"
+                  "name": "FAX_GetServerActivity"
                 },
                 {
                   "address": 5368844448,
-                  "name": "sub_1400210a0"
+                  "name": "FAX_SetConfigWizardUsed"
                 },
                 {
                   "address": 5368844928,
-                  "name": "sub_140021280"
+                  "name": "FAX_EnumRoutingExtensions"
                 },
                 {
                   "address": 5368845760,
-                  "name": "sub_1400215c0"
+                  "name": "FAX_AnswerCall"
                 },
                 {
                   "address": 5368770640,
-                  "name": "sub_14000f050"
+                  "name": "FAX_ConnectFaxServer"
                 },
                 {
                   "address": 5369001360,
-                  "name": "sub_140047590"
+                  "name": "FAX_GetSecurityEx"
                 },
                 {
                   "address": 5368846512,
-                  "name": "sub_1400218b0"
+                  "name": "FAX_RefreshArchive"
                 },
                 {
                   "address": 5368846880,
-                  "name": "sub_140021a20"
+                  "name": "FAX_SetRecipientsLimit"
                 },
                 {
                   "address": 5368846896,
-                  "name": "sub_140021a30"
+                  "name": "FAX_GetRecipientsLimit"
                 },
                 {
                   "address": 5368847104,
-                  "name": "sub_140021b00"
+                  "name": "FAX_GetServerSKU"
                 },
                 {
                   "address": 5368847360,
-                  "name": "sub_140021c00"
+                  "name": "FAX_CheckValidFaxFolder"
                 },
                 {
                   "address": 5368820400,
-                  "name": "sub_14001b2b0"
+                  "name": "FAX_GetJobEx2"
                 },
                 {
                   "address": 5368820800,
-                  "name": "sub_14001b440"
+                  "name": "FAX_EnumJobsEx2"
                 },
                 {
                   "address": 5368833728,
-                  "name": "sub_14001e6c0"
+                  "name": "FAX_GetMessageEx"
                 },
                 {
                   "address": 5368831200,
-                  "name": "sub_14001dce0"
+                  "name": "FAX_StartMessagesEnumEx"
                 },
                 {
                   "address": 5368831424,
-                  "name": "sub_14001ddc0"
+                  "name": "FAX_EnumMessagesEx"
                 },
                 {
                   "address": 5368843216,
-                  "name": "sub_140020bd0"
+                  "name": "FAX_StartServerNotificationEx2"
                 },
                 {
                   "address": 5368759568,
-                  "name": "sub_14000c510"
+                  "name": "FAX_CreateAccount"
                 },
                 {
                   "address": 5368760592,
-                  "name": "sub_14000c910"
+                  "name": "FAX_DeleteAccount"
                 },
                 {
                   "address": 5368762064,
-                  "name": "sub_14000ced0"
+                  "name": "FAX_EnumAccounts"
                 },
                 {
                   "address": 5368761024,
-                  "name": "sub_14000cac0"
+                  "name": "FAX_GetAccountInfo"
                 },
                 {
                   "address": 5369053696,
-                  "name": "sub_140054200"
+                  "name": "FAX_GetGeneralConfiguration"
                 },
                 {
                   "address": 5369054224,
-                  "name": "sub_140054410"
+                  "name": "FAX_SetGeneralConfiguration"
                 },
                 {
                   "address": 5369001440,
-                  "name": "sub_1400475e0"
+                  "name": "FAX_GetSecurityEx2"
                 },
                 {
                   "address": 5369000064,
-                  "name": "sub_140047080"
+                  "name": "FAX_SetSecurityEx2"
                 },
                 {
                   "address": 5369002608,
-                  "name": "sub_140047a70"
+                  "name": "FAX_AccessCheckEx2"
                 },
                 {
                   "address": 5368765344,
-                  "name": "sub_14000dba0"
+                  "name": "FAX_ReAssignMessage"
                 },
                 {
                   "address": 5368834944,
-                  "name": "sub_14001eb80"
+                  "name": "FAX_SetMessage"
                 },
                 {
                   "address": 5369053360,
-                  "name": "sub_1400540b0"
+                  "name": "FAX_GetConfigOption"
                 }
               ],
               "struct_values": {
@@ -1056,7 +1589,909 @@
           ],
           "api_function": "RpcServerRegisterIfEx",
           "possible_clients": {
-            "5368859456": []
+            "5368859456": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2312_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2313_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2315_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2317_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 == 0xfffffff000000068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_fffffff000000068_2320_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f470_2321_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2312_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2313_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2315_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2317_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 == 0xfffffff000000068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_fffffff000000068_2320_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2323_64{UNINITIALIZED}[31:0] == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f470_2325_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2312_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2313_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2315_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2317_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2319_64{UNINITIALIZED} + 0x68 == 0xfffffff000000068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_fffffff000000068_2320_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2323_64{UNINITIALIZED}[31:0] != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f470_2327_64{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2330_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2331_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2333_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2335_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 == 0xffffffffffff0068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffff0068_2338_32{UNINITIALIZED} != 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2330_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2331_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2333_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2335_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 == 0xffffffffffff0068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffff0068_2338_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2340_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "AuthenticationService": 10,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2249_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_2250_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2291_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2292_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2307_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f478_2308_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f518_2309_64{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strlen_2330_64 == 0x10>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2331_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2333_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2335_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool True>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 <= 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x14009f428_2337_64{UNINITIALIZED} + 0x68 == 0xffffffffffff0068>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffffffffff0068_2338_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_EnumPrintersW_2340_64{UNINITIALIZED}[31:0] != 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 5368860500

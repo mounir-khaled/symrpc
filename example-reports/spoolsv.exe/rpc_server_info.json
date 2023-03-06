@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Spooler",
     "filepath": "c:\\windows\\system32\\spoolsv.exe",
-    "time": 10.554779529571533,
+    "time": 6.57261848449707,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -370,11 +370,11 @@
                     "AuthenticationService": 9
                   },
                   {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 3,
                     "AuthenticationService": 9
                   },
                   {
-                    "AuthenticationLevel": 4,
+                    "AuthenticationLevel": 2,
                     "AuthenticationService": 9
                   },
                   {
@@ -386,11 +386,11 @@
                     "AuthenticationService": 9
                   },
                   {
-                    "AuthenticationLevel": 2,
+                    "AuthenticationLevel": 4,
                     "AuthenticationService": 9
                   },
                   {
-                    "AuthenticationLevel": 3,
+                    "AuthenticationLevel": 5,
                     "AuthenticationService": 9
                   },
                   {
@@ -474,6 +474,18 @@
                     "AuthenticationService": 9
                   },
                   {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
                     "AuthenticationLevel": 0,
                     "AuthenticationService": 0
                   },
@@ -483,18 +495,6 @@
                   },
                   {
                     "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 3,
                     "AuthenticationService": 9
                   },
                   {
@@ -582,6 +582,18 @@
                     "AuthenticationService": 9
                   },
                   {
+                    "AuthenticationLevel": 1,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "AuthenticationService": 9
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "AuthenticationService": 9
+                  },
+                  {
                     "AuthenticationLevel": 0,
                     "AuthenticationService": 0
                   },
@@ -591,18 +603,6 @@
                   },
                   {
                     "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 3,
                     "AuthenticationService": 9
                   },
                   {

@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "WebClient",
     "filepath": "C:\\WINDOWS\\system32\\webclnt.dll",
-    "time": 5.848552465438843,
+    "time": 4.8979716300964355,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -176,7 +176,47 @@
           ],
           "api_function": "RpcServerRegisterIfEx",
           "possible_clients": {
-            "6442612176": []
+            "6442612176": [
+              {
+                "call_attributes": [
+                  {
+                    "IsClientLocal": 2,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "IsClientLocal": 3,
+                    "protseq_string": "ncacn_np"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_2447_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_2446_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_2498_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingServerFromClient_2483_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2485_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_2501_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool Reverse(Pointer_2498_64) != 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 6442614817

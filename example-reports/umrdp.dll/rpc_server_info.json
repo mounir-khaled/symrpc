@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "UmRdpService",
     "filepath": "C:\\WINDOWS\\system32\\umrdp.dll",
-    "time": 7.620873212814331,
+    "time": 4.89581036567688,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -110,7 +110,35 @@
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442495408": []
+            "6442495408": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "NullSession": 0,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_8903_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_8902_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_8954_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_8940_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool strncmp_ret_8958_32{UNINITIALIZED} == 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 6442493292

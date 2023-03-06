@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "PolicyAgent",
     "filepath": "C:\\WINDOWS\\system32\\ipsecsvc.dll",
-    "time": 4.411860227584839,
+    "time": 4.3201212882995605,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -32,7 +32,7 @@
           "Flags": [
             {
               "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-              "RPC_IF_ALLOW_LOCAL_ONLY": false,
+              "RPC_IF_ALLOW_LOCAL_ONLY": true,
               "RPC_IF_ALLOW_SECURE_ONLY": true,
               "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
               "RPC_IF_ASYNC_CALLBACK": false,
@@ -43,7 +43,7 @@
             },
             {
               "RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH": false,
-              "RPC_IF_ALLOW_LOCAL_ONLY": true,
+              "RPC_IF_ALLOW_LOCAL_ONLY": false,
               "RPC_IF_ALLOW_SECURE_ONLY": true,
               "RPC_IF_ALLOW_UNKNOWN_AUTHORITY": false,
               "RPC_IF_ASYNC_CALLBACK": false,

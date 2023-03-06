@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "hns",
     "filepath": "C:\\WINDOWS\\system32\\hostnetsvc.dll",
-    "time": 309.0891284942627,
+    "time": 279.34640550613403,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -68,12 +68,37 @@
                   {
                     "AuthenticationLevel": 7,
                     "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
                     "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "AuthenticationLevel": 3,
@@ -86,7 +111,7 @@
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 5,
+                    "AuthenticationLevel": 2,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
@@ -97,41 +122,16 @@
                   },
                   {
                     "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
                     "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
                     "IsClientLocal": 1,
                     "protseq_string": "ncacn_np"
                   }
@@ -248,25 +248,25 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_6492_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_10188_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_6493_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_10187_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool (if unconstrained_ret_RpcBindingToStringBindingW_6533_32{UNINITIALIZED} <=s 0x0 then unconstrained_ret_RpcBindingToStringBindingW_6533_32{UNINITIALIZED} else (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_6533_32{UNINITIALIZED}[15:0])) == 0x0>"
+                    "bitvector": "<Bool (if unconstrained_ret_RpcBindingToStringBindingW_10228_32{UNINITIALIZED} <=s 0x0 then unconstrained_ret_RpcBindingToStringBindingW_10228_32{UNINITIALIZED} else (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_10228_32{UNINITIALIZED}[15:0])) == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool Pointer_6547_64 == 0xffffffffffffffff>"
+                    "bitvector": "<Bool Pointer_10242_64 == 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret__o__wcsicmp_6548_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret__o__wcsicmp_10243_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeff80_6562_64{UNINITIALIZED} == 0xd000000000000000>"
+                    "bitvector": "<Bool mem_7fffffffffeff80_10257_64{UNINITIALIZED} == 0xd000000000000000>"
                   },
                   {
-                    "bitvector": "<Bool Reverse(Pointer_6547_64) != 0x0>"
+                    "bitvector": "<Bool Reverse(Pointer_10242_64) != 0x0>"
                   }
                 ]
               }

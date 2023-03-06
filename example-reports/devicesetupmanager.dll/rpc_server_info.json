@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "DsmSvc",
     "filepath": "C:\\WINDOWS\\system32\\devicesetupmanager.dll",
-    "time": 6.922510862350464,
+    "time": 4.227383136749268,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -116,9 +116,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }
@@ -374,9 +372,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Audiosrv",
     "filepath": "C:\\WINDOWS\\system32\\audiosrv.dll",
-    "time": 11.408115148544312,
+    "time": 13.787253141403198,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -792,6 +792,10 @@
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

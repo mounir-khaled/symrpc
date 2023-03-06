@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "EFS",
     "filepath": "c:\\windows\\system32\\lsass.exe",
-    "time": 1.7962329387664795,
+    "time": 1.6040778160095215,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -138,54 +138,54 @@
               {
                 "call_attributes": [
                   {
-                    "protseq_string": "ncacn_np"
+                    "protseq_string": "ncalrpc"
                   },
                   {
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_5918_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_1766_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_5919_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_1765_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool !(.data_global_0x14000d6f0_5953_64{UNINITIALIZED} == 0x0)>"
+                    "bitvector": "<Bool !(.data_global_0x14000d6f0_1800_64{UNINITIALIZED} == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} + 0x50 <= 0xffffffffffffffff>"
+                    "bitvector": "<Bool .data_global_0x14000d6f0_1800_64{UNINITIALIZED} + 0x50 <= 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} + 0x50 == 0xffffffffe0000050>"
+                    "bitvector": "<Bool .data_global_0x14000d6f0_1800_64{UNINITIALIZED} + 0x50 == 0x4f>"
                   },
                   {
-                    "bitvector": "<Bool mem_ffffffffe0000050_5954_64{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool mem_4f_1801_64{UNINITIALIZED} == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
-                    "protseq_string": "ncacn_np"
+                    "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_5918_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_1766_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_5919_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_1765_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_5919_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_1766_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x14000d6f0_5953_64{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool .data_global_0x14000d6f0_1800_64{UNINITIALIZED} == 0x0>"
                   }
                 ]
               }

@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "TapiSrv",
     "filepath": "C:\\WINDOWS\\system32\\tapisrv.dll",
-    "time": 7.7490644454956055,
+    "time": 7.926546573638916,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -15,14 +15,14 @@
           "AuthnSvc": [
             {
               "annotations": [
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266da[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266d6[-2] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1800266f3 id=0x1800266e9[19] contextless>}>)"
               ],
               "bitvector": "<BV32 TOP[31:0]>"
             },
             {
               "annotations": [
-                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266d6[-2] contextless>}>)",
+                "<DefinitionAnnotation(<Definition {Atom:<Reg 72<8>>, Codeloc:<0x1800266e4 id=0x1800266da[-2] contextless>}>)",
                 "<DefinitionAnnotation(<Definition {Atom:<Reg 32<8>>, Codeloc:<0x1800266f3 id=0x1800266e9[19] contextless>}>)"
               ],
               "bitvector": "<BV32 TOP[31:0]>"
@@ -141,12 +141,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }
@@ -166,8 +161,8 @@
             }
           ],
           "MaxCalls": [
-            0,
             20000,
+            0,
             500
           ],
           "Protseq": [
@@ -192,8 +187,8 @@
             }
           ],
           "MaxCalls": [
-            20000,
             0,
+            20000,
             500
           ],
           "Protseq": [

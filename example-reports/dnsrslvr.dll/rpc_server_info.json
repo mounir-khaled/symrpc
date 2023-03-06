@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Dnscache",
     "filepath": "C:\\WINDOWS\\system32\\dnsrslvr.dll",
-    "time": 8.086377382278442,
+    "time": 4.852142095565796,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -206,7 +206,126 @@
           ],
           "api_function": "RpcServerRegisterIf3",
           "possible_clients": {
-            "6442509184": []
+            "6442509184": [
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_6558_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_6559_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_6612_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool !(.data_global_0x1800528d0_6594_8{UNINITIALIZED}[6:6] == 0)>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_6599_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (0x0 .. ~0xffffffff * (0x0 .. (if strncmp_ret_6615_32{UNINITIALIZED} == 0x0 then 1 else 0))[2:2] .. 0 .. ~(if strncmp_ret_6615_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncalrpc"
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool InterfaceUuid_6558_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_6559_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool Pointer_6633_64 == 0xffffffffffffffff>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x1800528d0_6594_8{UNINITIALIZED}[6:6] == 0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_6618_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (0x0 .. ~0xffffffff * (0x0 .. (if strncmp_ret_6636_32{UNINITIALIZED} == 0x0 then 1 else 0))[2:2] .. 0 .. ~(if strncmp_ret_6636_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0x0>"
+                  }
+                ]
+              }
+            ]
           }
         },
         "callsite_address": 6442524649
@@ -320,19 +439,18 @@
                 "call_attributes": [
                   {
                     "KernelModeCaller": 1,
-                    "ProtocolSequence": 3,
-                    "protseq_string": "ncalrpc"
+                    "ProtocolSequence": 3
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_7770_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_6640_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_7771_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_6641_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeffa0_7820_64{UNINITIALIZED} == 0xd000000000000000>"
+                    "bitvector": "<Bool mem_7fffffffffeffa0_6690_64{UNINITIALIZED} == 0xd000000000000000>"
                   }
                 ]
               }

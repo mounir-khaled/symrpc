@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "mpssvc",
     "filepath": "C:\\WINDOWS\\system32\\mpssvc.dll",
-    "time": 6.978520631790161,
+    "time": 8.312875747680664,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -79,42 +79,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

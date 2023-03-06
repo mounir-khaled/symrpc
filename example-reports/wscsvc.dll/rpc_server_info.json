@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "wscsvc",
     "filepath": "C:\\WINDOWS\\system32\\wscsvc.dll",
-    "time": 3.574683666229248,
+    "time": 2.099677801132202,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -235,56 +235,10 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   }

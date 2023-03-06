@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "iphlpsvc",
     "filepath": "C:\\WINDOWS\\system32\\iphlpsvc.dll",
-    "time": 5.337917327880859,
+    "time": 4.9009339809417725,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -62,11 +62,11 @@
                 "call_attributes": [
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
+                    "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": []

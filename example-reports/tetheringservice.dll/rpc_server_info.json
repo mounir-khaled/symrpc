@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "icssvc",
     "filepath": "C:\\WINDOWS\\system32\\tetheringservice.dll",
-    "time": 2.4463698863983154,
+    "time": 1.950373649597168,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -173,6 +173,10 @@
             "0": [
               {
                 "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"

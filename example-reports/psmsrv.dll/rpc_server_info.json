@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "BrokerInfrastructure",
     "filepath": "C:\\WINDOWS\\system32\\psmsrv.dll",
-    "time": 1.7026820182800293,
+    "time": 4.4008941650390625,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -70,9 +70,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

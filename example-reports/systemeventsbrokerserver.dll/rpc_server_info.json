@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "SystemEventsBroker",
     "filepath": "C:\\WINDOWS\\system32\\systemeventsbrokerserver.dll",
-    "time": 3.9417026042938232,
+    "time": 3.561694622039795,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -123,37 +123,37 @@
                 "call_attributes": [
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   },
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
+                    "protseq_string": "ncalrpc"
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_1154_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_6965_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_1192_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_7003_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1193_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_7004_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool OpenThreadTokenError_1196_32 != 0x0>"
+                    "bitvector": "<Bool OpenThreadTokenError_7007_32 != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_1195_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_7006_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_1197_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_7008_32{UNINITIALIZED} == 0x0>"
                   }
                 ]
               },
@@ -170,31 +170,31 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_1154_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_6965_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_1192_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_7003_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1193_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_7004_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool OpenThreadTokenError_1196_32 != 0x0>"
+                    "bitvector": "<Bool OpenThreadTokenError_7007_32 != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_1195_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_7006_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_AccessCheck_1200_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_AccessCheck_7011_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_1202_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_7013_32{UNINITIALIZED} == 0x0>"
                   }
                 ]
               },
@@ -211,31 +211,31 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_1154_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_6965_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_1192_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_7003_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1193_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_7004_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool OpenThreadTokenError_1196_32 != 0x0>"
+                    "bitvector": "<Bool OpenThreadTokenError_7007_32 != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_1195_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_7006_64{UNINITIALIZED}[31:0] != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_AccessCheck_1200_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_AccessCheck_7011_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_1203_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcRevertToSelf_7014_32{UNINITIALIZED} == 0x0>"
                   }
                 ]
               },
@@ -252,19 +252,19 @@
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_1154_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_6965_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_1155_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6966_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_1192_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_ConvertStringSecurityDescriptorToSecurityDescriptorW_7003_64{UNINITIALIZED}[31:0] == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_GetLastError_1159_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_GetLastError_6970_64{UNINITIALIZED}[31:0] == 0x0>"
                   }
                 ]
               }
@@ -435,11 +435,11 @@
                 "call_attributes": [
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncacn_np"
+                    "protseq_string": "ncalrpc"
                   },
                   {
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

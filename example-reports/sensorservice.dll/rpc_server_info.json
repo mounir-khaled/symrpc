@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "SensorService",
     "filepath": "C:\\WINDOWS\\system32\\sensorservice.dll",
-    "time": 4.159115791320801,
+    "time": 2.941668748855591,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -65,6 +65,10 @@
             "0": [
               {
                 "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
@@ -137,6 +141,10 @@
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
+                  },
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

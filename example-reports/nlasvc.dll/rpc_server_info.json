@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "NlaSvc",
     "filepath": "C:\\WINDOWS\\system32\\nlasvc.dll",
-    "time": 24.513758420944214,
+    "time": 7.610016584396362,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -92,32 +92,30 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 6
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_8407_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_5653_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_8408_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_5654_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0xd000000000000000>"
+                    "bitvector": "<Bool mem_7fffffffffeff60_5694_64{UNINITIALIZED} == 0xd000000000000000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeff70_8450_64{UNINITIALIZED} == 0xd000000000001000>"
+                    "bitvector": "<Bool mem_7fffffffffeff70_5696_64{UNINITIALIZED} == 0xd000000000001000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0xd000000000002000>"
+                    "bitvector": "<Bool mem_7fffffffffeffa0_5706_64{UNINITIALIZED} == 0xd000000000002000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_8446_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_8446_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0)>"
+                    "bitvector": "<Bool mem_7fffffffffeffa0_5706_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_5692_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_5706_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_5692_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_5706_64{UNINITIALIZED} == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_8446_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_8460_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8475_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8475_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_8450_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_8478_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_8478_32[7:0] <= 128 then (if mem_7fffffffffeff54_8446_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8448_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8475_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8475_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
+                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_5692_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_5706_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_5692_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_5692_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_5694_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_5721_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_5721_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_5696_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_5724_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_5724_32[7:0] <= 128 then (if mem_7fffffffffeff54_5692_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_5694_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_5721_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_5721_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
                   }
                 ]
               }
@@ -291,32 +289,30 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 6
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_8524_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_5770_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_8523_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_5769_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0xd000000000000000>"
+                    "bitvector": "<Bool mem_7fffffffffeff60_5810_64{UNINITIALIZED} == 0xd000000000000000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeff70_8566_64{UNINITIALIZED} == 0xd000000000001000>"
+                    "bitvector": "<Bool mem_7fffffffffeff70_5812_64{UNINITIALIZED} == 0xd000000000001000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0xd000000000002000>"
+                    "bitvector": "<Bool mem_7fffffffffeffa0_5822_64{UNINITIALIZED} == 0xd000000000002000>"
                   },
                   {
-                    "bitvector": "<Bool mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_8562_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_8562_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0)>"
+                    "bitvector": "<Bool mem_7fffffffffeffa0_5822_64{UNINITIALIZED} == 0xd000000000002000 && (mem_7fffffffffeff54_5808_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_5822_64{UNINITIALIZED} == 0x0 || !((mem_7fffffffffeff54_5808_32{UNINITIALIZED}[7:0] & 8) != 0 && mem_7fffffffffeffa0_5822_64{UNINITIALIZED} == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_8562_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_8576_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8591_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8591_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_8566_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_8594_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_8594_32[7:0] <= 128 then (if mem_7fffffffffeff54_8562_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_8564_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_8591_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_8591_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
+                    "bitvector": "<Bool (if !(mem_7fffffffffeff54_5808_32{UNINITIALIZED}[3:3] == 0) && mem_7fffffffffeffa0_5822_64{UNINITIALIZED} == 0x0 then 0x57 else (if mem_7fffffffffeff54_5808_32{UNINITIALIZED}[2:2] == 0 then (if mem_7fffffffffeff54_5808_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_5810_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_5837_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_5837_32[7:0] <= 128 then 0x0 else 0xea))) else (if mem_7fffffffffeff70_5812_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualClientPrincipalNameBufferLength_5840_32[31:8] == 0x0 && ActualClientPrincipalNameBufferLength_5840_32[7:0] <= 128 then (if mem_7fffffffffeff54_5808_32{UNINITIALIZED}[1:1] == 0 then 0x0 else (if mem_7fffffffffeff60_5810_64{UNINITIALIZED} == 0x0 then 0x57 else (if ActualServerPrincipalNameBufferLength_5837_32[31:8] == 0x0 && ActualServerPrincipalNameBufferLength_5837_32[7:0] <= 128 then 0x0 else 0xea))) else 0xea))))[31:0] == 0x0>"
                   }
                 ]
               }

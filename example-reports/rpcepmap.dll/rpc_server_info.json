@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "RpcEptMapper",
     "filepath": "C:\\WINDOWS\\system32\\rpcepmap.dll",
-    "time": 4.197388410568237,
+    "time": 4.908747911453247,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -331,176 +331,42 @@
             "6442470016": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  }
+                  {}
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_3865_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_6753_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_3864_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_6754_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_3865_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6754_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180013d10_3899_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool .data_global_0x180013d10_6788_32{UNINITIALIZED} != 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  }
+                  {}
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_3865_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_6753_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_3864_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_6754_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_3865_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6754_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180013d10_3899_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool .data_global_0x180013d10_6788_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_3900_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_6789_32{UNINITIALIZED} == 0x0>"
                   }
                 ]
               }
@@ -643,176 +509,42 @@
             "6442470016": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  }
+                  {}
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_3907_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_6795_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_3906_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_6796_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_3907_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6796_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180013d10_3941_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool .data_global_0x180013d10_6830_32{UNINITIALIZED} != 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  }
+                  {}
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_3907_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_6795_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_3906_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_6796_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_3907_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_6796_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180013d10_3941_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool .data_global_0x180013d10_6830_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_3942_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_I_RpcServerCheckClientRestriction_6831_32{UNINITIALIZED} == 0x0>"
                   }
                 ]
               }
@@ -963,74 +695,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }
@@ -1181,74 +846,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 16
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

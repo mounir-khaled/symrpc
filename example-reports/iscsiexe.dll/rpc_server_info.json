@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "MSiSCSI",
     "filepath": "C:\\WINDOWS\\system32\\iscsiexe.dll",
-    "time": 5.056581258773804,
+    "time": 3.251028060913086,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -199,9 +199,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

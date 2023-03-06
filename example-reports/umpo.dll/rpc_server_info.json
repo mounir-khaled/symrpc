@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "Power",
     "filepath": "C:\\WINDOWS\\system32\\umpo.dll",
-    "time": 2.3696632385253906,
+    "time": 1.4396209716796875,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -241,9 +241,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "diagsvc",
     "filepath": "C:\\WINDOWS\\system32\\diagsvc.dll",
-    "time": 1.8250443935394287,
+    "time": 2.5199832916259766,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -141,9 +141,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

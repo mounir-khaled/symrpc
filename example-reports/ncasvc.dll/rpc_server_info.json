@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "NcaSvc",
     "filepath": "C:\\WINDOWS\\system32\\ncasvc.dll",
-    "time": 3.6164917945861816,
+    "time": 2.8542635440826416,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -162,492 +162,156 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
                     "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1
                   },
                   {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_2341_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180028980_481_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool .data_global_0x180028980_2382_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
+                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[15:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 3
                   },
                   {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 1
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 3
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 2
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_2341_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180028980_481_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool .data_global_0x180028980_2382_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_482_32{UNINITIALIZED}[15:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2383_32{UNINITIALIZED}[15:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 0
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_2341_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180028980_484_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool .data_global_0x180028980_2385_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED} == 0x0 then 1 else 0)) != 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED} & 0x1fff0000) == 0x70000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[15:0] == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 9,
-                    "IsClientLocal": 0
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 9,
                     "IsClientLocal": 0
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_440_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_2341_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_441_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_2342_64 <= 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x180028980_484_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool .data_global_0x180028980_2385_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED} != 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
+                    "bitvector": "<Bool (unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[31:31] | (if unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED} == 0x0 then 1 else 0)) == 0>"
                   },
                   {
-                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
+                    "bitvector": "<Bool (LShR((0#32 .. (0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[15:0])), 0x1f)[0:0] & 1) != 0>"
                   },
                   {
-                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
+                    "bitvector": "<Bool ((0x8007 .. unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[15:0]) & 0x1fff0000) == 0x70000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_485_32{UNINITIALIZED}[15:0] == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcBindingToStringBindingW_2386_32{UNINITIALIZED}[15:0] == 0x0>"
                   }
                 ]
               }

@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "bthserv",
     "filepath": "C:\\WINDOWS\\system32\\bthserv.dll",
-    "time": 6.14656662940979,
+    "time": 1.454988718032837,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -206,51 +206,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 10,
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

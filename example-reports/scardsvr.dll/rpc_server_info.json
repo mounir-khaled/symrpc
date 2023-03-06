@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "SCardSvr",
     "filepath": "C:\\WINDOWS\\system32\\scardsvr.dll",
-    "time": 3.9516618251800537,
+    "time": 5.211938381195068,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -191,363 +191,608 @@
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 1
                   },
                   {
                     "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 3
                   },
                   {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
                   },
                   {
                     "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_170_64 == 0xc0000000>"
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 2
                   },
                   {
-                    "bitvector": "<Bool Context_171_64 == 0xc0000400>"
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
                   },
                   {
-                    "bitvector": "<Bool Context_171_64 <= 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_207_32{UNINITIALIZED} == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool OpenThreadTokenError_212_32 != 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] != 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_GetTokenInformation_214_32{UNINITIALIZED} == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_212_32 else 0x0) == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
                   },
                   {
                     "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 3
                   },
                   {
                     "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
                   },
                   {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
                   },
                   {
                     "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 1
                   },
                   {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_170_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_171_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_207_32{UNINITIALIZED} == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool !(OpenThreadTokenError_212_32 == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_214_32{UNINITIALIZED} == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_216_64{UNINITIALIZED}[31:0] == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool .data_global_0x18003de20_209_64{UNINITIALIZED} == 0xffffffffffffffc0>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_218_32{UNINITIALIZED} == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_220_32{UNINITIALIZED} == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_212_32 else 0x0) == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
                   },
                   {
                     "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 3
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_170_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_1863_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_171_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_1862_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_207_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1899_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool !(OpenThreadTokenError_212_32 == 0x0)>"
+                    "bitvector": "<Bool !(OpenThreadTokenError_1904_32 == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0)>"
+                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_214_32{UNINITIALIZED} == 0x0)>"
+                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_1906_32{UNINITIALIZED} == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_216_64{UNINITIALIZED}[31:0] == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool .data_global_0x18003de20_209_64{UNINITIALIZED} == 0xffffffffffffffc0>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_218_32{UNINITIALIZED} == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_220_32{UNINITIALIZED} == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool .data_global_0x18003de20_209_64{UNINITIALIZED} + 0x20 == 0xffffffffffffffe0>"
-                  },
-                  {
-                    "bitvector": "<Bool mem_ffffffffffffffe0_222_8{UNINITIALIZED} != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_CapabilityCheck_224_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
-                  },
-                  {
-                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_212_32 else 0x0) == 0x0>"
-                  }
-                ]
-              },
-              {
-                "call_attributes": [
-                  {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  }
-                ],
-                "extra_constraints": [
-                  {
-                    "bitvector": "<Bool InterfaceUuid_170_64 == 0xc0000000>"
-                  },
-                  {
-                    "bitvector": "<Bool Context_171_64 == 0xc0000400>"
-                  },
-                  {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_207_32{UNINITIALIZED} == 0x0>"
-                  },
-                  {
-                    "bitvector": "<Bool !(OpenThreadTokenError_212_32 == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_214_32{UNINITIALIZED} == 0x0)>"
-                  },
-                  {
-                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_216_64{UNINITIALIZED}[31:0] == 0x0)>"
+                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_1907_64{UNINITIALIZED}[31:0] == 0x0)>"
                   },
                   {
                     "bitvector": "<Bool True>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x18003de20_209_64{UNINITIALIZED} + 0x8 <= 0xffffffffffffffff>"
+                    "bitvector": "<Bool .data_global_0x18003de20_1901_64{UNINITIALIZED} + 0x8 <= 0xffffffffffffffff>"
                   },
                   {
-                    "bitvector": "<Bool .data_global_0x18003de20_209_64{UNINITIALIZED} + 0x8 == 0xffffffffffffffc8>"
+                    "bitvector": "<Bool .data_global_0x18003de20_1901_64{UNINITIALIZED} + 0x8 == 0xffffe00000000008>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_218_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1909_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_212_32 else 0x0) == 0x0>"
+                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_1904_32 else 0x0) == 0x0>"
                   }
                 ]
               },
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
                   },
                   {
                     "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 3
                   },
                   {
-                    "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
                   },
                   {
                     "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 3
                   },
                   {
                     "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_170_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_1863_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_171_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_1862_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_171_64 <= 0xc0000400>"
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1899_32{UNINITIALIZED} == 0x0>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_207_32{UNINITIALIZED} == 0x0>"
+                    "bitvector": "<Bool !(OpenThreadTokenError_1904_32 == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool OpenThreadTokenError_212_32 != 0x0>"
+                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_211_64{UNINITIALIZED}[31:0] != 0x0>"
+                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_1906_32{UNINITIALIZED} == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_GetTokenInformation_214_32{UNINITIALIZED} != 0x0>"
+                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_1907_64{UNINITIALIZED}[31:0] == 0x0)>"
                   },
                   {
-                    "bitvector": "<Bool unconstrained_ret_RtlGetActiveConsoleId_216_64{UNINITIALIZED}[31:0] == 0x0>"
+                    "bitvector": "<Bool .data_global_0x18003de20_1901_64{UNINITIALIZED} == 0xffffe00000000000>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_1909_32{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_CheckTokenMembership_1912_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_1904_32 else 0x0) == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 3
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_1863_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_1862_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1899_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool !(OpenThreadTokenError_1904_32 == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_GetTokenInformation_1906_32{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_RtlGetActiveConsoleId_1907_64{UNINITIALIZED}[31:0] == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x18003de20_1901_64{UNINITIALIZED} == 0xffffe00000000000>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_1909_32{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool !(unconstrained_ret_CheckTokenMembership_1912_32{UNINITIALIZED} == 0x0)>"
+                  },
+                  {
+                    "bitvector": "<Bool .data_global_0x18003de20_1901_64{UNINITIALIZED} + 0x20 == 0xffffe00000000020>"
+                  },
+                  {
+                    "bitvector": "<Bool mem_ffffe00000000020_1914_8{UNINITIALIZED} != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (LShR((0#32 .. unconstrained_ret_CapabilityCheck_1916_64{UNINITIALIZED}[31:0]), 0x1f)[0:0] & 1) != 0>"
+                  },
+                  {
+                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_1904_32 else 0x0) == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 3
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_1863_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_1862_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_1863_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1899_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool OpenThreadTokenError_1904_32 != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_GetTokenInformation_1906_32{UNINITIALIZED} != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RtlGetActiveConsoleId_1907_64{UNINITIALIZED}[31:0] == 0x0>"
+                  }
+                ]
+              },
+              {
+                "call_attributes": [
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 3
+                  }
+                ],
+                "extra_constraints": [
+                  {
+                    "bitvector": "<Bool Context_1863_64 == 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool InterfaceUuid_1862_64 == 0xc0000000>"
+                  },
+                  {
+                    "bitvector": "<Bool Context_1863_64 <= 0xc0000400>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_RpcImpersonateClient_1899_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool OpenThreadTokenError_1904_32 != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] != 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool unconstrained_ret_GetTokenInformation_1906_32{UNINITIALIZED} == 0x0>"
+                  },
+                  {
+                    "bitvector": "<Bool (if unconstrained_ret_OpenThreadToken_1903_64{UNINITIALIZED}[31:0] == 0x0 then OpenThreadTokenError_1904_32 else 0x0) == 0x0>"
                   }
                 ]
               }
@@ -667,49 +912,98 @@
                 "call_attributes": [
                   {
                     "AuthenticationLevel": 7,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 1
                   },
                   {
                     "AuthenticationLevel": 1,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
                   },
                   {
                     "AuthenticationLevel": 3,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 2,
+                    "IsClientLocal": 2
                   },
                   {
                     "AuthenticationLevel": 6,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 5,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 3,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 6,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 2
+                  },
+                  {
+                    "AuthenticationLevel": 1,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "AuthenticationLevel": 4,
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "AuthenticationLevel": 7,
+                    "IsClientLocal": 3
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_229_64 == 0xc0000000>"
+                    "bitvector": "<Bool InterfaceUuid_1921_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_230_64 == 0xc0000400>"
+                    "bitvector": "<Bool Context_1922_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_230_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_1922_64 <= 0xc0000400>"
                   }
                 ]
               }

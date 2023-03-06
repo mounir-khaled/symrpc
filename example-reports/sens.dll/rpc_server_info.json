@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "SENS",
     "filepath": "C:\\WINDOWS\\system32\\sens.dll",
-    "time": 1.4512710571289062,
+    "time": 1.5597078800201416,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -116,19 +116,24 @@
               {
                 "call_attributes": [
                   {
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "IsClientLocal": 2
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool Context_4351_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_3750_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool InterfaceUuid_4350_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_3751_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_4351_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_3751_64 <= 0xc0000400>"
                   }
                 ]
               }
@@ -256,19 +261,24 @@
               {
                 "call_attributes": [
                   {
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "IsClientLocal": 1
+                  },
+                  {
+                    "IsClientLocal": 3
+                  },
+                  {
+                    "IsClientLocal": 2
                   }
                 ],
                 "extra_constraints": [
                   {
-                    "bitvector": "<Bool InterfaceUuid_4385_64 == 0xc0000000>"
+                    "bitvector": "<Bool Context_3786_64 == 0xc0000400>"
                   },
                   {
-                    "bitvector": "<Bool Context_4386_64 == 0xc0000400>"
+                    "bitvector": "<Bool InterfaceUuid_3785_64 == 0xc0000000>"
                   },
                   {
-                    "bitvector": "<Bool Context_4386_64 <= 0xc0000400>"
+                    "bitvector": "<Bool Context_3786_64 <= 0xc0000400>"
                   }
                 ]
               }

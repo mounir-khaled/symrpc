@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "TrkWks",
     "filepath": "C:\\WINDOWS\\system32\\trkwks.dll",
-    "time": 1.5901429653167725,
+    "time": 2.0218074321746826,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -150,12 +150,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

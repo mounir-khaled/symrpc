@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "BDESVC",
     "filepath": "C:\\WINDOWS\\system32\\bdesvc.dll",
-    "time": 8.98929214477539,
+    "time": 4.2812957763671875,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -175,58 +175,12 @@
               {
                 "call_attributes": [
                   {
-                    "AuthenticationLevel": 7,
-                    "AuthenticationService": 10,
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"
                   },
                   {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 0,
                     "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 4,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 2,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 6,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 5,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 1,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 3,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
-                  },
-                  {
-                    "AuthenticationLevel": 0,
-                    "AuthenticationService": 10,
-                    "IsClientLocal": 1,
-                    "protseq_string": "ncalrpc"
+                    "protseq_string": "ncacn_np"
                   }
                 ],
                 "extra_constraints": []

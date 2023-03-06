@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "DusmSvc",
     "filepath": "C:\\WINDOWS\\system32\\dusmsvc.dll",
-    "time": 2.6015422344207764,
+    "time": 1.801891565322876,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -209,6 +209,10 @@
             "0": [
               {
                 "call_attributes": [
+                  {
+                    "IsClientLocal": 1,
+                    "protseq_string": "ncacn_np"
+                  },
                   {
                     "IsClientLocal": 1,
                     "protseq_string": "ncalrpc"

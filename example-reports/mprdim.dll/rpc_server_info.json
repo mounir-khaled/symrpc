@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "RemoteAccess",
     "filepath": "C:\\WINDOWS\\system32\\mprdim.dll",
-    "time": 2.5483956336975098,
+    "time": 4.399619817733765,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -391,12 +391,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncacn_np"
-                  },
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }

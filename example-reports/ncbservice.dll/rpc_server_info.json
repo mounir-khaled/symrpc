@@ -2,7 +2,7 @@
   "analysis_metadata": {
     "name": "NcbService",
     "filepath": "C:\\WINDOWS\\system32\\ncbservice.dll",
-    "time": 3.9172067642211914,
+    "time": 2.3483219146728516,
     "termination_reason": "SUCCESS"
   },
   "analysis_result": {
@@ -119,9 +119,7 @@
             "0": [
               {
                 "call_attributes": [
-                  {
-                    "protseq_string": "ncalrpc"
-                  }
+                  {}
                 ],
                 "extra_constraints": []
               }
