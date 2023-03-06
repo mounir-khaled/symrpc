@@ -8,8 +8,6 @@ import angr
 
 from ctypes import *
 
-from angr.knowledge_plugins import Function
-
 from rpc_analysis import RpcInterfacesAnalysis
 from angrcache import AngrProjectCache
 
@@ -85,16 +83,20 @@ def find_and_load_symbols(p:angr.Project, symbols_dir):
 
 
 
-def analyze_service(cache_filename, service_binpath, output_dir="./reports/", symbols_dir=""):
+def analyze_service(cache_filename, service_binpath, output_dir="./reports/", symbols_dir="", is_in_service_group=False):
     metadata = {}
     metadata["binpath"] = service_binpath
     with AngrProjectCache(cache_filename) as cache:
         metadata["is_cached"] = cache.is_cached(service_binpath)
         
-        p = cache.create_if_not_cached(
-            service_binpath, 
-            auto_load_libs=False
-        )
+        try:
+            p = cache.create_if_not_cached(
+                service_binpath, 
+                auto_load_libs=False
+            )
+        except Exception as e:
+            log.exception("Failed to load project from cache")
+            p = angr.Project(service_binpath, auto_load_libs=False)
 
         p.selfmodifying_code = False
 
@@ -122,7 +124,7 @@ def analyze_service(cache_filename, service_binpath, output_dir="./reports/", sy
 
         log.info("Starting analysis")
         try:
-            rpc_ifs:RpcInterfacesAnalysis = p.analyses.RpcInterfaces(coerce_argument_values=True)
+            rpc_ifs:RpcInterfacesAnalysis = p.analyses.RpcInterfaces(coerce_argument_values=True, is_multiplexed=is_in_service_group)
         except Exception:
             log.error("Unhandled exception while running RpcInterfacesAnalysis", exc_info=True)
             return

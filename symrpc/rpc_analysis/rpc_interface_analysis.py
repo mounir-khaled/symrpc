@@ -159,7 +159,8 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
             register_auth_functions:Optional[Iterable[Function]]=None,
             backer_state:Optional[angr.SimState]=None,
             coerce_argument_values=True,
-            symexec_callbacks=True
+            symexec_callbacks=True,
+            is_multiplexed=True
         ):
 
         super().__init__(coerce_argument_values)
@@ -184,7 +185,7 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
 
         self._recover_registration_args(register_if_functions, use_protseq_functions, register_auth_functions, backer_state)
         if symexec_callbacks:
-            self._symexec_callbacks()
+            self._symexec_callbacks(is_multiplexed=is_multiplexed)
 
     def _recover_registration_args(
             self, 
@@ -249,14 +250,15 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
             self.rpc_register_auth_calls.update(callsite_register_auth_args_dict)
         
 
-    def _symexec_callbacks(self):
+    def _symexec_callbacks(self, is_multiplexed=True):
         auth_svcs = []
-        for auth_call in self.rpc_register_auth_calls.values():
-            auth_svcs.extend(a if isinstance(a, int) else None for a in auth_call["AuthnSvc"])
-        
         protseqs = []
-        for use_protseq_call in self.rpc_use_protseq_calls.values():
-            protseqs.extend(p.string for p in use_protseq_call["Protseq"])
+        if not is_multiplexed:    
+            for auth_call in self.rpc_register_auth_calls.values():
+                auth_svcs.extend(a if isinstance(a, int) else None for a in auth_call["AuthnSvc"])
+            
+            for use_protseq_call in self.rpc_use_protseq_calls.values():
+                protseqs.extend(p.string for p in use_protseq_call["Protseq"])
         
         for register_interface_args in self.rpc_register_calls.values():
             ifcallbacks = register_interface_args.get("IfCallback", set()) | register_interface_args.get("IfCallbackFn", set())
@@ -272,8 +274,6 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
             register_interface_args["possible_clients"] = accepted_callers_dict
 
             for ifcallback in ifcallbacks:
-                # if not isinstance(ifcallback, int):
-                #     continue
                 accepted_callers_list = []
                 
                 if not isinstance(ifcallback, int) or ifcallback == 0:

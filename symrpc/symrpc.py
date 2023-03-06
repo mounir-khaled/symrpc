@@ -55,33 +55,57 @@ def analyze_all_services(cache_filename, report_dir="reports", timeout=0, servic
         return
     else:
         service_names = set(services)
-        services:Iterable[WindowsService] = (psutil.win_service_get(s) for s in service_names)
+        # services:Iterable[WindowsService] = (psutil.win_service_get(s) for s in service_names)
+        services = []
+        for service_name in service_names:
+            if os.path.exists(service_name) and os.path.isfile(service_name):
+                services.append(service_name)
+            else:
+
+                try:
+                    service = psutil.win_service_get(service_name)
+                except psutil.NoSuchProcess:
+                    log.error("Failed to find service %s", service_name)
+                    continue
+
+                services.append(service)
 
     for service in services:
-        try:
-            service_binpath = get_service_binpath(service)
-        except NotImplementedError:
-            log.error("Failed to find binary path for service %s", service.name())
-            continue
+        if isinstance(service, WindowsService):
+            try:
+                service_binpath = get_service_binpath(service)
+                service_name = service.name()
+                is_in_service_group = "svchost.exe" in service.binpath()
+            except NotImplementedError:
+                log.error("Failed to find binary path for service %s", service.name())
+                continue
+
+        else:
+            service_binpath = service
+            service_name = None
+            is_in_service_group = False
 
         if service_binpath in blacklist:
             continue
 
         blacklist.add(service_binpath)
-        log.info("Loading service: %s (%s)", service.name(), service_binpath)
+        log.info("Loading service: %s (%s)", service_name, service_binpath)
 
         start_time = time.time()
         p = None
         output_dir = os.path.join(report_dir, os.path.basename(service_binpath))
         os.makedirs(output_dir, exist_ok=True)
+        
         try:
             if timeout:
-                p = multiprocessing.Process(target=analyze_service, args=(cache_filename, service_binpath, output_dir, symbols_dir), daemon=True)
+                p = multiprocessing.Process(
+                    target=analyze_service, 
+                    args=(cache_filename, service_binpath, output_dir, symbols_dir, is_in_service_group), daemon=True)
                 p.start()
                 p.join(timeout)
 
             else:
-                analyze_service(cache_filename, service_binpath, output_dir, symbols_dir)
+                analyze_service(cache_filename, service_binpath, output_dir, symbols_dir, is_in_service_group)
 
         except KeyboardInterrupt:
             log.info("Analysis interrupted with KeyboardInterrupt", exc_info=True)
@@ -99,10 +123,10 @@ def analyze_all_services(cache_filename, report_dir="reports", timeout=0, servic
 
         else:
             if timeout and p is not None and p.is_alive():
-                log.error("Timeout analyzing service: %s (%s)", service.name(), service_binpath)
+                log.error("Timeout analyzing service: %s (%s)", service_name, service_binpath)
                 termination_reason = "TIMEOUT"
             else:
-                log.info("Done analyzing service: %s (%s)", service.name(), service_binpath)
+                log.info("Done analyzing service: %s (%s)", service_name, service_binpath)
                 termination_reason = "SUCCESS"
 
         finally:
@@ -113,7 +137,7 @@ def analyze_all_services(cache_filename, report_dir="reports", timeout=0, servic
             time_taken = time.time() - start_time
 
             analysis_metadata = {   
-                "name": service.name(), 
+                "name": service_name, 
                 "filepath": service_binpath, 
                 "time": time_taken, 
                 "termination_reason": termination_reason

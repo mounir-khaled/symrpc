@@ -69,7 +69,7 @@ class LastErrorPlugin(angr.SimStatePlugin):
 
 class GetLastError(angr.SimProcedure):
     def run(self, *args, **kwargs):
-        if self.state.arch.bits == 64:
+        if self.prototype.returnty.size == 64:
             return claripy.Concat(self.state.regs.rax[63:32], self.state.last_error.value[31:0])
         else:
             return self.state.last_error.value

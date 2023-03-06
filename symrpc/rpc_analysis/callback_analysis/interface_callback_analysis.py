@@ -18,6 +18,8 @@ RE_CONTROL_CHARS = re.compile('[%s]' % re.escape(
     ''.join(map(chr, itertools.chain(range(0x00,0x20), range(0x7f,0xa0))))
 ))
 
+STRCMP_PROTOTYPE = angr.SIM_LIBRARIES["libc.so"].prototypes["strcmp"]
+
 # Just for type checking 
 class RpcSimState(SimState):
     rpc_call:RpcCallPlugin
@@ -104,6 +106,28 @@ def annotate_global_var_write(state:angr.SimState):
     if not any(isinstance(a, SkipUnconstrainAnnotation) for a in state.inspect.mem_write_expr.annotations):
         state.inspect.mem_write_expr = state.inspect.mem_write_expr.annotate(SkipUnconstrainAnnotation())
 
+def assign_prototype(state:angr.SimState):
+    simproc:angr.SimProcedure = state.inspect.simprocedure
+    charp = SimTypePointer(SimTypeChar())
+    if not (simproc.prototype.returnty == charp and \
+            all(arg == charp for arg in simproc.prototype.args)):
+        return
+
+    prototype = None
+    if simproc.library_name and simproc.library_name in angr.SIM_LIBRARIES:
+        prototype = angr.SIM_LIBRARIES[simproc.library_name].get_prototype(simproc.display_name, state.arch)
+
+    if prototype is None:
+        for lib_name, lib in angr.SIM_LIBRARIES.items():
+            prototype = lib.get_prototype(simproc.display_name, state.arch)
+            if prototype is not None:
+                break
+
+    if prototype is None:
+        log.warning("Failed to find prototype for %s", simproc)
+    else:
+        simproc.prototype = prototype
+
 class RpcInterfaceCallbackAnalysis(Analysis):
     SIMPROC_DICT = {
         "I_RpcBindingIsClientLocal": I_RpcBindingIsClientLocal(),
@@ -179,6 +203,7 @@ class RpcInterfaceCallbackAnalysis(Analysis):
 
         init_state.inspect.b("mem_read", when=angr.BP_AFTER, action=unconstrain_global)
         init_state.inspect.b("mem_write", when=angr.BP_BEFORE, action=annotate_global_var_write)
+        init_state.inspect.b("simprocedure", when=angr.BP_BEFORE, action=assign_prototype)
 
         simgr = p.factory.simulation_manager(init_state)
         simgr.use_technique(DFS())
