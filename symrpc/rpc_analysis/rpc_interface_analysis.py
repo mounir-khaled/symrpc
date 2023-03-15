@@ -4,17 +4,22 @@ import logging
 from typing import Iterable, Optional
 
 import angr
-import archinfo
+import ctypes
 
 
 from angr.analyses.analysis import Analysis
 from angr.knowledge_plugins.functions import Function
+from angr.analyses.reaching_definitions import ReachingDefinitionsAnalysis
+from angr.knowledge_plugins.key_definitions.key_definition_manager import RDAObserverControl
 
 
 from .rpc_structs import *
 from .callback_analysis.interface_callback_analysis import RpcInterfaceCallbackAnalysis, RpcSimState
 
 from .reaching_arguments import ReachingArgumentsAnalysis
+
+from .rpc_dataclasses import *
+from .rd_function_handlers import ConvertStringSecurityDescriptorHandler
 
 # import angr.procedures.definitions.win32_rpcrt4 as win32_rpcrt4
 # ^ PyLance breaks when doing this import so this is here as a workaround
@@ -23,135 +28,21 @@ win32_rpcrt4 = import_module("angr.procedures.definitions.win32_rpcrt4")
 
 log = logging.getLogger(__name__)
 
-def arch_endness_to_int_byteorder(endness:str):
-    return "little" if endness == archinfo.Endness.LE else "big"
-
-@dataclass
-class RpcServerInterfaceFlags:
-    FLAG_VALUE_DICT = {
-        'RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH': 16,
-        'RPC_IF_ALLOW_LOCAL_ONLY': 32,
-        'RPC_IF_ALLOW_SECURE_ONLY': 8,
-        'RPC_IF_ALLOW_UNKNOWN_AUTHORITY': 4,
-        'RPC_IF_ASYNC_CALLBACK': 256,
-        'RPC_IF_AUTOLISTEN': 1,
-        'RPC_IF_OLE': 2,
-        'RPC_IF_SEC_CACHE_PER_PROC': 128,
-        'RPC_IF_SEC_NO_CACHE': 64
-    }
-
-    RPC_IF_AUTOLISTEN: bool
-    RPC_IF_OLE: bool
-    RPC_IF_ALLOW_UNKNOWN_AUTHORITY: bool
-    RPC_IF_ALLOW_SECURE_ONLY: bool
-    RPC_IF_ALLOW_CALLBACKS_WITH_NO_AUTH: bool
-    RPC_IF_ALLOW_LOCAL_ONLY: bool
-    RPC_IF_SEC_NO_CACHE: bool
-    RPC_IF_SEC_CACHE_PER_PROC: bool
-    RPC_IF_ASYNC_CALLBACK: bool
-
-    @classmethod
-    def from_int(cls, flag:int):
-        return cls(**{k: flag & v != 0 for k, v in cls.FLAG_VALUE_DICT.items()})
-
-    def to_int(self):
-        flag_int = 0
-        for flag, value in self.FLAG_VALUE_DICT.items():
-            if getattr(self, flag): flag_int |= value
-        
-        return flag_int
-
-@dataclass
-class ExtractedString:
-    address:int
-    string:Optional[str]=None
-    
-    @classmethod
-    def extract(cls, backer_state:angr.SimState, address:int, char_width=8, byteorder=archinfo.Endness.LE):
-        LOAD_BUFFER_SIZE = 1
-
-        reading_string = True
-        string = ''
-        str_encoding = "ASCII" if char_width in (7, 8) else "UTF-16-LE"
-        load_size = LOAD_BUFFER_SIZE * char_width // 8
-        current_address = address
-        while reading_string:
-            
-            char_bvs = backer_state.memory.load(current_address, load_size, endness=byteorder)
-            if not char_bvs.concrete:
-                log.error("Failed to extract string at address %#x", address)
-                return cls(address, None)
-
-            char = backer_state.solver.eval(char_bvs)
-            if char == 0:
-                break
-
-            string += int.to_bytes(char, LOAD_BUFFER_SIZE * char_width//8, byteorder=arch_endness_to_int_byteorder(byteorder)).decode(str_encoding)
-            current_address += load_size
-
-        return cls(address, string)
-
-@dataclass
-class Uuid:
-    uuid:str
-    version:str
-
-    @classmethod 
-    def from_struct(cls, interface_id:SimStructValue):
-        uuid_parts = [None] * 5
-        guid = interface_id.SyntaxGUID
-        uuid_parts[0] = "%08X" % guid.Data1
-        uuid_parts[1] = "%04X" % guid.Data2
-        uuid_parts[2] = "%04X" % guid.Data3
-        uuid_parts[3] = "".join("%02X" % int.from_bytes(b, byteorder='little') for b in guid.Data4[:2])
-        uuid_parts[4] = "".join("%02X" % int.from_bytes(b, byteorder='little') for b in guid.Data4[2:])
-        
-        uuid = "-".join(uuid_parts)
-
-        syntax_version = interface_id.SyntaxVersion
-        version = "%d.%d" % (syntax_version.MajorVersion, syntax_version.MinorVersion)
-
-        return Uuid(uuid, version)
-
-@dataclass
-class RpcServerInterface:
-    address:int
-    struct_values:Optional[SimStructValue]=None
-    procedure_functions:Optional[Iterable[Function]]=None
-    flags:Optional[RpcServerInterfaceFlags]=None
-
-    @property
-    def uuid(self):
-        if self.struct_values is None:
-            return None
-
-        return Uuid.from_struct(self.struct_values.InterfaceId)
-
-    @classmethod
-    def extract(cls, backer_state:angr.SimState, addr:int):
-        arch = backer_state.arch
-
-        if_struct = RPC_SERVER_INTERFACE.with_arch(arch)
-        server_info_struct = MIDL_SERVER_INFO.with_arch(arch)
-        dispatch_table_struct = RPC_DISPATCH_TABLE.with_arch(arch)
-
-        iface = if_struct.extract(backer_state, addr, concrete=True)
-        server_info = server_info_struct.extract(backer_state, iface.InterpreterInfo, concrete=True)
-        dispatch_table = dispatch_table_struct.extract(backer_state, iface.DispatchTable, concrete=True)
-
-        proc_fns = []
-        n_procs = dispatch_table.DispatchTableCount
-        dispatch_table_entry_type = server_info_struct.fields["DispatchTable"].pts_to
-        ptr_size = dispatch_table_entry_type.size // arch.byte_width
-        for i in range(n_procs):
-            stub_fn_ptr_addr = server_info.DispatchTable + i * ptr_size
-            stub_fn_addr = dispatch_table_entry_type.extract(backer_state, stub_fn_ptr_addr, concrete=True)
-            proc_fns.append(backer_state.project.kb.functions.get_by_addr(stub_fn_addr))
-
-        return cls(addr, iface, proc_fns, iface.Flags)
-
-
 class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
+
+    RE_SECURITY_DESCRIPTOR = re.compile(r"PSecurityDescriptor\('(?P<sddl>.+)'\)")
+
+    security_descriptor_to_string = ctypes.windll.advapi32.ConvertSecurityDescriptorToStringSecurityDescriptorW
+    security_descriptor_to_string.argtypes = [
+        ctypes.c_void_p, 
+        ctypes.wintypes.DWORD, 
+        ctypes.wintypes.DWORD, 
+        ctypes.POINTER(ctypes.wintypes.LPWSTR), 
+        ctypes.POINTER(ctypes.wintypes.PULONG)
+    ]
+
+    security_descriptor_to_string.restype = ctypes.wintypes.BOOL
+
     def __init__(
             self, 
             register_interface_functions:Optional[Iterable[Function]]=None, 
@@ -187,15 +78,56 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
         if symexec_callbacks:
             self._symexec_callbacks(is_multiplexed=is_multiplexed)
 
+    def _run_and_cache_rda(self, fn:Function):
+        # caller_block = fn.get_block(caller_blocknode.addr, fn.get_block_size(caller_blocknode.addr))
+        # obs_point = ("insn", caller_block.instruction_addrs[-1], 0)
+
+        # rda = self.project.analyses[ReachingDefinitionsAnalysis].prep()(
+        #     fn, 
+        #     observation_points=[obs_point], 
+        #     function_handler=ConvertStringSecurityDescriptorHandler()
+        # )
+
+        # self.kb.defs.model_by_funcaddr[fn.addr] = rda.model
+
+        if fn.is_simprocedure or fn.is_plt or fn.alignment:
+            raise ValueError("Function is simprocedure or plt or alignment")
+
+        callsites = list(fn.get_call_sites())
+        if not callsites:
+            return
+        call_insn_addrs = set()
+        for block_addr in callsites:
+            block = fn._get_block(block_addr)
+            if block is None:
+                continue
+            if not block.instruction_addrs:
+                continue
+            call_insn_addr = block.instruction_addrs[-1]
+            call_insn_addrs.add(call_insn_addr)
+
+        observer = RDAObserverControl(fn.addr, callsites, call_insn_addrs)
+        rda = self.project.analyses[ReachingDefinitionsAnalysis].prep(kb=self.kb)(
+            subject=fn, observe_callback=observer.rda_observe_callback, function_handler=ConvertStringSecurityDescriptorHandler()
+        )
+        
+        self.kb.defs.model_by_funcaddr[fn.addr] = rda.model
+
     def _recover_registration_args(
-            self, 
-            register_if_functions:Iterable[Function], 
-            use_protseq_functions:Iterable[Function], 
-            register_auth_functions:Iterable[Function], 
-            backer_state:angr.SimState
-        ):
+                self, 
+                register_if_functions:Iterable[Function], 
+                use_protseq_functions:Iterable[Function], 
+                register_auth_functions:Iterable[Function], 
+                backer_state:angr.SimState
+            ):
 
         for register_fn in register_if_functions:
+            for caller_fn, caller_blocknode in self._iter_callers(register_fn):
+                if caller_fn.addr in self.kb.defs.model_by_funcaddr:
+                    continue
+                
+                self._run_and_cache_rda(caller_fn)
+
             callsite_register_args_dict = self.find_all_callsite_args(register_fn, win32_rpcrt4.prototypes[register_fn.name])
             for register_args in callsite_register_args_dict.values():
                 register_args["api_function"] = register_fn.name
@@ -208,7 +140,7 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
 
                     interfaces.append(interface)
                 
-                register_args["IfSpec"] = interfaces
+                register_args["IfSpec"] = interfaces.copy()
 
                 flags_list = []
                 for flags_int in register_args["Flags"]:
@@ -219,11 +151,37 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
 
                     flags_list.append(flags)
                 
-                register_args["Flags"] = flags_list
+                register_args["Flags"] = flags_list.copy()
+
+                security_descriptors = []
+                for sd_ptr in register_args["SecurityDescriptor"]:
+                    sddl = None
+                    try:
+                        if isinstance(sd_ptr, int):
+                            sddl = self._extract_sddl_from_addr(sd_ptr)
+                        elif isinstance(sd_ptr, claripy.ast.bv.BV):
+                            sddl = self._extract_sddl_from_bvs(sd_ptr)
+
+                    except Exception:
+                        log.error("Failed to extract security descriptor at %#x", sd_ptr)
+                        
+                    if sddl is None:
+                        security_descriptors.append(sd_ptr)
+                    else:
+                        security_descriptors.append(sddl)
+                    
+                register_args["SecurityDescriptor"] = security_descriptors.copy()
+                    
             
             self.rpc_register_calls.update(callsite_register_args_dict)
 
         for fn in use_protseq_functions:
+            for caller_fn, caller_blocknode in self._iter_callers(register_fn):
+                if caller_fn.addr in self.kb.defs.model_by_funcaddr:
+                    continue
+                
+                self._run_and_cache_rda(caller_fn)
+
             callsite_useprotseq_args_dict = self.find_all_callsite_args(fn, win32_rpcrt4.prototypes[fn.name])
             char_width = 16 if fn.name.endswith("W") else 8
             for register_args in callsite_useprotseq_args_dict.values():
@@ -239,16 +197,73 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
                 
                 if "IfSpec" in register_args:
                     log.info("Unhandled IfSpec in register_args")
+                
+                security_descriptors = []
+                for sd_ptr in register_args["SecurityDescriptor"]:
+                    sddl = None
+                    try:
+                        if isinstance(sd_ptr, int):
+                            sddl = self._extract_sddl_from_addr(sd_ptr)
+                        elif isinstance(sd_ptr, claripy.ast.bv.BV):
+                            sddl = self._extract_sddl_from_bvs(sd_ptr)
+
+                    except Exception:
+                        log.error("Failed to extract security descriptor at %#x", sd_ptr)
+                        
+                    if sddl is None:
+                        security_descriptors.append(sd_ptr)
+                    else:
+                        security_descriptors.append(sddl)
+                    
+                register_args["SecurityDescriptor"] = security_descriptors.copy()
 
             self.rpc_use_protseq_calls.update(callsite_useprotseq_args_dict)
 
         for fn in register_auth_functions:
+            for caller_fn, caller_blocknode in self._iter_callers(register_fn):
+                if caller_fn.addr in self.kb.defs.model_by_funcaddr:
+                    continue
+                
+                self._run_and_cache_rda(caller_fn)
+
             callsite_register_auth_args_dict = self.find_all_callsite_args(fn, win32_rpcrt4.prototypes[fn.name])
             for register_args in callsite_register_auth_args_dict.values():
                 register_args["api_function"] = fn.name
 
             self.rpc_register_auth_calls.update(callsite_register_auth_args_dict)
         
+
+    def _extract_sddl_from_bvs(self, bvs):
+        if not bvs.op == "BVS":
+            return None
+
+        name = bvs.args[0]
+        match = self.RE_SECURITY_DESCRIPTOR.fullmatch(name)
+        if match is None:
+            return None
+
+        return match.group("sddl")
+
+    def _extract_sddl_from_addr(self, addr):
+        offset = addr - self.project.loader.main_object.mapped_base
+
+        # This won't work with non-dlls
+        loaded_dll = ctypes.windll.LoadLibrary(self.project.filename)
+        sd_ptr = ctypes.cast(loaded_dll._handle + offset, ctypes.c_void_p)
+
+        sb = ctypes.c_wchar_p()
+        sb_ptr = ctypes.pointer(sb)
+
+        sz = ctypes.wintypes.ULONG(0)
+        sz_ptr = ctypes.pointer(sz)
+
+        retval = self.security_descriptor_to_string(sd_ptr, 1, 0xffff_ffff, sb_ptr, sz_ptr)
+        if retval == 0:
+            raise ValueError("Conversion failed")
+        
+        sddl = sb.value
+        ctypes.windll.kernel32.LocalFree(sb)
+        return sddl
 
     def _symexec_callbacks(self, is_multiplexed=True):
         auth_svcs = []
