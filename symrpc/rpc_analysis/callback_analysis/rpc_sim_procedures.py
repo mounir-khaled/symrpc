@@ -28,7 +28,11 @@ def concat_null_character(string_bvs, char_width):
 
 class I_RpcBindingIsClientLocal(angr.SimProcedure):
     def run(self, Binding, IsClientLocal):
-        self.state.memory.store(IsClientLocal, self.state.rpc_call.call_attributes.IsClientLocal)
+        self.state.memory.store(
+            IsClientLocal, 
+            claripy.If(self.state.rpc_call.call_attributes.IsClientLocal == 1, claripy.BVV(1, 32), claripy.BVV(0, 32))
+        )
+        
         return 0
 
 class I_RpcBindingInqTransportType(angr.SimProcedure):
