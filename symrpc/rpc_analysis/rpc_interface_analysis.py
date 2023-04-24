@@ -58,8 +58,6 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
         self.rpc_register_calls = {}
         self.rpc_use_protseq_calls = {}
         self.rpc_register_auth_calls = {}
-        self.possible_callers = defaultdict(list)
-        self.rpc_constraints = defaultdict(set)
         # self._symexec_callbacks = symexec_callbacks
 
         if backer_state is None:
@@ -75,6 +73,42 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
             register_auth_functions = [fn for fn in self.kb.functions.values() if fn.name.startswith("RpcServerRegisterAuthInfo")]
 
         self._recover_registration_args(register_if_functions, use_protseq_functions, register_auth_functions, backer_state)
+        for cs_addr, register_args in self.rpc_register_calls.items():
+            interfaces = register_args["IfSpec"]
+            resolved_interfaces = [i for i in interfaces if isinstance(i.address, int)]
+            if len(interfaces) == len(resolved_interfaces):
+                continue
+            
+            resolved_interface_addrs = {i.address for i in resolved_interfaces}
+            detected_interfaces = resolved_interfaces.copy()
+            for addr in self.project.loader.memory.find(b"\x60\x00\x00\x00"):
+                try:
+                    if addr in resolved_interface_addrs:
+                        continue
+
+                    extracted_ifspec = RpcServerInterface.extract(backer_state, addr)
+                    if syntax_version["MajorVersion"] > 10:
+                        continue
+
+                    if not extracted_ifspec.procedure_functions:
+                        continue
+
+                    required_addrs = (
+                        extracted_ifspec.struct_values["DispatchTable"], 
+                        extracted_ifspec.struct_values["InterpreterInfo"]
+                    )
+
+                    if not all(self.project.loader.main_object.contains_addr(a) for a in required_addrs):
+                        continue
+
+                    syntax_version = extracted_ifspec.struct_values["InterfaceId"]["SyntaxVersion"]
+                    detected_interfaces.append(extracted_ifspec)
+
+                except ValueError:
+                    continue
+
+            register_args["IfSpec"] = detected_interfaces.copy()
+
         if symexec_callbacks:
             self._symexec_callbacks(is_multiplexed=is_multiplexed)
 
@@ -157,7 +191,9 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
                 for sd_ptr in register_args["SecurityDescriptor"]:
                     sddl = None
                     try:
-                        if isinstance(sd_ptr, int):
+                        if isinstance(sd_ptr, int) and sd_ptr == 0:
+                            sddl = 0
+                        elif isinstance(sd_ptr, int):
                             sddl = self._extract_sddl_from_addr(sd_ptr)
                         elif isinstance(sd_ptr, claripy.ast.bv.BV):
                             sddl = self._extract_sddl_from_bvs(sd_ptr)
@@ -202,7 +238,9 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
                 for sd_ptr in register_args["SecurityDescriptor"]:
                     sddl = None
                     try:
-                        if isinstance(sd_ptr, int):
+                        if isinstance(sd_ptr, int) and sd_ptr == 0:
+                            sddl = 0
+                        elif isinstance(sd_ptr, int):
                             sddl = self._extract_sddl_from_addr(sd_ptr)
                         elif isinstance(sd_ptr, claripy.ast.bv.BV):
                             sddl = self._extract_sddl_from_bvs(sd_ptr)
@@ -247,7 +285,7 @@ class RpcInterfacesAnalysis(ReachingArgumentsAnalysis):
     def _extract_sddl_from_addr(self, addr):
         offset = addr - self.project.loader.main_object.mapped_base
 
-        # This won't work with non-dlls
+        # This won't work with exe files
         loaded_dll = ctypes.windll.LoadLibrary(self.project.filename)
         sd_ptr = ctypes.cast(loaded_dll._handle + offset, ctypes.c_void_p)
 

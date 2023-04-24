@@ -94,8 +94,6 @@ def analyze_all_services(cache_filename, report_dir="reports", timeout=0, servic
         start_time = time.time()
         p = None
         output_dir = os.path.join(report_dir, os.path.basename(service_binpath))
-        os.makedirs(output_dir, exist_ok=True)
-        
         try:
             if timeout:
                 p = multiprocessing.Process(
@@ -151,8 +149,14 @@ def analyze_all_services(cache_filename, report_dir="reports", timeout=0, servic
 
                 result_dict.update(analysis_result)
                 
-            with open(result_filepath, 'w') as f:
-                json.dump(result_dict, f, indent=2)
+                with open(result_filepath, 'w') as f:
+                    json.dump(result_dict, f, indent=2)
+            
+            elif termination_reason != "SUCCESS":
+                os.makedirs(output_dir, exist_ok=True)
+                with open(result_filepath, 'w') as f:
+                    json.dump(result_dict, f, indent=2)
+
 
 if __name__ == "__main__":
     logging.basicConfig()

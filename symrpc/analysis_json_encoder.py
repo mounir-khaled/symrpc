@@ -89,9 +89,7 @@ class RpcInterfaceAnalysisJsonEncoder(json.JSONEncoder):
         return {
             "interface_registration": self._callsite_dict_to_list(o.rpc_register_calls),
             "protseq_usage": self._callsite_dict_to_list(o.rpc_use_protseq_calls),
-            "auth_registration": self._callsite_dict_to_list(o.rpc_register_auth_calls),
-            # "possible_callers": self._callsite_dict_to_list(o.possible_callers),
-            "rpc_constraints": o.rpc_constraints
+            "auth_registration": self._callsite_dict_to_list(o.rpc_register_auth_calls)
         }
 
 class AnalysisResultJsonEncoder(

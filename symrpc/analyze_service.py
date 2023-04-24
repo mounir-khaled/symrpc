@@ -123,15 +123,12 @@ def analyze_service(cache_filename, service_binpath, output_dir="./reports/", sy
             fn._project = p
 
         log.info("Starting analysis")
-        try:
-            rpc_ifs:RpcInterfacesAnalysis = p.analyses.RpcInterfaces(coerce_argument_values=True, is_multiplexed=is_in_service_group)
-        except Exception:
-            log.error("Unhandled exception while running RpcInterfacesAnalysis", exc_info=True)
-            return
+        rpc_ifs:RpcInterfacesAnalysis = p.analyses.RpcInterfaces(coerce_argument_values=True, is_multiplexed=is_in_service_group)
     
-    os.makedirs(output_dir, exist_ok=True)
+    if rpc_ifs.rpc_register_calls:
+        os.makedirs(output_dir, exist_ok=True)
 
-    rpc_info_filepath = os.path.join(output_dir, "rpc_server_info.json")
-    with open(rpc_info_filepath, 'w') as f:
-        json.dump({"analysis_result": rpc_ifs}, f, indent=2, cls=AnalysisResultJsonEncoder, sort_keys=True)
+        rpc_info_filepath = os.path.join(output_dir, "rpc_server_info.json")
+        with open(rpc_info_filepath, 'w') as f:
+            json.dump({"analysis_result": rpc_ifs}, f, indent=2, cls=AnalysisResultJsonEncoder, sort_keys=True)
 
